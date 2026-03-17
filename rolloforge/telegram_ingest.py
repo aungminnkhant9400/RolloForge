@@ -274,27 +274,44 @@ def ingest_telegram_bookmark_message(message: str, settings: Settings) -> tuple[
     save_bookmarks(merged_bookmarks)
     save_known_bookmark_ids(load_known_bookmark_ids() | {bookmark.id})
 
-    # Analyze bookmark (DeepSeek removed, uses fallback/LLM)
-    try:
-        result = analyze_bookmark(bookmark, settings)
-        # For url_only mode, mark as low confidence
-        if parsed.capture_mode == "url_only":
-            result = build_low_confidence_analysis_result(bookmark, settings)
-    except Exception:
-        LOGGER.exception("Bookmark analysis failed for %s. Saving failed analysis record.", bookmark.id)
-        result = build_failed_analysis_result(bookmark)
+    # Skip auto-analysis - LLM (Garfis) will analyze manually
+    # Create placeholder result indicating pending LLM analysis
+    result = AnalysisResult(
+        bookmark_id=bookmark.id,
+        summary="[PENDING LLM ANALYSIS] " + compact_text(bookmark.text, limit=180),
+        recommendation_reason="Bookmark captured. Awaiting LLM analysis by Garfis.",
+        key_insights=[
+            f"Source: {bookmark.source}",
+            f"Capture mode: {parsed.capture_mode}",
+            "Status: Pending LLM analysis",
+            "Action: Garfis will analyze when URL is shared in Telegram"
+        ],
+        scoring_inputs=ScoringInputs(
+            relevance=0, practical_value=0, actionability=0, stage_fit=0,
+            novelty=0, excitement=0, difficulty=0, time_cost=0
+        ),
+        worth_score=0.0,
+        effort_score=0.0,
+        priority_score=0.0,
+        recommendation_bucket="pending",
+        analysis_source="pending_llm",
+        analyzed_at=utc_now_iso(),
+        confidence="pending",
+        difficulty_reason="awaiting LLM analysis",
+        next_action="Garfis will analyze and update scores",
+    )
     
     existing_results = load_analysis_results()
     upsert_analysis_results(existing_results, [result])
     save_seen_bookmark_ids(load_seen_bookmark_ids() | {bookmark.id})
 
     confirmation = {
-        "status": result.analysis_source,
+        "status": "pending_llm",
         "source": bookmark.source,
         "capture_mode": parsed.capture_mode,
         "tag": bookmark.tags[0] if bookmark.tags else "general",
-        "recommendation": result.recommendation_bucket,
-        "priority": result.priority_score,
-        "next_action": result.next_action or next_action_for_bucket(result.recommendation_bucket),
+        "recommendation": "pending",
+        "priority": 0.0,
+        "next_action": "Garfis will analyze this bookmark",
     }
     return bookmark, result, confirmation
