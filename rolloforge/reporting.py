@@ -62,8 +62,11 @@ def generate_report(
     latest_path: Path = LATEST_REPORT_PATH,
     history_dir: Path = REPORT_HISTORY_DIR,
 ) -> Path:
+    # Keep only last 10 bookmarks (most recent first)
+    recent_bookmarks = sorted(bookmarks, key=lambda b: b.bookmarked_at or "", reverse=True)[:10]
+    
     analysis_map = {result.bookmark_id: result for result in analysis_results}
-    rows = _build_rows(bookmarks, analysis_map)
+    rows = _build_rows(recent_bookmarks, analysis_map)
     generated_at = utc_now_iso()
 
     environment = Environment(
@@ -74,6 +77,8 @@ def generate_report(
         generated_at=generated_at,
         rows=rows,
         stats=_stats(rows),
+        showing_last_n=len(recent_bookmarks),
+        total_bookmarks=len(bookmarks),
     )
 
     ensure_parent(latest_path)
