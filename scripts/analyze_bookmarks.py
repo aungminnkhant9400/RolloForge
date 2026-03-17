@@ -11,7 +11,6 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from config.settings import get_settings
 from rolloforge.analysis import analyze_pending_bookmarks
-from rolloforge.deepseek_client import DeepSeekClient
 from rolloforge.storage import (
     load_analysis_results,
     load_bookmarks,
@@ -22,7 +21,7 @@ from rolloforge.storage import (
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Analyze new bookmarks with DeepSeek or fallback heuristics.")
+    parser = argparse.ArgumentParser(description="Analyze new bookmarks with LLM or fallback heuristics.")
     parser.add_argument("--limit", type=int, help="Optional max number of bookmarks to analyze in this run.")
     parser.add_argument("--force-all", action="store_true", help="Re-analyze all bookmarks instead of only unseen ones.")
     return parser.parse_args()
@@ -32,7 +31,6 @@ def main() -> int:
     args = parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     settings = get_settings()
-    client = DeepSeekClient(settings)
 
     bookmarks = load_bookmarks()
     existing_results = load_analysis_results()
@@ -41,7 +39,6 @@ def main() -> int:
     new_results = analyze_pending_bookmarks(
         bookmarks=bookmarks,
         existing_ids=seen_ids,
-        client=client,
         settings=settings,
         limit=args.limit,
         force_all=args.force_all,

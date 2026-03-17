@@ -11,7 +11,6 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from config.settings import get_settings
 from rolloforge.analysis import analyze_pending_bookmarks
-from rolloforge.deepseek_client import DeepSeekClient
 from rolloforge.reporting import generate_report
 from rolloforge.storage import (
     load_analysis_results,
@@ -56,13 +55,11 @@ def main() -> int:
         logging.info("New bookmarks stored: %s", len(new_ids))
         logging.info("Sync step complete with %s stored bookmark(s).", len(bookmarks))
 
-    deepseek_client = DeepSeekClient(settings)
     seen_ids = set() if args.force_all else load_seen_bookmark_ids()
     existing_results = load_analysis_results()
     new_results = analyze_pending_bookmarks(
         bookmarks=bookmarks,
         existing_ids=seen_ids,
-        client=deepseek_client,
         settings=settings,
         limit=args.limit,
         force_all=args.force_all,

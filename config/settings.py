@@ -36,11 +36,6 @@ def _int_env(name: str, default: int) -> int:
 class Settings:
     project_name: str
     pipeline_stage: str
-    deepseek_api_key: str | None
-    deepseek_api_base: str
-    deepseek_model: str
-    deepseek_timeout_seconds: int
-    deepseek_max_retries: int
     x_bookmarks_source_file: str | None
     x_api_base_url: str
     x_user_access_token: str | None
@@ -54,11 +49,6 @@ def get_settings() -> Settings:
     return Settings(
         project_name="RolloForge",
         pipeline_stage=os.getenv("PIPELINE_STAGE", "idea_validation"),
-        deepseek_api_key=os.getenv("DEEPSEEK_API_KEY") or None,
-        deepseek_api_base=os.getenv("DEEPSEEK_API_BASE", "https://api.deepseek.com").rstrip("/"),
-        deepseek_model=os.getenv("DEEPSEEK_MODEL", "deepseek-chat"),
-        deepseek_timeout_seconds=_int_env("DEEPSEEK_TIMEOUT_SECONDS", 45),
-        deepseek_max_retries=max(1, _int_env("DEEPSEEK_MAX_RETRIES", 3)),
         x_bookmarks_source_file=os.getenv("X_BOOKMARKS_SOURCE_FILE") or None,
         x_api_base_url=os.getenv("X_API_BASE_URL", "https://api.x.com/2").rstrip("/"),
         x_user_access_token=os.getenv("X_USER_ACCESS_TOKEN") or None,

@@ -2,7 +2,6 @@
 
 __all__ = [
     "analysis",
-    "deepseek_client",
     "models",
     "reporting",
     "scoring",

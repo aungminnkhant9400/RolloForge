@@ -4,53 +4,12 @@ import logging
 from typing import Any
 
 from config.settings import Settings
-from rolloforge.deepseek_client import DeepSeekClient
 from rolloforge.models import AnalysisResult, Bookmark, ScoringInputs
 from rolloforge.scoring import score_analysis
 from rolloforge.utils import compact_text, safe_list, utc_now_iso
 
 
 LOGGER = logging.getLogger(__name__)
-
-SYSTEM_PROMPT = (
-    "You are a bookmark intelligence analyst. "
-    "Return only valid JSON with grounded assessments and numeric scores from 0 to 10."
-)
-
-
-def build_user_prompt(bookmark: Bookmark, stage: str) -> str:
-    note = bookmark.note or str(bookmark.raw_payload.get("note", "")).strip() or "none"
-    return f"""
-Analyze this saved bookmark for a solo builder pipeline.
-
-Current stage: {stage}
-
-Bookmark:
-- ID: {bookmark.id}
-- Source: {bookmark.source}
-- URL: {bookmark.url}
-- Author: {bookmark.author or "unknown"}
-- Text: {bookmark.text}
-- Note: {note}
-- Tags: {", ".join(bookmark.tags) if bookmark.tags else "none"}
-
-Return JSON with this shape:
-{{
-  "summary": "short summary",
-  "recommendation_reason": "why this matters now",
-  "key_insights": ["insight 1", "insight 2", "insight 3"],
-  "scoring_inputs": {{
-    "relevance": 0-10,
-    "practical_value": 0-10,
-    "actionability": 0-10,
-    "stage_fit": 0-10,
-    "novelty": 0-10,
-    "excitement": 0-10,
-    "difficulty": 0-10,
-    "time_cost": 0-10
-  }}
-}}
-""".strip()
 
 
 def _keyword_score(text: str, keywords: list[str], base: float = 3.5, bonus: float = 1.2) -> float:
@@ -87,15 +46,23 @@ def fallback_analysis(bookmark: Bookmark, stage: str) -> dict[str, Any]:
     focus = "near-term experiment" if inputs.actionability >= 6 else "reference material"
     note = bookmark.note or str(bookmark.raw_payload.get("note", "")).strip()
     note_hint = f"Saved note: {compact_text(note, 70)}" if note else "No saved note provided."
+    capture_mode = bookmark.raw_payload.get("capture_mode", "unknown")
+    capture_hint = f"Capture mode: {capture_mode}"
+    
+    insights = [
+        f"Author/source: {bookmark.author or 'unknown'}",
+        f"Primary signal: {bookmark.tags[0] if bookmark.tags else 'general bookmark'}",
+        note_hint,
+        capture_hint,
+    ]
+    
+    if capture_mode == "url_only":
+        insights.append("Low-confidence: captured from URL only, limited context available.")
+    
     return {
         "summary": compact_text(bookmark.text, limit=120),
         "recommendation_reason": f"This looks like {focus} for the current {stage} stage.",
-        "key_insights": [
-            f"Author/source: {bookmark.author or 'unknown'}",
-            f"Primary signal: {bookmark.tags[0] if bookmark.tags else 'general bookmark'}",
-            note_hint,
-            "Fallback analysis used because DeepSeek output was unavailable.",
-        ],
+        "key_insights": insights,
         "scoring_inputs": inputs.to_dict(),
     }
 
@@ -121,20 +88,15 @@ def normalize_analysis_payload(bookmark: Bookmark, payload: dict[str, Any], anal
     )
 
 
-def analyze_bookmark(bookmark: Bookmark, client: DeepSeekClient, settings: Settings) -> AnalysisResult:
-    payload = client.request_json(SYSTEM_PROMPT, build_user_prompt(bookmark, settings.pipeline_stage))
-    if payload is None:
-        payload = fallback_analysis(bookmark, settings.pipeline_stage)
-        source = "fallback"
-    else:
-        source = "deepseek"
-    return normalize_analysis_payload(bookmark, payload, analysis_source=source)
+def analyze_bookmark(bookmark: Bookmark, settings: Settings) -> AnalysisResult:
+    """Analyze a bookmark using fallback scoring (DeepSeek removed)."""
+    payload = fallback_analysis(bookmark, settings.pipeline_stage)
+    return normalize_analysis_payload(bookmark, payload, analysis_source="llm_fallback")
 
 
 def analyze_pending_bookmarks(
     bookmarks: list[Bookmark],
     existing_ids: set[str],
-    client: DeepSeekClient,
     settings: Settings,
     limit: int | None = None,
     force_all: bool = False,
@@ -143,4 +105,4 @@ def analyze_pending_bookmarks(
     if limit is not None:
         pending = pending[:limit]
     LOGGER.info("Preparing analysis for %s bookmark(s).", len(pending))
-    return [analyze_bookmark(bookmark, client, settings) for bookmark in pending]
+    return [analyze_bookmark(bookmark, settings) for bookmark in pending]

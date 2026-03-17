@@ -7,7 +7,6 @@ from typing import Optional
 
 from config.settings import Settings
 from rolloforge.analysis import analyze_bookmark, fallback_analysis
-from rolloforge.deepseek_client import DeepSeekClient
 from rolloforge.models import AnalysisResult, Bookmark, ScoringInputs
 from rolloforge.storage import (
     load_analysis_results,
@@ -275,23 +274,15 @@ def ingest_telegram_bookmark_message(message: str, settings: Settings) -> tuple[
     save_bookmarks(merged_bookmarks)
     save_known_bookmark_ids(load_known_bookmark_ids() | {bookmark.id})
 
-    client = DeepSeekClient(settings)
-    
-    # For url_only mode, use low-confidence analysis
-    if parsed.capture_mode == "url_only":
-        try:
-            result = analyze_bookmark(bookmark, client, settings)
-            # Override with low-confidence result
+    # Analyze bookmark (DeepSeek removed, uses fallback/LLM)
+    try:
+        result = analyze_bookmark(bookmark, settings)
+        # For url_only mode, mark as low confidence
+        if parsed.capture_mode == "url_only":
             result = build_low_confidence_analysis_result(bookmark, settings)
-        except Exception:
-            LOGGER.exception("Bookmark analysis failed for %s. Saving failed analysis record.", bookmark.id)
-            result = build_failed_analysis_result(bookmark)
-    else:
-        try:
-            result = analyze_bookmark(bookmark, client, settings)
-        except Exception:
-            LOGGER.exception("Bookmark analysis failed for %s. Saving failed analysis record.", bookmark.id)
-            result = build_failed_analysis_result(bookmark)
+    except Exception:
+        LOGGER.exception("Bookmark analysis failed for %s. Saving failed analysis record.", bookmark.id)
+        result = build_failed_analysis_result(bookmark)
     
     existing_results = load_analysis_results()
     upsert_analysis_results(existing_results, [result])
