@@ -1,24 +1,25 @@
 # RolloForge
 
-RolloForge is a personal-use bookmark intelligence pipeline for X bookmarks. It syncs bookmark data into local JSON files, analyzes new entries with DeepSeek, computes recommendation scores in Python, and renders a standalone HTML report at `reports/latest_report.html`.
+RolloForge is a personal-use bookmark intelligence pipeline. It captures bookmarks from Telegram (URLs or structured messages), stores them in local JSON files, waits for LLM analysis, computes recommendation scores, and renders a standalone HTML report.
 
 ## v1 scope
 
 - No web frontend
 - No database
 - JSON storage only
-- DeepSeek-backed semantic analysis with graceful fallback
+- LLM-powered semantic analysis (manual, via Garfis)
 - Python scoring and recommendation mapping
-- Standalone HTML reporting for all bookmarks
+- Standalone HTML reporting (last 10 bookmarks)
+- Telegram integration via OpenClaw
 
 ## Project layout
 
 - `config/settings.py`: environment-driven settings and project paths
 - `data/bookmarks_raw.json`: normalized bookmark records
 - `data/analysis_results.json`: analysis outputs and scoring results
-- `data/seen_bookmarks.json`: known synced bookmark IDs plus analyzed bookmark IDs
-- `reports/latest_report.html`: latest standalone report
-- `reports/history/`: timestamped historical reports
+- `data/seen_bookmarks.json`: known bookmark IDs
+- `reports/latest_report.html`: latest standalone report (last 10 bookmarks)
+- `reports/history/`: timestamped historical reports (last 2 kept)
 - `rolloforge/`: core package modules
 - `scripts/`: runnable entry points
 - `templates/report.html.j2`: HTML report template
@@ -32,154 +33,76 @@ RolloForge is a personal-use bookmark intelligence pipeline for X bookmarks. It 
 pip install -r requirements.txt
 ```
 
-3. Copy `.env.example` to `.env` and populate the variables you want to use.
-
-## Real X setup
-
-RolloForge now supports real bookmark sync from the authenticated X user through the X API.
-
-1. Create an X developer app that supports OAuth 2.0 Authorization Code Flow.
-2. Configure the app with a redirect URI that exactly matches `X_REDIRECT_URI`.
-3. Enable user authentication and request these scopes:
-   - `bookmark.read`
-   - `tweet.read`
-   - `users.read`
-   - `offline.access`
-4. Copy `.env.example` to `.env`.
-5. Put your OAuth app values in:
-   - `X_CLIENT_ID`
-   - `X_CLIENT_SECRET`
-   - `X_REDIRECT_URI`
-6. Run the one-time helper:
+3. Copy `.env.example` to `.env` and set your pipeline stage:
 
 ```bash
-python scripts/get_x_user_token.py
+PIPELINE_STAGE=idea_validation
 ```
 
-7. Visit the printed authorization URL.
-8. After X redirects back to your redirect URI, copy either:
-   - the full callback URL, or
-   - just the `code` value
-9. Paste that into the script when prompted.
-10. The helper will exchange the code for tokens, print a safe token summary, call `GET /2/users/me`, and print:
-   - `X_USER_ID=...`
-   - a redacted `X_USER_ACCESS_TOKEN` placeholder
-11. If `GET /2/users/me` fails, the helper will print the status code, raw response body, and a scope-vs-auth diagnosis.
-12. Leave `X_BOOKMARKS_SOURCE_FILE` empty if you want real API sync.
+## How it works
 
-### Exact `.env` values needed for real X sync
+### 1. Capture (Telegram)
 
-Required:
-
-- `X_CLIENT_ID`
-- `X_CLIENT_SECRET`
-- `X_REDIRECT_URI`
-- `X_USER_ACCESS_TOKEN`
-
-Optional but supported:
-
-- `X_USER_ID`
-- `X_API_BASE_URL` default: `https://api.x.com/2`
-- `X_MAX_RESULTS` default: `100`
-- `X_MAX_PAGES` default: `50`
-- `X_USER_AGENT`
-
-Local-file mode only:
-
-- `X_BOOKMARKS_SOURCE_FILE`
-
-DeepSeek remains separate:
-
-- `DEEPSEEK_API_KEY`
-- `DEEPSEEK_API_BASE`
-- `DEEPSEEK_MODEL`
-- `DEEPSEEK_TIMEOUT_SECONDS`
-- `DEEPSEEK_MAX_RETRIES`
-- `PIPELINE_STAGE`
-
-## Run
-
-Use local sample data only:
-
-```bash
-python scripts/run_pipeline.py --skip-sync
+**Frictionless mode** (just paste URL):
+```
+https://x.com/user/status/123456
 ```
 
-Run the full pipeline with sync enabled:
-
-```bash
-python scripts/run_pipeline.py
+**Structured mode** (full control):
 ```
-
-Run the one-time OAuth helper:
-
-```bash
-python scripts/get_x_user_token.py
-```
-
-Test bookmark sync only without writing files:
-
-```bash
-python scripts/sync_x_bookmarks.py --dry-run
-```
-
-Run individual steps:
-
-```bash
-python scripts/sync_x_bookmarks.py
-python scripts/analyze_bookmarks.py
-python scripts/generate_report.py
-```
-
-## Telegram / OpenClaw workflow
-
-For personal VPS use, OpenClaw can map Telegram commands to local scripts:
-
-- `/bookmark` -> `python scripts/ingest_telegram_bookmark.py`
-- `/bmreport` -> `python scripts/bmreport.py`
-- `/bmsummary` -> `python scripts/bmsummary.py`
-
-Structured bookmark message format:
-
-```text
 /bookmark
 URL: https://example.com/post
-Text: copied post or article text
-Note: why I saved it
+Text: Article content or description
+Note: Why I'm saving this
 Tag: agents
 Source: article
 ```
 
-Rules:
+The system saves the bookmark with status `"pending_llm"` and waits for analysis.
 
-- `URL` is required
-- `Text` is required
-- `Note` is optional
-- `Tag` is optional and defaults to `general`
-- `Source` is optional and is inferred from the URL when missing
+### 2. Analysis (LLM - Garfis)
 
-Telegram bookmark ingestion immediately:
+When you share a URL in Telegram:
+1. Garfis scrapes the content using Playwright
+2. Performs semantic analysis (relevance, practical value, actionability, etc.)
+3. Calculates worth_score, effort_score, priority_score
+4. Assigns recommendation bucket: `test_this_week`, `build_later`, `archive`, or `ignore`
+5. Writes results to `data/analysis_results.json`
 
-1. saves the raw bookmark to `data/bookmarks_raw.json`
-2. analyzes the bookmark immediately
-3. upserts the result into `data/analysis_results.json`
-4. returns a short confirmation with source, tag, recommendation, priority, and next action
+**No external APIs** - all analysis done by Garfis directly.
 
-`/bmreport` behavior:
+### 3. Report Generation
 
-1. generates the HTML report at `reports/latest_report.html`
-2. computes summary counts for all recommendation buckets
-3. returns summary text plus the report path
-4. stays easy for OpenClaw to send as a Telegram document by attaching `reports/latest_report.html`
+When you say **"bmreport"**:
+1. Generates HTML report at `reports/latest_report.html`
+2. Shows only **last 10 bookmarks** (most recent first)
+3. Footer displays: *"Showing last 10 of X total bookmarks"*
+4. Sends file via Telegram using `telegram-file-sender` skill
+5. Keeps only **last 2 reports** in `reports/history/`, deletes older ones
 
-`/bmsummary` behavior:
+## Commands
 
-- returns only:
-  - `total`
-  - `test_this_week`
-  - `build_later`
-  - `archive`
-  - `ignore`
+### Telegram Workflow
+
+**Paste URL** (any URL in chat):
+- Scraped and analyzed silently
+- No response unless there's an error
+
+**"bmreport"**:
+- Generates and sends HTML report
+- Shows stats and last 10 bookmarks
+
+### Manual Scripts
+
+Generate report:
+```bash
+python scripts/generate_report.py
+```
+
+Run full pipeline (if you have X API set up):
+```bash
+python scripts/run_pipeline.py
+```
 
 ## JSON contracts
 
@@ -191,12 +114,14 @@ Telegram bookmark ingestion immediately:
     "id": "bookmark_001",
     "source": "x",
     "url": "https://example.com/post",
-    "text": "Bookmark text",
+    "text": "Bookmark text or URL placeholder",
     "author": "account_name",
     "created_at": "2026-03-14T09:00:00Z",
     "bookmarked_at": "2026-03-16T02:00:00Z",
     "tags": ["agents"],
-    "raw_payload": {}
+    "raw_payload": {
+      "capture_mode": "url_only"
+    }
   }
 ]
 ```
@@ -224,42 +149,54 @@ Telegram bookmark ingestion immediately:
     "effort_score": 4.45,
     "priority_score": 4.33,
     "recommendation_bucket": "build_later",
-    "analysis_source": "deepseek"
+    "analysis_source": "llm_direct",
+    "analyzed_at": "2026-03-17T08:00:00Z"
   }
 ]
 ```
 
-## OpenClaw trigger
+## Recommendation Buckets
 
-OpenClaw can invoke:
+- **test_this_week**: High priority, act on it now
+- **build_later**: Save for future reference
+- **archive**: Store but don't actively track
+- **ignore**: Drop it
+
+## Differences from Original Design
+
+| Original | Current |
+|----------|---------|
+| DeepSeek API for analysis | Garfis (LLM) analyzes directly |
+| Required `/bookmark` command | Frictionless URL capture works |
+| All bookmarks in report | Last 10 only |
+| Unlimited report history | Last 2 reports kept |
+| Separate analysis step | Analysis happens when URL shared |
+
+## Environment Variables
 
 ```bash
-python scripts/run_pipeline.py
+# Required
+PIPELINE_STAGE=idea_validation  # or prototype, validation, etc.
+
+# Optional - for X API sync (if you want real bookmark sync)
+X_CLIENT_ID=
+X_CLIENT_SECRET=
+X_REDIRECT_URI=
+X_USER_ACCESS_TOKEN=
 ```
 
-If OpenClaw exports bookmarks to a local file first, point `X_BOOKMARKS_SOURCE_FILE` at that file and the sync step will normalize and merge it into `data/bookmarks_raw.json`.
+No API keys needed for core functionality - Garfis handles all analysis.
 
-For real X syncing, leave `X_BOOKMARKS_SOURCE_FILE` empty and set `X_USER_ACCESS_TOKEN`.
+## File Sender Skill
 
-## Troubleshooting
+The `telegram-file-sender` skill (created separately) allows sending HTML reports directly to Telegram:
 
-### 403 on `GET /2/users/me`
+```bash
+python telegram-file-sender/scripts/send_file.py /path/to/report.html "Optional caption"
+```
 
-If `python scripts/get_x_user_token.py` exchanges the code successfully but then gets a 403 from `GET /2/users/me`, the helper now prints:
+Requires `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` environment variables.
 
-- the token response summary:
-  - `token_type`
-  - `expires_in`
-  - whether a `refresh_token` exists
-  - the granted `scope` field if X returned one
-- the exact scopes requested in the authorization URL
-- the `/2/users/me` status code
-- the raw `/2/users/me` response body
-- a short diagnosis of whether the failure looks like missing scope versus a broader auth/app-permission issue
+## License
 
-Common causes:
-
-- the X app did not actually grant `users.read`
-- the granted scope set is narrower than the requested scope set
-- the app or project access level is not allowed to use the endpoint
-- the token is valid enough to exchange, but not valid for `/2/users/me`
+Personal use. Modify as needed.
