@@ -3,9 +3,10 @@ from __future__ import annotations
 import logging
 import re
 from dataclasses import dataclass
+from typing import Optional
 
 from config.settings import Settings
-from rolloforge.analysis import analyze_bookmark
+from rolloforge.analysis import analyze_bookmark, fallback_analysis
 from rolloforge.deepseek_client import DeepSeekClient
 from rolloforge.models import AnalysisResult, Bookmark, ScoringInputs
 from rolloforge.storage import (
@@ -22,6 +23,8 @@ from rolloforge.storage import (
 from rolloforge.utils import compact_text, stable_bookmark_id, utc_now_iso
 
 
+# URL detection patterns
+URL_PATTERN = re.compile(r"https?://[^\s<>\[\]]+", re.IGNORECASE)
 FIELD_PATTERN = re.compile(r"^(url|text|note|tag|source)\s*:\s*(.*)$", re.IGNORECASE)
 VALID_SOURCES = {"x", "article", "github", "manual"}
 LOGGER = logging.getLogger(__name__)
@@ -31,10 +34,17 @@ LOGGER = logging.getLogger(__name__)
 class ParsedTelegramBookmark:
     url: str
     text: str
-    note: str | None
+    note: Optional[str]
     tag: str
     source: str
     raw_message: str
+    capture_mode: str  # "manual", "url_only", "url_plus_note"
+
+
+def detect_url(message: str) -> Optional[str]:
+    """Extract first URL from message."""
+    match = URL_PATTERN.search(message.strip())
+    return match.group(0) if match else None
 
 
 def infer_source_from_url(url: str) -> str:
@@ -62,6 +72,41 @@ def normalize_source(source: str | None, url: str) -> str:
     if value in VALID_SOURCES:
         return value
     return infer_source_from_url(url)
+
+
+def parse_frictionless_url(message: str) -> ParsedTelegramBookmark:
+    """Parse a frictionless URL message (plain URL with optional note)."""
+    url = detect_url(message)
+    if not url:
+        raise ValueError("No URL found in message.")
+
+    # Remove the URL from the message to get any additional text
+    remaining = message.replace(url, "").strip()
+    
+    # Check if there's additional text (note)
+    text_content = remaining.strip() if remaining.strip() else ""
+    
+    # Determine capture mode based on whether there's extra content
+    if text_content:
+        capture_mode = "url_plus_note"
+        # Use the additional text as both text and note
+        text = text_content
+        note = text_content
+    else:
+        capture_mode = "url_only"
+        # For URL-only, use URL as text placeholder
+        text = f"[URL content not available] {url}"
+        note = "Auto-captured from URL-only message"
+
+    return ParsedTelegramBookmark(
+        url=url,
+        text=text,
+        note=note,
+        tag="general",
+        source=infer_source_from_url(url),
+        raw_message=message.strip(),
+        capture_mode=capture_mode,
+    )
 
 
 def parse_telegram_bookmark_message(message: str) -> ParsedTelegramBookmark:
@@ -105,6 +150,7 @@ def parse_telegram_bookmark_message(message: str) -> ParsedTelegramBookmark:
         tag=tag,
         source=source,
         raw_message=message.strip(),
+        capture_mode="manual",
     )
 
 
@@ -124,6 +170,7 @@ def bookmark_from_parsed_message(parsed: ParsedTelegramBookmark) -> Bookmark:
             "ingestion_channel": "telegram",
             "telegram_message": parsed.raw_message,
             "note": parsed.note,
+            "capture_mode": parsed.capture_mode,
         },
     )
 
@@ -170,8 +217,57 @@ def build_failed_analysis_result(bookmark: Bookmark) -> AnalysisResult:
     )
 
 
+def build_low_confidence_analysis_result(bookmark: Bookmark, settings: Settings) -> AnalysisResult:
+    """Build analysis result for URL-only bookmarks with low confidence."""
+    # Use fallback analysis but mark as low confidence
+    payload = fallback_analysis(bookmark, settings.pipeline_stage)
+    inputs = ScoringInputs.from_dict(payload.get("scoring_inputs", {}))
+    
+    # Adjust scores down slightly for low-confidence items
+    from rolloforge.scoring import score_analysis
+    worth_score, effort_score, priority_score, bucket = score_analysis(inputs)
+    priority_score = max(0, priority_score * 0.7)  # Reduce priority for low-confidence
+    
+    return AnalysisResult(
+        bookmark_id=bookmark.id,
+        summary=compact_text(str(payload.get("summary", bookmark.text)), limit=220),
+        recommendation_reason=compact_text(
+            str(payload.get("recommendation_reason", "Low-confidence analysis due to incomplete input.")),
+            limit=260,
+        ),
+        key_insights=payload.get("key_insights", []) + ["Low-confidence: captured from URL only, limited context available."],
+        scoring_inputs=inputs,
+        worth_score=worth_score,
+        effort_score=effort_score,
+        priority_score=priority_score,
+        recommendation_bucket=bucket,
+        analysis_source="fallback_low_confidence",
+        confidence="low",
+        difficulty_reason="incomplete input",
+        next_action="Add more context or re-save with /bookmark for better analysis",
+        analyzed_at=utc_now_iso(),
+    )
+
+
 def ingest_telegram_bookmark_message(message: str, settings: Settings) -> tuple[Bookmark, AnalysisResult, dict[str, str | float]]:
-    parsed = parse_telegram_bookmark_message(message)
+    # Try to detect if it's a /bookmark command first
+    lines = [line.strip() for line in message.strip().splitlines()]
+    is_manual = lines and lines[0].strip().lower() == "/bookmark"
+    
+    # Try to find a URL in the message
+    url = detect_url(message)
+    
+    if not url:
+        raise ValueError("No URL found in message.")
+    
+    # Parse based on mode
+    if is_manual:
+        # Full /bookmark format
+        parsed = parse_telegram_bookmark_message(message)
+    else:
+        # Frictionless mode - plain URL with optional note
+        parsed = parse_frictionless_url(message)
+    
     bookmark = bookmark_from_parsed_message(parsed)
 
     existing_bookmarks = load_bookmarks()
@@ -180,11 +276,23 @@ def ingest_telegram_bookmark_message(message: str, settings: Settings) -> tuple[
     save_known_bookmark_ids(load_known_bookmark_ids() | {bookmark.id})
 
     client = DeepSeekClient(settings)
-    try:
-        result = analyze_bookmark(bookmark, client, settings)
-    except Exception:
-        LOGGER.exception("Bookmark analysis failed for %s. Saving failed analysis record.", bookmark.id)
-        result = build_failed_analysis_result(bookmark)
+    
+    # For url_only mode, use low-confidence analysis
+    if parsed.capture_mode == "url_only":
+        try:
+            result = analyze_bookmark(bookmark, client, settings)
+            # Override with low-confidence result
+            result = build_low_confidence_analysis_result(bookmark, settings)
+        except Exception:
+            LOGGER.exception("Bookmark analysis failed for %s. Saving failed analysis record.", bookmark.id)
+            result = build_failed_analysis_result(bookmark)
+    else:
+        try:
+            result = analyze_bookmark(bookmark, client, settings)
+        except Exception:
+            LOGGER.exception("Bookmark analysis failed for %s. Saving failed analysis record.", bookmark.id)
+            result = build_failed_analysis_result(bookmark)
+    
     existing_results = load_analysis_results()
     upsert_analysis_results(existing_results, [result])
     save_seen_bookmark_ids(load_seen_bookmark_ids() | {bookmark.id})
@@ -192,6 +300,7 @@ def ingest_telegram_bookmark_message(message: str, settings: Settings) -> tuple[
     confirmation = {
         "status": result.analysis_source,
         "source": bookmark.source,
+        "capture_mode": parsed.capture_mode,
         "tag": bookmark.tags[0] if bookmark.tags else "general",
         "recommendation": result.recommendation_bucket,
         "priority": result.priority_score,

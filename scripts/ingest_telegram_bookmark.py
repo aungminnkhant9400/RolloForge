@@ -40,6 +40,7 @@ def main() -> int:
     print("Bookmark saved.")
     print(f"status={confirmation['status']}")
     print(f"source={confirmation['source']}")
+    print(f"capture_mode={confirmation['capture_mode']}")
     print(f"tag={confirmation['tag']}")
     print(f"recommendation={confirmation['recommendation']}")
     print(f"priority={confirmation['priority']}")
