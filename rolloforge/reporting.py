@@ -79,7 +79,14 @@ def generate_report(
     ensure_parent(latest_path)
     latest_path.write_text(rendered, encoding="utf-8")
 
+    # Save to history
     history_dir.mkdir(parents=True, exist_ok=True)
     history_path = history_dir / f"report_{generated_at.replace(':', '-')}.html"
     history_path.write_text(rendered, encoding="utf-8")
+    
+    # Keep only last 2 reports, delete older ones
+    history_files = sorted(history_dir.glob("report_*.html"), key=lambda p: p.stat().st_mtime, reverse=True)
+    for old_file in history_files[2:]:
+        old_file.unlink()
+    
     return latest_path
