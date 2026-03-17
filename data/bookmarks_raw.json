@@ -1,0 +1,128 @@
+[
+  {
+    "id": "bookmark_004",
+    "source": "x",
+    "url": "https://example.com/design-notes",
+    "text": "Broad design notes on startup positioning. Interesting, but not clearly actionable right now.",
+    "note": null,
+    "author": "indiefounder",
+    "created_at": "2026-03-11T07:30:00Z",
+    "bookmarked_at": "2026-03-16T00:40:00Z",
+    "tags": [
+      "strategy",
+      "design"
+    ],
+    "raw_payload": {
+      "id": "bookmark_004",
+      "source": "x",
+      "url": "https://example.com/design-notes",
+      "text": "Broad design notes on startup positioning. Interesting, but not clearly actionable right now.",
+      "author": "indiefounder",
+      "created_at": "2026-03-11T07:30:00Z",
+      "bookmarked_at": "2026-03-16T00:40:00Z",
+      "tags": [
+        "strategy",
+        "design"
+      ],
+      "raw_payload": {
+        "tweet_id": "190004"
+      }
+    }
+  },
+  {
+    "id": "bookmark_003",
+    "source": "x",
+    "url": "https://www.latent.space/p/agent-evals",
+    "text": "Post outlining a practical eval loop for LLM products. Strong candidate for testing this week.",
+    "note": null,
+    "author": "productml",
+    "created_at": "2026-03-13T18:00:00Z",
+    "bookmarked_at": "2026-03-15T19:10:00Z",
+    "tags": [
+      "evals",
+      "product",
+      "workflow"
+    ],
+    "raw_payload": {
+      "id": "bookmark_003",
+      "source": "x",
+      "url": "https://www.latent.space/p/agent-evals",
+      "text": "Post outlining a practical eval loop for LLM products. Strong candidate for testing this week.",
+      "author": "productml",
+      "created_at": "2026-03-13T18:00:00Z",
+      "bookmarked_at": "2026-03-15T19:10:00Z",
+      "tags": [
+        "evals",
+        "product",
+        "workflow"
+      ],
+      "raw_payload": {
+        "tweet_id": "190003"
+      }
+    }
+  },
+  {
+    "id": "bookmark_002",
+    "source": "x",
+    "url": "https://arxiv.org/abs/2501.01234",
+    "text": "Paper on retrieval benchmarks for agent memory. Useful for evaluating what to build versus what to ignore.",
+    "note": null,
+    "author": "ml_research",
+    "created_at": "2026-03-12T13:15:00Z",
+    "bookmarked_at": "2026-03-15T03:25:00Z",
+    "tags": [
+      "research",
+      "memory",
+      "evaluation"
+    ],
+    "raw_payload": {
+      "id": "bookmark_002",
+      "source": "x",
+      "url": "https://arxiv.org/abs/2501.01234",
+      "text": "Paper on retrieval benchmarks for agent memory. Useful for evaluating what to build versus what to ignore.",
+      "author": "ml_research",
+      "created_at": "2026-03-12T13:15:00Z",
+      "bookmarked_at": "2026-03-15T03:25:00Z",
+      "tags": [
+        "research",
+        "memory",
+        "evaluation"
+      ],
+      "raw_payload": {
+        "tweet_id": "190002"
+      }
+    }
+  },
+  {
+    "id": "bookmark_001",
+    "source": "x",
+    "url": "https://github.com/microsoft/autogen",
+    "text": "AutoGen has a solid multi-agent orchestration pattern with practical examples and tooling ideas.",
+    "note": null,
+    "author": "openagents",
+    "created_at": "2026-03-10T09:00:00Z",
+    "bookmarked_at": "2026-03-14T06:45:00Z",
+    "tags": [
+      "agents",
+      "orchestration",
+      "github"
+    ],
+    "raw_payload": {
+      "id": "bookmark_001",
+      "source": "x",
+      "url": "https://github.com/microsoft/autogen",
+      "text": "AutoGen has a solid multi-agent orchestration pattern with practical examples and tooling ideas.",
+      "author": "openagents",
+      "created_at": "2026-03-10T09:00:00Z",
+      "bookmarked_at": "2026-03-14T06:45:00Z",
+      "tags": [
+        "agents",
+        "orchestration",
+        "github"
+      ],
+      "raw_payload": {
+        "tweet_id": "190001"
+      }
+    }
+  }
+]

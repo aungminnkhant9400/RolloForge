@@ -1,0 +1,100 @@
+from __future__ import annotations
+
+from dataclasses import asdict, dataclass, field
+from typing import Any
+
+
+@dataclass(slots=True)
+class Bookmark:
+    id: str
+    source: str
+    url: str
+    text: str
+    note: str | None = None
+    author: str | None = None
+    created_at: str | None = None
+    bookmarked_at: str | None = None
+    tags: list[str] = field(default_factory=list)
+    raw_payload: dict[str, Any] = field(default_factory=dict)
+
+    @classmethod
+    def from_dict(cls, payload: dict[str, Any]) -> "Bookmark":
+        return cls(
+            id=str(payload.get("id", "")).strip(),
+            source=str(payload.get("source", "x")).strip() or "x",
+            url=str(payload.get("url", "")).strip(),
+            text=str(payload.get("text", "")).strip(),
+            note=str(payload.get("note", "")).strip() or None,
+            author=payload.get("author"),
+            created_at=payload.get("created_at"),
+            bookmarked_at=payload.get("bookmarked_at"),
+            tags=[str(tag) for tag in payload.get("tags", []) if str(tag).strip()],
+            raw_payload=payload.get("raw_payload", {}) or {},
+        )
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(slots=True)
+class ScoringInputs:
+    relevance: float
+    practical_value: float
+    actionability: float
+    stage_fit: float
+    novelty: float
+    excitement: float
+    difficulty: float
+    time_cost: float
+
+    @classmethod
+    def from_dict(cls, payload: dict[str, Any]) -> "ScoringInputs":
+        return cls(
+            relevance=float(payload.get("relevance", 0)),
+            practical_value=float(payload.get("practical_value", 0)),
+            actionability=float(payload.get("actionability", 0)),
+            stage_fit=float(payload.get("stage_fit", 0)),
+            novelty=float(payload.get("novelty", 0)),
+            excitement=float(payload.get("excitement", 0)),
+            difficulty=float(payload.get("difficulty", 0)),
+            time_cost=float(payload.get("time_cost", 0)),
+        )
+
+    def to_dict(self) -> dict[str, float]:
+        return asdict(self)
+
+
+@dataclass(slots=True)
+class AnalysisResult:
+    bookmark_id: str
+    summary: str
+    recommendation_reason: str
+    key_insights: list[str]
+    scoring_inputs: ScoringInputs
+    worth_score: float
+    effort_score: float
+    priority_score: float
+    recommendation_bucket: str
+    analysis_source: str
+    analyzed_at: str
+
+    @classmethod
+    def from_dict(cls, payload: dict[str, Any]) -> "AnalysisResult":
+        return cls(
+            bookmark_id=str(payload.get("bookmark_id", "")).strip(),
+            summary=str(payload.get("summary", "")).strip(),
+            recommendation_reason=str(payload.get("recommendation_reason", "")).strip(),
+            key_insights=[str(item).strip() for item in payload.get("key_insights", []) if str(item).strip()],
+            scoring_inputs=ScoringInputs.from_dict(payload.get("scoring_inputs", {})),
+            worth_score=float(payload.get("worth_score", 0)),
+            effort_score=float(payload.get("effort_score", 0)),
+            priority_score=float(payload.get("priority_score", 0)),
+            recommendation_bucket=str(payload.get("recommendation_bucket", "archive")).strip(),
+            analysis_source=str(payload.get("analysis_source", "fallback")).strip(),
+            analyzed_at=str(payload.get("analyzed_at", "")).strip(),
+        )
+
+    def to_dict(self) -> dict[str, Any]:
+        payload = asdict(self)
+        payload["scoring_inputs"] = self.scoring_inputs.to_dict()
+        return payload
