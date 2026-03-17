@@ -37,7 +37,8 @@ def main() -> int:
     message = load_message(args)
 
     _, _, confirmation = ingest_telegram_bookmark_message(message, settings)
-    print("Bookmark saved and analyzed.")
+    print("Bookmark saved.")
+    print(f"status={confirmation['status']}")
     print(f"source={confirmation['source']}")
     print(f"tag={confirmation['tag']}")
     print(f"recommendation={confirmation['recommendation']}")

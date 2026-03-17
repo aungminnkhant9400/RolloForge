@@ -23,7 +23,10 @@
     "priority_score": 4.44,
     "recommendation_bucket": "test_this_week",
     "analysis_source": "fallback",
-    "analyzed_at": "2026-03-17T04:35:03Z"
+    "analyzed_at": "2026-03-17T04:35:03Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_001",
@@ -49,7 +52,10 @@
     "priority_score": 2.67,
     "recommendation_bucket": "build_later",
     "analysis_source": "fallback",
-    "analyzed_at": "2026-03-17T04:35:03Z"
+    "analyzed_at": "2026-03-17T04:35:03Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_004",
@@ -75,7 +81,10 @@
     "priority_score": 2.67,
     "recommendation_bucket": "archive",
     "analysis_source": "fallback",
-    "analyzed_at": "2026-03-17T04:35:03Z"
+    "analyzed_at": "2026-03-17T04:35:03Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_002",
@@ -101,6 +110,9 @@
     "priority_score": 2.61,
     "recommendation_bucket": "build_later",
     "analysis_source": "fallback",
-    "analyzed_at": "2026-03-17T04:35:03Z"
+    "analyzed_at": "2026-03-17T04:35:03Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   }
 ]

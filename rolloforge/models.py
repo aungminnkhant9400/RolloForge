@@ -77,6 +77,9 @@ class AnalysisResult:
     recommendation_bucket: str
     analysis_source: str
     analyzed_at: str
+    confidence: str | None = None
+    difficulty_reason: str | None = None
+    next_action: str | None = None
 
     @classmethod
     def from_dict(cls, payload: dict[str, Any]) -> "AnalysisResult":
@@ -92,6 +95,9 @@ class AnalysisResult:
             recommendation_bucket=str(payload.get("recommendation_bucket", "archive")).strip(),
             analysis_source=str(payload.get("analysis_source", "fallback")).strip(),
             analyzed_at=str(payload.get("analyzed_at", "")).strip(),
+            confidence=str(payload.get("confidence", "")).strip() or None,
+            difficulty_reason=str(payload.get("difficulty_reason", "")).strip() or None,
+            next_action=str(payload.get("next_action", "")).strip() or None,
         )
 
     def to_dict(self) -> dict[str, Any]:
