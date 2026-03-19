@@ -30,7 +30,7 @@ def save_bookmark_and_analysis(bookmark_dict: dict, analysis_dict: dict) -> None
     existing_urls = {b.url for b in existing_bookmarks}
     
     if new_url in existing_urls:
-        print(f"Skipped: Bookmark with URL already exists: {new_url[:60]}...")
+        print(f"DUPLICATE: URL already saved - {new_url[:60]}...")
         return
     
     # Create models
@@ -49,8 +49,7 @@ def save_bookmark_and_analysis(bookmark_dict: dict, analysis_dict: dict) -> None
     # Merge and save analysis
     upsert_analysis_results(existing_analysis, [analysis])
     
-    print(f"Saved bookmark: {bookmark.id}")
-    print(f"Saved analysis: {analysis.bookmark_id}")
+    print(f"SAVED: {bookmark.id}")
 
 
 if __name__ == "__main__":
