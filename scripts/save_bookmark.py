@@ -20,10 +20,18 @@ from rolloforge.storage import load_bookmarks, save_bookmarks, load_analysis_res
 
 
 def save_bookmark_and_analysis(bookmark_dict: dict, analysis_dict: dict) -> None:
-    """Save a bookmark and its analysis to JSON files."""
+    """Save a bookmark and its analysis to JSON files. Skip if URL already exists."""
     # Load existing
     existing_bookmarks = load_bookmarks()
     existing_analysis = load_analysis_results()
+    
+    # Check for duplicate URL
+    new_url = bookmark_dict.get('url', '')
+    existing_urls = {b.url for b in existing_bookmarks}
+    
+    if new_url in existing_urls:
+        print(f"Skipped: Bookmark with URL already exists: {new_url[:60]}...")
+        return
     
     # Create models
     bookmark = Bookmark.from_dict(bookmark_dict)
