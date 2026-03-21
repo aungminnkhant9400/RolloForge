@@ -12,8 +12,7 @@ TIER_1_SOURCES = {
 
 # Tier 2: Established practitioners
 TIER_2_SOURCES = {
-    "0xsero", "nickspisak_", "investingluc", "0xmari
-awfal",
+    "0xsero", "nickspisak_", "investingluc", "0xmario",
     "thedankoe", "zeneca", "startupideaspod", "anthropic", "openai"
 }
 
@@ -126,7 +125,7 @@ def calculate_actionability(text: str, is_openclaw_related: bool) -> float:
     text_lower = text.lower()
     
     # Specific commands
-    if any(cmd in text_lower for cmd in ["run this", "install", `docker`, `git clone`, `pip install`]):
+    if any(cmd in text_lower for cmd in ["run this", "install", "docker", "git clone", "pip install"]):
         base = 10.0
     elif "steps" in text_lower or "workflow" in text_lower:
         base = 8.0
