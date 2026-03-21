@@ -10,6 +10,7 @@ class Bookmark:
     source: str
     url: str
     text: str
+    title: str | None = None
     note: str | None = None
     author: str | None = None
     created_at: str | None = None
@@ -24,6 +25,7 @@ class Bookmark:
             source=str(payload.get("source", "x")).strip() or "x",
             url=str(payload.get("url", "")).strip(),
             text=str(payload.get("text", "")).strip(),
+            title=str(payload.get("title", "")).strip() or None,
             note=str(payload.get("note", "")).strip() or None,
             author=payload.get("author"),
             created_at=payload.get("created_at"),

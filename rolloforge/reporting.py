@@ -17,6 +17,7 @@ def _build_rows(bookmarks: list[Bookmark], analysis_map: dict[str, AnalysisResul
             {
                 "id": bookmark.id,
                 "url": bookmark.url,
+                "title": bookmark.title or bookmark.text[:80],
                 "text": bookmark.text,
                 "note": bookmark.note or "",
                 "author": bookmark.author or "unknown",
