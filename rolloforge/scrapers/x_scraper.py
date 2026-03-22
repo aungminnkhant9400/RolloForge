@@ -16,7 +16,7 @@ class XScraper:
     
     def __init__(self):
         self.user_agent = (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
             "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         )
     
@@ -34,43 +34,97 @@ class XScraper:
         
         try:
             async with async_playwright() as p:
-                browser = await p.chromium.launch(headless=True)
+                browser = await p.chromium.launch(
+                    headless=True,
+                    args=['--disable-blink-features=AutomationControlled']
+                )
                 context = await browser.new_context(
                     user_agent=self.user_agent,
-                    viewport={"width": 1280, "height": 800}
+                    viewport={"width": 1280, "height": 800},
+                    locale="en-US"
                 )
+                
+                # Block images to speed up loading
+                await context.route("**/*.{png,jpg,jpeg,gif,svg}", lambda route: route.abort())
+                
                 page = await context.new_page()
                 
                 # Navigate to tweet
                 LOGGER.info(f"Fetching X content: {url}")
-                await page.goto(url, wait_until="networkidle", timeout=30000)
+                await page.goto(url, wait_until="domcontentloaded", timeout=30000)
                 
-                # Wait for tweet to load
-                await page.wait_for_selector("article[data-testid='tweet']", timeout=10000)
+                # Wait for any of these selectors
+                selectors = [
+                    "article[data-testid='tweet']",
+                    "[data-testid='tweet']",
+                    "article[role='article']",
+                    "article"
+                ]
                 
-                # Extract tweet text
-                tweet_text = await page.eval_on_selector(
-                    "article[data-testid='tweet'] div[data-testid='tweetText']",
-                    "el => el.innerText"
-                )
+                found_selector = None
+                for selector in selectors:
+                    try:
+                        await page.wait_for_selector(selector, timeout=5000)
+                        found_selector = selector
+                        LOGGER.info(f"Found selector: {selector}")
+                        break
+                    except:
+                        continue
+                
+                if not found_selector:
+                    # Try to get any text from the page
+                    page_text = await page.inner_text("body")
+                    LOGGER.warning(f"No tweet selector found. Page text: {page_text[:200]}")
+                    await browser.close()
+                    return self._error_result("Could not find tweet on page - X may require login")
+                
+                # Try multiple text selectors
+                text_selectors = [
+                    f"{found_selector} div[data-testid='tweetText']",
+                    f"{found_selector} [lang]",
+                    f"{found_selector} div[dir='auto']",
+                    found_selector
+                ]
+                
+                tweet_text = ""
+                for text_selector in text_selectors:
+                    try:
+                        elem = await page.query_selector(text_selector)
+                        if elem:
+                            tweet_text = await elem.inner_text()
+                            if tweet_text.strip():
+                                LOGGER.info(f"Found text using: {text_selector}")
+                                break
+                    except:
+                        continue
                 
                 # Extract author
-                author_elem = await page.query_selector("article[data-testid='tweet'] a[href^='/']")
                 author = None
-                if author_elem:
-                    href = await author_elem.get_attribute("href")
-                    if href:
-                        author = href.strip("/").split("/")[0]
+                try:
+                    # Try to get author from URL or page
+                    author_elem = await page.query_selector("a[href^='/'] [data-testid='User-Name']")
+                    if author_elem:
+                        author = await author_elem.inner_text()
+                    else:
+                        # Extract from URL
+                        parts = url.split('/')
+                        if len(parts) > 3:
+                            author = parts[3]
+                except:
+                    pass
                 
                 await browser.close()
                 
-                return {
-                    "success": True,
-                    "text": tweet_text or "",
-                    "author": author,
-                    "title": self._generate_title(tweet_text or ""),
-                    "error": None
-                }
+                if tweet_text.strip():
+                    return {
+                        "success": True,
+                        "text": tweet_text.strip(),
+                        "author": author,
+                        "title": self._generate_title(tweet_text.strip()),
+                        "error": None
+                    }
+                else:
+                    return self._error_result("Tweet text is empty - X may require login")
                 
         except Exception as e:
             LOGGER.exception(f"Failed to fetch X content: {url}")
@@ -127,8 +181,8 @@ def fetch_x_content_sync(url: str) -> Optional[dict]:
 
 
 if __name__ == "__main__":
-    # Test
     import sys
+    import json
     if len(sys.argv) > 1:
         url = sys.argv[1]
         result = fetch_x_content_sync(url)
