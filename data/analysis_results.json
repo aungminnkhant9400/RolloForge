@@ -337,6 +337,36 @@
     "next_action": "None"
   },
   {
+    "bookmark_id": "bookmark_WeixinWeChat_2035537088314290",
+    "summary": "Today, we are officially opening the capability to integrate #OpenClaw into #Weixin. With the launch of the #WeixinCl...",
+    "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Ready to try when you have time. Save for after current priorities.",
+    "key_insights": [
+      "Source: Weixin_WeChat",
+      "Relevance: 7.5/10",
+      "Actionability: 8.0/10 (with lazy+popular bonus)",
+      "Medium priority - good for build-later queue"
+    ],
+    "scoring_inputs": {
+      "relevance": 7.5,
+      "practical_value": 4.0,
+      "actionability": 8.0,
+      "stage_fit": 9.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 6.7,
+    "effort_score": 5.0,
+    "priority_score": 4.2,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "llm_auto_scored",
+    "analyzed_at": "2026-03-22T11:52:02Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
+  },
+  {
     "bookmark_id": "bookmark_saranormous_2035080458304987603",
     "summary": "Caught up with @karpathy for a new @NoPriorsPod : on the phase shift in engineering, AI psychosis, claws, AutoResearc...",
     "recommendation_reason": "High relevance to your current priorities. Novel approach you haven't seen before. Save for after current priorities.",
@@ -393,9 +423,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:47:45Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_startupideaspod_agents",
