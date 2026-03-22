@@ -229,54 +229,55 @@ def bookmark_from_parsed_message(parsed: ParsedTelegramBookmark) -> Bookmark:
 
 
 def _generate_title(text: str, max_length: int = 80) -> str:
-    """Generate a clean, readable title that ends with proper punctuation.
+    """Generate a clean, concise title from text.
     
-    Extracts a complete thought ending with . ? ! or : that invites reading more.
+    - Takes first sentence or first complete thought
+    - Removes hashtags for cleaner reading
+    - No trailing ellipsis
+    - Ends with proper punctuation
     """
     if not text:
-        return "Untitled."
+        return "Untitled"
     
-    # Get first line
+    # Get first line and clean it up
     first_line = text.split('\n')[0].strip()
     
-    # If it's short enough and already has ending punctuation, use it
-    if len(first_line) <= max_length and first_line[-1] in '.?!':
-        return first_line
+    # Remove hashtags for cleaner title (keep the words, lose the #)
+    import re
+    first_line = re.sub(r'#(\w+)', r'\1', first_line)
+    
+    # If it's short enough, use it as-is (add period if needed)
+    if len(first_line) <= max_length:
+        if first_line[-1] in '.?!':
+            return first_line
+        return first_line + '.'
     
     # Look for sentence-ending punctuation within limit
-    # Priority: period, question mark, exclamation, colon (for introductions)
-    best_end = 0
     for punct in ['. ', '? ', '! ']:
         idx = first_line[:max_length].rfind(punct)
-        if idx > 20 and idx > best_end:
-            best_end = idx + 1  # Include the punctuation
+        if idx > 20:
+            return first_line[:idx + 1].strip()
     
-    # If we found a good sentence end, use it
-    if best_end > 0:
-        return first_line[:best_end].strip()
-    
-    # Try colon as alternative (for "Title: description" patterns)
+    # Try colon as alternative
     colon_idx = first_line[:max_length].rfind(': ')
     if colon_idx > 30:
         return first_line[:colon_idx + 1].strip()
     
-    # Try dash as section break
-    dash_idx = first_line[:max_length].rfind(' - ')
-    if dash_idx > 30:
-        return first_line[:dash_idx].strip() + '.'
-    
-    # No good break found - take up to max_length at word boundary and add period
+    # No good break found - truncate at word boundary
     idx = first_line[:max_length].rfind(' ')
     if idx > 20:
         title = first_line[:idx].strip()
     else:
         title = first_line[:max_length].strip()
     
-    # Ensure it ends with proper punctuation
+    # Ensure it ends with period (NOT ellipsis)
     if title and title[-1] not in '.?!':
         title += '.'
+    elif title.endswith('...'):
+        # Replace ellipsis with single period
+        title = title.rstrip('.') + '.'
     
-    return title if title else "Untitled."
+    return title if title else "Untitled"
 
 
 def next_action_for_bucket(bucket: str) -> str:
