@@ -3,7 +3,7 @@
     "id": "bookmark_ernestosoftware_2033917717762191659",
     "source": "x",
     "url": "https://x.com/ernestosoftware/status/2033917717762191659?s=46",
-    "text": "Twitter/X post from @ernestosoftware. View on X for full content.",
+    "text": "We turned Openclaw into a self improving vibe marketer for our $300,000/yr app.",
     "note": "Auto-captured from URL-only message",
     "author": "ernestosoftware",
     "created_at": "2026-03-22T10:27:49.826126+00:00",
@@ -15,15 +15,16 @@
       "ingestion_channel": "telegram",
       "telegram_message": "https://x.com/ernestosoftware/status/2033917717762191659?s=46",
       "note": "Auto-captured from URL-only message",
-      "capture_mode": "url_only"
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
     },
-    "title": "Tweet by @ernestosoftware"
+    "title": "We turned Openclaw into a self improving vibe marketer for our $300,000/yr app."
   },
   {
     "id": "bookmark_saranormous_2035080458304987603",
     "source": "x",
     "url": "https://x.com/saranormous/status/2035080458304987603?s=20",
-    "text": "Twitter/X post from @saranormous. View on X for full content.",
+    "text": "Caught up with \n@karpathy\n for a new \n@NoPriorsPod\n: on the phase shift in engineering, AI psychosis, claws, AutoResearch, the opportunity for a SETI-at-Home like movement in AI, the model landscape, and second order effects\n\n02:55 - What Capability Limits Remain?\n06:15 - What Mastery of Coding Agents Looks Like\n11:16 - Second Order Effects of Coding Agents\n15:51 - Why AutoResearch\n22:45 - Relevant Skills in the AI Era\n28:25 - Model Speciation\n32:30 - Collaboration Surfaces for Humans and AI\n37:28 - Analysis of Jobs Market Data\n48:25 - Open vs. Closed Source Models\n53:51 - Autonomous Robotics and Atoms\n1:00:59 - MicroGPT and Agentic Education\n1:05:40 - End Thoughts",
     "note": "Auto-captured from URL-only message",
     "author": "saranormous",
     "created_at": "2026-03-22T09:17:25.398646Z",
@@ -35,9 +36,10 @@
       "ingestion_channel": "telegram",
       "telegram_message": "https://x.com/saranormous/status/2035080458304987603?s=20",
       "note": "Auto-captured from URL-only message",
-      "capture_mode": "url_only"
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
     },
-    "title": "Tweet by @saranormous"
+    "title": "Caught up with"
   },
   {
     "id": "bookmark_zeneca_vibe_code",
