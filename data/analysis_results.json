@@ -362,9 +362,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:52:02Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_saranormous_2035080458304987603",
@@ -951,6 +951,35 @@
     "confidence": "None",
     "difficulty_reason": "None",
     "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_dr_cintas_2035387052460536",
+    "summary": "China has released an AI employee that runs 100% locally. It can do research, code, build websites, create slide deck...",
+    "recommendation_reason": "Reference material for future projects.",
+    "key_insights": [
+      "Source: dr_cintas",
+      "Relevance: 4.0/10",
+      "Actionability: 4.0/10 (with lazy+popular bonus)"
+    ],
+    "scoring_inputs": {
+      "relevance": 4.0,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 7.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.3,
+    "effort_score": 5.0,
+    "priority_score": 1.8,
+    "recommendation_bucket": "archive",
+    "analysis_source": "llm_auto_scored",
+    "analyzed_at": "2026-03-22T12:36:20Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_theflowhorse_trading",
