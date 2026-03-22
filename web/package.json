@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "npm run data && next dev",
     "build": "npm run data && next build",
-    "data": "cp ../data/bookmarks_raw.json ./lib/data.json 2>/dev/null || echo '[]' > ./lib/data.json; cp ../data/analysis_results.json ./lib/analysis.json 2>/dev/null || echo '[]' > ./lib/analysis.json",
+    "data": "node lib/copy-data.js",
     "start": "next start",
     "lint": "next lint"
   },
