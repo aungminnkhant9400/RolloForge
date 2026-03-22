@@ -64,7 +64,7 @@ export function BookmarksContent({ allBookmarks, allTags }: BookmarksContentProp
   return (
     <div className="filter-layout">
       <FilterSidebar
-        allTags={allTags}
+        availableTags={allTags}
         selectedBucket={selectedBucket}
         onBucketChange={setSelectedBucket}
         selectedTags={selectedTags}
