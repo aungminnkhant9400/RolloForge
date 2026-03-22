@@ -397,4 +397,4 @@ MIT - Modify as needed for your own bookmark intelligence system.
 
 Built for OpenClaw users who want automated bookmark prioritization. Inspired by Karpathy's autoresearch and the agent workflow community.
 
-**Questions?** Open an issue or DM on X: [@yourusername](https://x.com/yourusername)
+**Questions?** Open an issue or DM on X: [@yourusername](https://x.com/rollinrollo94)
