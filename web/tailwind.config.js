@@ -1,13 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        // RolloForge theme - warm beige/cream
         background: '#f5efe4',
         panel: '#fffaf2',
         'panel-strong': '#f1e4d0',
@@ -16,7 +15,6 @@ module.exports = {
         accent: '#a44b1a',
         'accent-soft': '#d77b46',
         line: 'rgba(32, 32, 28, 0.1)',
-        // Bucket colors
         'bucket-test': '#275d38',
         'bucket-build': '#8c641f',
         'bucket-archive': '#6e6e62',
