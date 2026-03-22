@@ -1,44 +1,80 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
+import { useState, useMemo } from 'react';
 import { FilterSidebar } from './FilterSidebar';
 import { SearchBar } from './SearchBar';
 import { BookmarkList } from './BookmarkList';
-import { getBookmarksWithAnalysis, getAllTags } from '@/lib/data';
+import { BookmarkWithAnalysis } from '@/lib/data';
 
-export function BookmarksContent() {
-  const searchParams = useSearchParams();
+interface BookmarksContentProps {
+  allBookmarks: BookmarkWithAnalysis[];
+  allTags: string[];
+}
+
+export function BookmarksContent({ allBookmarks, allTags }: BookmarksContentProps) {
+  const [selectedBucket, setSelectedBucket] = useState('all');
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [searchQuery, setSearchQuery] = useState('');
   
-  const allBookmarks = getBookmarksWithAnalysis();
-  const allTags = getAllTags();
+  const filteredBookmarks = useMemo(() => {
+    return allBookmarks.filter((bookmark) => {
+      // Bucket filter
+      if (selectedBucket !== 'all') {
+        if (bookmark.analysis?.recommendation_bucket !== selectedBucket) {
+          return false;
+        }
+      }
+      
+      // Tag filter
+      if (selectedTags.length > 0) {
+        const hasSelectedTag = selectedTags.some(tag => 
+          bookmark.tags?.includes(tag)
+        );
+        if (!hasSelectedTag) return false;
+      }
+      
+      // Search filter
+      if (searchQuery.trim()) {
+        const query = searchQuery.toLowerCase();
+        const searchableText = `
+          ${bookmark.title} 
+          ${bookmark.text} 
+          ${bookmark.author || ''} 
+          ${bookmark.analysis?.summary || ''}
+          ${bookmark.tags?.join(' ') || ''}
+        `.toLowerCase();
+        
+        if (!searchableText.includes(query)) {
+          return false;
+        }
+      }
+      
+      return true;
+    });
+  }, [allBookmarks, selectedBucket, selectedTags, searchQuery]);
   
-  // Get filter params
-  const bucket = searchParams.get('bucket') || 'all';
-  const tagsParam = searchParams.get('tags') || '';
-  const tags = tagsParam ? tagsParam.split(',') : [];
-  const query = searchParams.get('q') || '';
+  const handleTagChange = (tag: string) => {
+    setSelectedTags(prev => 
+      prev.includes(tag) 
+        ? prev.filter(t => t !== tag)
+        : [...prev, tag]
+    );
+  };
 
   return (
-    <div className="grid lg:grid-cols-4 gap-6">
-      {/* Sidebar */}
-      <div className="lg:col-span-1">
-        <FilterSidebar
-          allTags={allTags}
-          selectedBucket={bucket}
-          selectedTags={tags}
-        />
-      </div>
+    <div className="filter-layout">
+      <FilterSidebar
+        allTags={allTags}
+        selectedBucket={selectedBucket}
+        onBucketChange={setSelectedBucket}
+        selectedTags={selectedTags}
+        onTagChange={handleTagChange}
+        bookmarks={allBookmarks}
+      />
       
-      {/* Main content */}
-      <div className="lg:col-span-3 space-y-4">
-        <SearchBar initialValue={query} />
-        
-        <BookmarkList 
-          bookmarks={allBookmarks}
-          filterBucket={bucket}
-          filterTags={tags}
-          searchQuery={query}
-        />
+      <div>
+        <SearchBar value={searchQuery} onChange={setSearchQuery} />
+        <BookmarkList bookmarks={filteredBookmarks} />
       </div>
     </div>
   );

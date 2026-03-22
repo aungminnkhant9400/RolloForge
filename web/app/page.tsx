@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { StatCard } from '@/components/StatCard';
 import { BookmarkCard } from '@/components/BookmarkCard';
 import { getStats, getRecentBookmarks } from '@/lib/data';
@@ -7,58 +8,36 @@ export default function OverviewPage() {
   const recentBookmarks = getRecentBookmarks(5);
 
   return (
-    <div className="space-y-8">
-      {/* Stats Grid */}
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
       <section>
-        <h2 className="text-xl font-semibold text-ink mb-4">Dashboard</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <StatCard 
-            label="Total Bookmarks" 
-            value={stats.total} 
-            color="gray" 
-          />
-          <StatCard 
-            label="Test This Week" 
-            value={stats.test_this_week} 
-            color="green" 
-          />
-          <StatCard 
-            label="Build Later" 
-            value={stats.build_later} 
-            color="orange" 
-          />
-          <StatCard 
-            label="Archive" 
-            value={stats.archive} 
-            color="gray" 
-          />
+        <h2 className="section-title" style={{ marginBottom: '16px' }}>Dashboard</h2>
+        <div className="stats-grid">
+          <StatCard label="Total Bookmarks" value={stats.total} color="gray" />
+          <StatCard label="Test This Week" value={stats.test_this_week} color="green" />
+          <StatCard label="Build Later" value={stats.build_later} color="orange" />
+          <StatCard label="Archive" value={stats.archive} color="gray" />
         </div>
       </section>
 
-      {/* Recent Bookmarks */}
       <section>
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-semibold text-ink">Recent Bookmarks</h2>
-          <a 
-            href="/bookmarks" 
-            className="text-accent hover:text-accent-soft transition-colors"
-          >
+        <div className="section-header">
+          <h2 className="section-title">Recent Bookmarks</h2>
+          <Link href="/bookmarks" className="view-all">
             View all →
-          </a>
+          </Link>
         </div>
         
-        <div className="grid gap-4">
+        <div className="bookmark-list">
           {recentBookmarks.length > 0 ? (
             recentBookmarks.map((bookmark) => (
-              <BookmarkCard 
-                key={bookmark.id} 
-                bookmark={bookmark} 
-              />
+              <BookmarkCard key={bookmark.id} bookmark={bookmark} />
             ))
           ) : (
-            <div className="text-center py-12 text-muted bg-panel rounded-2xl border border-line">
+            <div className="empty-state">
               <p>No bookmarks yet.</p>
-              <p className="text-sm mt-2">Save your first bookmark to see it here.</p>
+              <p style={{ fontSize: '0.875rem', marginTop: '8px' }}>
+                Save your first bookmark to see it here.
+              </p>
             </div>
           )}
         </div>

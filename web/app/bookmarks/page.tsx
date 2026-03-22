@@ -1,12 +1,14 @@
-import { Suspense } from 'react';
 import { BookmarksContent } from '@/components/BookmarksContent';
+import { getBookmarksWithAnalysis, getAllTags } from '@/lib/data';
 
 export default function BookmarksPage() {
+  const allBookmarks = getBookmarksWithAnalysis();
+  const allTags = getAllTags();
+
   return (
-    <Suspense fallback={
-      <div className="text-center py-12 text-muted">Loading bookmarks...✨</div>
-    }>
-      <BookmarksContent />
-    </Suspense>
+    <BookmarksContent 
+      allBookmarks={allBookmarks}
+      allTags={allTags}
+    />
   );
 }
