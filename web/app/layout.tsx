@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { LayoutTabs } from '@/components/LayoutTabs';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 export const metadata: Metadata = {
   title: 'RolloForge Dashboard',
@@ -17,8 +18,11 @@ export default function RootLayout({
       <body>
         <div className="container">
           <header className="header">
-            <h1>RolloForge</h1>
-            <p>Bookmark intelligence for AI agents</p>
+            <div className="header-left">
+              <h1>RolloForge</h1>
+              <p>Bookmark intelligence for AI agents</p>
+            </div>
+            <ThemeToggle />
           </header>
           <LayoutTabs />
           <main>{children}</main>
