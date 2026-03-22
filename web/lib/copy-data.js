@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const dataDir = path.join(__dirname, '..', 'data');
+// Go up 2 levels: web/lib/ -> web/ -> repo root
+const dataDir = path.join(__dirname, '..', '..', 'data');
 const libDir = __dirname;
 
 try {
