@@ -977,9 +977,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T12:36:20Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_theflowhorse_trading",
@@ -1241,5 +1241,34 @@
     "confidence": "None",
     "difficulty_reason": "None",
     "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_0xsunnft_2035722514090062",
+    "summary": "最近看到很多对比AI和Crypto行业的讨论，大部分是拉AI踩Crypto，而且往往来自币圈业内人士，作为勉强算两个领域都涉足过的人，也分享一下我的主观看法吧。 无可质疑，AI确实是现在最炙手可热，也很可能是智力密度最高的行业，互联网...",
+    "recommendation_reason": "Reference material for future projects.",
+    "key_insights": [
+      "Source: 0xsunnft",
+      "Relevance: 4.0/10",
+      "Actionability: 4.0/10 (with lazy+popular bonus)"
+    ],
+    "scoring_inputs": {
+      "relevance": 4.0,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.1,
+    "effort_score": 5.0,
+    "priority_score": 1.6,
+    "recommendation_bucket": "archive",
+    "analysis_source": "llm_auto_scored",
+    "analyzed_at": "2026-03-22T18:00:03Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   }
 ]
