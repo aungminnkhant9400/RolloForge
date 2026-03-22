@@ -91,13 +91,40 @@ def parse_frictionless_url(message: str) -> ParsedTelegramBookmark:
         # Use the additional text as both text and note
         text = text_content
         note = text_content
+        scraped_via = None
     else:
         capture_mode = "url_only"
-        # For URL-only, use URL as text placeholder
-        text = f"[URL content not available] {url}"
-        note = "Auto-captured from URL-only message"
+        
+        # For X URLs, try to scrape content
+        source = infer_source_from_url(url)
+        if source == "x":
+            try:
+                from rolloforge.scrapers import fetch_x_content_sync
+                LOGGER.info(f"Attempting to scrape X content: {url}")
+                scraped = fetch_x_content_sync(url)
+                
+                if scraped and scraped.get("success"):
+                    text = scraped["text"]
+                    note = f"Auto-captured from X. Author: @{scraped.get('author', 'unknown')}"
+                    scraped_via = "playwright"
+                    LOGGER.info(f"Successfully scraped X content: {len(text)} chars")
+                else:
+                    # Fallback to placeholder
+                    text = f"Twitter/X post from @{_extract_x_handle(url)}. View on X for full content."
+                    note = "Auto-captured from URL-only message (scraping failed)"
+                    scraped_via = None
+            except Exception as e:
+                LOGGER.warning(f"X scraping failed: {e}")
+                text = f"Twitter/X post from @{_extract_x_handle(url)}. View on X for full content."
+                note = "Auto-captured from URL-only message"
+                scraped_via = None
+        else:
+            # For non-X URLs, use placeholder
+            text = f"[URL content not available] {url}"
+            note = "Auto-captured from URL-only message"
+            scraped_via = None
 
-    return ParsedTelegramBookmark(
+    parsed = ParsedTelegramBookmark(
         url=url,
         text=text,
         note=note,
@@ -106,6 +133,28 @@ def parse_frictionless_url(message: str) -> ParsedTelegramBookmark:
         raw_message=message.strip(),
         capture_mode=capture_mode,
     )
+    
+    # Attach scraping metadata
+    if scraped_via:
+        parsed.raw_payload = getattr(parsed, 'raw_payload', {})
+        if isinstance(parsed.raw_payload, dict):
+            parsed.raw_payload["scraped_via"] = scraped_via
+    
+    return parsed
+
+
+def _extract_x_handle(url: str) -> str:
+    """Extract X handle from URL."""
+    try:
+        # https://x.com/username/status/...
+        parts = url.split("/")
+        if "x.com" in url or "twitter.com" in url:
+            for i, part in enumerate(parts):
+                if part in ("x.com", "twitter.com") and i + 1 < len(parts):
+                    return parts[i + 1]
+    except:
+        pass
+    return "unknown"
 
 
 def parse_telegram_bookmark_message(message: str) -> ParsedTelegramBookmark:
