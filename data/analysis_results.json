@@ -26,9 +26,9 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_cad9e7c3",
@@ -57,9 +57,9 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_bd9fdb00",
@@ -88,9 +88,9 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_c1eed805",
@@ -119,9 +119,9 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_f0776159",
@@ -149,9 +149,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_61136115",
@@ -179,9 +179,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_c04e3c42",
@@ -210,9 +210,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_steipete_soul",
@@ -240,9 +240,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_5f137c14",
@@ -270,9 +270,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_roundtable_github",
@@ -301,9 +301,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_2694bfae",
@@ -332,9 +332,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_saranormous_2035080458304987603",
@@ -363,6 +363,36 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_0xSero_2035680567274975",
+    "summary": "In 72 hours I got over 100k of value\n\n1.",
+    "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Ready to try when you have time. Save for after current priorities.",
+    "key_insights": [
+      "Source: 0xSero",
+      "Relevance: 8.0/10",
+      "Actionability: 8.0/10 (with lazy+popular bonus)",
+      "Medium priority - good for build-later queue"
+    ],
+    "scoring_inputs": {
+      "relevance": 8.0,
+      "practical_value": 6.5,
+      "actionability": 8.0,
+      "stage_fit": 9.0,
+      "novelty": 7.0,
+      "excitement": 5.0,
+      "difficulty": 7.0,
+      "time_cost": 7.0
+    },
+    "worth_score": 7.67,
+    "effort_score": 7.0,
+    "priority_score": 4.17,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "llm_auto_scored",
+    "analyzed_at": "2026-03-22T11:47:45Z",
     "confidence": null,
     "difficulty_reason": null,
     "next_action": null
@@ -392,9 +422,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_trq212_claude_skills",
@@ -421,9 +451,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_alexfinn_openclaw_speed",
@@ -450,9 +480,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_ernestosoftware_2033917717762191659",
@@ -479,9 +509,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_antpalkin_spx",
@@ -509,9 +539,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_6c2ebc23",
@@ -539,9 +569,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_zeneca_vibe_code",
@@ -568,9 +598,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_4c78f48b",
@@ -597,9 +627,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_austiinxbt_polymarket",
@@ -626,9 +656,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_atenov_obsidian",
@@ -655,9 +685,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_heynavtoor_ai_engineer",
@@ -684,9 +714,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_255f5753",
@@ -714,9 +744,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_6ea58733",
@@ -743,9 +773,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_gkisokay_self_improving",
@@ -772,9 +802,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_ihtesham_superpowers",
@@ -801,9 +831,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_forbes_ai_jobs",
@@ -830,9 +860,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_56c3fee3",
@@ -859,9 +889,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_citrini_crisis",
@@ -888,9 +918,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_theflowhorse_trading",
@@ -917,9 +947,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_zodchiii_poker",
@@ -946,9 +976,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_saccc_mirofish",
@@ -975,9 +1005,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_pvergadia_alibaba",
@@ -1004,9 +1034,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_nvidia_fivelayer",
@@ -1033,9 +1063,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_sharbel_recaptcha",
@@ -1062,9 +1092,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_googlecloud_adk_patterns",
@@ -1091,9 +1121,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_minimax_agent",
@@ -1120,9 +1150,9 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_minimax_m27_official",
@@ -1149,8 +1179,8 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   }
 ]

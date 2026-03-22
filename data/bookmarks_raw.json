@@ -1,5 +1,24 @@
 [
   {
+    "id": "bookmark_0xSero_2035680567274975",
+    "source": "x",
+    "url": "https://x.com/0xSero/status/2035680567274975634?s=20",
+    "text": "In 72 hours I got over 100k of value\n\n1. Lambda gave me 5000$ credits in compute\n\n2. Nvidia offered me 8x H100s on the cloud (20$/h) idk for how long but assuming 2 weeks that'd be 5000$~\n\n3. TNG technology offered me 2 weeks of B200s which is something like 12000$ in compute \n\n4. A kind person offered me 100k in GCP credits (enough to train a 27B if you do it right)\n\n5. Framework offered to mail me a desktop computer\n\n6. We got 14,000$ in donations which will go to buying 2x RTX Pro 6000s (bringing me up to 384GB VRAM)\n\n7. I got over 6M impressions which based on my RPM would be 1500$ over my 500$~ usual per pay period\n\n8. I have gained 17,000~ followers, over doubling my follower count \n\n9. 17 subscribers on X + 700 on youtube.\n\nThe total value of all this approaches at minimum 50,000$~ and closer to 150,000$ if I leverage it all. \n\n---------------------\n\nWhat I'll be doing with all this: \n\nEric is an incredibly driven researcher I have been bouncing ideas off of over the last month. \n\nHim and I have been tackling the idea of getting massive models to fit on relatively cheap memory. \n\nThe idea is taking advantage of different forms of memory, in combination with expert saliency scoring, to offload specific expert groupings to different memory tiers. \n\nFor the MoEs I've tested over my entire AI session history about 37.5% of the model is responsible for 95% of token routing.\n\nSo we can offload 62.5% of an LLM onto SSD/NVMe/CPU/Cheap VRAM this should theoretically result in minimal latency added if we can select the right experts. \n\nWe can combine this with paged swapping to further accelerate the prompt processing, if done right we are looking at very very decent performance for massive unquantisation & unpruned LLMs. \n\nYou can get DeepSeek-v3.2-speciale at full intelligence with decent tokens/s as long as you have enough vram to host the core 20-40% of the model and enough ram or SSD to host the rest. \n\nAdd quantisation to the mix and you can basically have decent speeds and intelligence with just 5-10% of the model's size in vram (+ you need some for context)\n\nThe funds will be used to push this to it's limits. \n\n-----------------\n\nThere's also tons of research that you can quantise a model drastically, then distill from the original BF16 or make a LoRA to align it back to the original mostly. \n\nThis will be added to the pipeline too. \n\n------------------\n\nAll this will be built out here: \nhttps://\ngithub.com/0xSero/moe-com\npress\n\u2026 you will be able to take any MoE and shove it in here, and with only 24GB and enough RAM/NVMe to compress it down. it'll be slow as hell but it will work with little tinkering. \n\n------------------\n\nLastly I will be looking into either a full training run from scratch -> or just post-training on an open AMERICAN base model\n\n- a research model\n- an openclaw/nanoclaw/hermes model \n- a browser-use model \n\nTo prove that this can be done. \n\n--------------------\n\nI will be bad at all of it, and doubt I will get beyond the best small models from 6 months ago, but I want to prove it's no boogeyman impossible task to everyone who says otherwise. \n\n--------------------\n\nBy the end of the year:\n\n1. I will have 1 model I trained in some capacity be on the top 5 at either pinchbench, browseruse, or research. \n\n2. My github will have a master repo which combines all my work into reusable generalised scripts to help you do that same. \n\n3. The largest public comparative dataset for all MoE quantisations, prunes, benchmarks, costs, hardware requirements. \n\n--------------------------\n\nA lot of this will be lead by Eric, who I will tag in the next post. \n\nI want to say thank you to everyone who has supported me, I have gotten a lot of comments stating:\n\n1. I'm crazy, stupid, or both\n2. I'm wasting my time, no one cares about this\n3. This is not a real issue\n\nI believe the amount of interest and support I've received says it all.\n\n\nhttps://\ndonate.sybilsolutions.ai",
+    "title": "In 72 hours I got over 100k of value",
+    "author": "0xSero",
+    "created_at": "2026-03-22T11:47:40.419690+00:00",
+    "bookmarked_at": "2026-03-22T11:47:40.419707+00:00",
+    "tags": [
+      "general"
+    ],
+    "note": "Auto-captured via RolloForge workflow",
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
+  },
+  {
     "id": "bookmark_ernestosoftware_2033917717762191659",
     "source": "x",
     "url": "https://x.com/ernestosoftware/status/2033917717762191659?s=46",
