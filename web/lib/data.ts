@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import bookmarksData from './data.json';
+import analysisData from './analysis.json';
 
 // Types
 export interface Bookmark {
@@ -43,37 +43,21 @@ export interface BookmarkWithAnalysis extends Bookmark {
   analysis: AnalysisResult | null;
 }
 
-// Read data from parent directory (RolloForge root)
-const DATA_DIR = path.join(process.cwd(), '..', 'data');
+// Data is imported directly from JSON files
+const bookmarks: Bookmark[] = bookmarksData as Bookmark[];
+const analysisResults: AnalysisResult[] = analysisData as AnalysisResult[];
+
+const analysisMap = new Map(analysisResults.map(a => [a.bookmark_id, a]));
 
 export function getBookmarks(): Bookmark[] {
-  try {
-    const filePath = path.join(DATA_DIR, 'bookmarks_raw.json');
-    const data = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(data);
-  } catch (error) {
-    console.error('Error reading bookmarks:', error);
-    return [];
-  }
+  return bookmarks;
 }
 
 export function getAnalysisResults(): AnalysisResult[] {
-  try {
-    const filePath = path.join(DATA_DIR, 'analysis_results.json');
-    const data = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(data);
-  } catch (error) {
-    console.error('Error reading analysis:', error);
-    return [];
-  }
+  return analysisResults;
 }
 
 export function getBookmarksWithAnalysis(): BookmarkWithAnalysis[] {
-  const bookmarks = getBookmarks();
-  const analysisResults = getAnalysisResults();
-  
-  const analysisMap = new Map(analysisResults.map(a => [a.bookmark_id, a]));
-  
   return bookmarks.map(bookmark => ({
     ...bookmark,
     analysis: analysisMap.get(bookmark.id) || null,
@@ -81,32 +65,28 @@ export function getBookmarksWithAnalysis(): BookmarkWithAnalysis[] {
 }
 
 export function getStats() {
-  const bookmarks = getBookmarksWithAnalysis();
-  const withAnalysis = bookmarks.filter(b => b.analysis);
+  const withAnalysis = bookmarks.filter(b => analysisMap.has(b.id));
   
   return {
     total: bookmarks.length,
-    test_this_week: withAnalysis.filter(b => b.analysis?.recommendation_bucket === 'test_this_week').length,
-    build_later: withAnalysis.filter(b => b.analysis?.recommendation_bucket === 'build_later').length,
-    archive: withAnalysis.filter(b => b.analysis?.recommendation_bucket === 'archive').length,
-    ignore: withAnalysis.filter(b => b.analysis?.recommendation_bucket === 'ignore').length,
+    test_this_week: withAnalysis.filter(b => analysisMap.get(b.id)?.recommendation_bucket === 'test_this_week').length,
+    build_later: withAnalysis.filter(b => analysisMap.get(b.id)?.recommendation_bucket === 'build_later').length,
+    archive: withAnalysis.filter(b => analysisMap.get(b.id)?.recommendation_bucket === 'archive').length,
+    ignore: withAnalysis.filter(b => analysisMap.get(b.id)?.recommendation_bucket === 'ignore').length,
   };
 }
 
 export function getRecentBookmarks(limit: number = 5): BookmarkWithAnalysis[] {
-  const bookmarks = getBookmarksWithAnalysis();
-  return bookmarks
+  return getBookmarksWithAnalysis()
     .sort((a, b) => new Date(b.bookmarked_at).getTime() - new Date(a.bookmarked_at).getTime())
     .slice(0, limit);
 }
 
 export function getBookmarksByBucket(bucket: string): BookmarkWithAnalysis[] {
-  const bookmarks = getBookmarksWithAnalysis();
-  return bookmarks.filter(b => b.analysis?.recommendation_bucket === bucket);
+  return getBookmarksWithAnalysis().filter(b => b.analysis?.recommendation_bucket === bucket);
 }
 
 export function getAllTags(): string[] {
-  const bookmarks = getBookmarks();
   const tagSet = new Set<string>();
   bookmarks.forEach(b => b.tags?.forEach(tag => tagSet.add(tag)));
   return Array.from(tagSet).sort();
