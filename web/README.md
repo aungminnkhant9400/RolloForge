@@ -36,6 +36,18 @@ The dashboard reads from:
 
 ## Deployment
 
-This dashboard is automatically deployed to Vercel when you push to GitHub.
+### Option 1: Vercel Dashboard (Recommended)
+
+1. Go to https://vercel.com/new
+2. Import your GitHub repo
+3. **Important**: Set "Root Directory" to `web` in project settings
+4. Deploy
+
+### Option 2: Vercel CLI
+
+```bash
+npm i -g vercel
+vercel --cwd web
+```
 
 URL: https://rolloforge.vercel.app

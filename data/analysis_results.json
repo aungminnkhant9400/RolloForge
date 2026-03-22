@@ -1001,5 +1001,96 @@
     "confidence": null,
     "difficulty_reason": null,
     "next_action": null
+  },
+  {
+    "bookmark_id": "bookmark_f0776159",
+    "summary": "Maybe the sickest OpenClaw use case I have ever built I now have my own R&D department Twice a day 5 different AI mod...",
+    "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Contains actionable implementation details. Ready to try when you have time. Save for after current priorities.",
+    "key_insights": [
+      "Source: alexfinn",
+      "Relevance: 7.5/10",
+      "Actionability: 10.0/10 (with lazy+popular bonus)",
+      "Medium priority - good for build-later queue"
+    ],
+    "scoring_inputs": {
+      "relevance": 7.5,
+      "practical_value": 8.0,
+      "actionability": 10.0,
+      "stage_fit": 9.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 8.1,
+    "effort_score": 5.0,
+    "priority_score": 5.6,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "llm_auto_scored",
+    "analyzed_at": "2026-03-22T01:07:20Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
+  },
+  {
+    "bookmark_id": "bookmark_5f137c14",
+    "summary": "LarryLoop - AI marketing agent that generates TikTok slideshows autonomously Larry is an AI agent that generated 1.6...",
+    "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Ready to try when you have time. Save for after current priorities.",
+    "key_insights": [
+      "Source: oliverhenry",
+      "Relevance: 7.5/10",
+      "Actionability: 10.0/10 (with lazy+popular bonus)",
+      "Medium priority - good for build-later queue"
+    ],
+    "scoring_inputs": {
+      "relevance": 7.5,
+      "practical_value": 4.0,
+      "actionability": 10.0,
+      "stage_fit": 9.0,
+      "novelty": 7.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 7.3,
+    "effort_score": 5.0,
+    "priority_score": 4.8,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "llm_auto_scored",
+    "analyzed_at": "2026-03-22T01:11:17Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
+  },
+  {
+    "bookmark_id": "bookmark_2694bfae",
+    "summary": "Karpathy Autoresearch results - Deedy Karpathy Autoresearch pushed my vibecoded Rust chess engine AI from expert to a...",
+    "recommendation_reason": "High relevance to your current priorities. Novel approach you haven't seen before. Save for after current priorities.",
+    "key_insights": [
+      "Source: deedydas",
+      "Relevance: 10.0/10",
+      "Actionability: 4.0/10 (with lazy+popular bonus)",
+      "Novel concept - first time seeing this approach",
+      "Directly aligned with OpenClaw build priorities"
+    ],
+    "scoring_inputs": {
+      "relevance": 10.0,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 6.5,
+      "novelty": 9.5,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 6.72,
+    "effort_score": 5.0,
+    "priority_score": 4.22,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "llm_auto_scored",
+    "analyzed_at": "2026-03-22T04:10:58Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   }
 ]
