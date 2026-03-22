@@ -1,5 +1,25 @@
 [
   {
+    "id": "bookmark_saranormous_2035080458304987603",
+    "source": "x",
+    "url": "https://x.com/saranormous/status/2035080458304987603?s=20",
+    "text": "Twitter/X post from saranormous (content unavailable due to privacy settings)",
+    "note": "Auto-captured from URL-only message",
+    "author": "saranormous",
+    "created_at": "2026-03-22T09:17:25.398646Z",
+    "bookmarked_at": "2026-03-22T09:17:25.398699Z",
+    "tags": [
+      "general"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "telegram_message": "https://x.com/saranormous/status/2035080458304987603?s=20",
+      "note": "Auto-captured from URL-only message",
+      "capture_mode": "url_only"
+    },
+    "title": "X Post by saranormous"
+  },
+  {
     "id": "bookmark_zeneca_vibe_code",
     "source": "x",
     "url": "https://x.com/Zeneca/status/203167408203993507?s=20",
