@@ -7,7 +7,7 @@
       "Karpathy shares 10 most interesting things he is thinking about. General insight"
     ],
     "scoring_inputs": {
-      "relevance": 5,
+      "relevance": 5.0,
       "practical_value": 8.0,
       "actionability": 8.0,
       "stage_fit": 9.0,
@@ -58,10 +58,10 @@
     "summary": "Comprehensive OpenClaw guide for beginners to advanced. One-hour deep dive into capabilities and workflows.",
     "recommendation_reason": "Relevance: 9/10. Comprehensive OpenClaw guide for beginners to advanced. One-hour deep dive into capabilities and wor",
     "key_insights": [
-      "Comprehensive OpenClaw guide for beginners to advanced. One-hour deep dive into "
+      "Comprehensive OpenClaw guide for beginners to advanced. One-hour deep dive into"
     ],
     "scoring_inputs": {
-      "relevance": 9,
+      "relevance": 9.0,
       "practical_value": 8.0,
       "actionability": 10.0,
       "stage_fit": 10.0,
@@ -88,7 +88,7 @@
       "OpenClaw use case with 5 AI models meeting twice daily as R&D department for bus"
     ],
     "scoring_inputs": {
-      "relevance": 9,
+      "relevance": 9.0,
       "practical_value": 8.0,
       "actionability": 10.0,
       "stage_fit": 9.0,
@@ -115,7 +115,7 @@
       "Comprehensive guide on applying autoresearch to business tasks. Pattern works on"
     ],
     "scoring_inputs": {
-      "relevance": 9,
+      "relevance": 9.0,
       "practical_value": 4.0,
       "actionability": 4.0,
       "stage_fit": 6.5,
@@ -142,7 +142,7 @@
       "Execution tips for improving OpenClaw performance. Speed and efficiency optimiza"
     ],
     "scoring_inputs": {
-      "relevance": 7,
+      "relevance": 7.0,
       "practical_value": 9.0,
       "actionability": 10.0,
       "stage_fit": 9.0,
@@ -166,10 +166,10 @@
     "summary": "Official autoresearch repo for AI skill improvement. 42K stars. Clone and apply to your OpenClaw skills for automated optimization.",
     "recommendation_reason": "Relevance: 8/10. Official autoresearch repo for AI skill improvement. 42K stars. Clone and apply to your OpenClaw ski",
     "key_insights": [
-      "Official autoresearch repo for AI skill improvement. 42K stars. Clone and apply "
+      "Official autoresearch repo for AI skill improvement. 42K stars. Clone and apply"
     ],
     "scoring_inputs": {
-      "relevance": 8,
+      "relevance": 8.0,
       "practical_value": 9.0,
       "actionability": 8.0,
       "stage_fit": 6.5,
@@ -223,7 +223,7 @@
       "AI agent autonomously generates TikTok slideshows for marketing. Demonstrates co"
     ],
     "scoring_inputs": {
-      "relevance": 7,
+      "relevance": 7.0,
       "practical_value": 4.0,
       "actionability": 10.0,
       "stage_fit": 9.0,
@@ -250,7 +250,7 @@
       "Analysis of fastest growing GitHub projects this week. Trend spotting in open so"
     ],
     "scoring_inputs": {
-      "relevance": 5,
+      "relevance": 5.0,
       "practical_value": 4.0,
       "actionability": 6.0,
       "stage_fit": 9.0,
@@ -292,9 +292,9 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "garfis",
     "analyzed_at": "2026-03-23T06:51:55Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_WeixinWeChat_2035537088314290",
@@ -304,7 +304,7 @@
       "WeChat now supports OpenClaw through WeixinClawBot. Users can send/receive OpenC"
     ],
     "scoring_inputs": {
-      "relevance": 10,
+      "relevance": 10.0,
       "practical_value": 4.0,
       "actionability": 8.0,
       "stage_fit": 9.0,
@@ -358,7 +358,7 @@
       "Author built self-improving OpenClaw marketing agent for their app. System optim"
     ],
     "scoring_inputs": {
-      "relevance": 10,
+      "relevance": 10.0,
       "practical_value": 6.5,
       "actionability": 8.0,
       "stage_fit": 9.0,
@@ -517,7 +517,7 @@
     "summary": "Chinese quantitative trading system for S&P 500 prediction. Algorithmic trading approach.",
     "recommendation_reason": "Relevance: 6.5/10. Chinese quantitative trading system for S&P 500 prediction. Algorithmic trading approach.",
     "key_insights": [
-      "Chinese quantitative trading system for S&P 500 prediction. Algorithmic trading "
+      "Chinese quantitative trading system for S&P 500 prediction. Algorithmic trading"
     ],
     "scoring_inputs": {
       "relevance": 6.5,
@@ -547,7 +547,7 @@
       "Guide to building teams of AI agents that work together autonomously. Multi-agen"
     ],
     "scoring_inputs": {
-      "relevance": 8,
+      "relevance": 8.0,
       "practical_value": 4.0,
       "actionability": 8.0,
       "stage_fit": 10.0,
@@ -574,7 +574,7 @@
       "Step-by-step guide to building prediction models with AI. No ML background requi"
     ],
     "scoring_inputs": {
-      "relevance": 7,
+      "relevance": 7.0,
       "practical_value": 8.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -601,7 +601,7 @@
       "Communication skills for intelligent expression. Soft skill development."
     ],
     "scoring_inputs": {
-      "relevance": 3,
+      "relevance": 3.0,
       "practical_value": 8.0,
       "actionability": 6.0,
       "stage_fit": 4.0,
@@ -628,7 +628,7 @@
       "Farming Polymarket liquidity provider rewards with minimal capital. Prediction m"
     ],
     "scoring_inputs": {
-      "relevance": 8,
+      "relevance": 8.0,
       "practical_value": 9.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -650,12 +650,12 @@
   {
     "bookmark_id": "bookmark_yacinemtb_2035779012908175",
     "summary": "Google DeepMind demonstrates AI training robots for soccer. Physical AI embodiment with coordinated team behavior.",
-    "recommendation_reason": "Relevance: 6/10. Google DeepMind demonstrates AI training robots for soccer. Physical AI embodiment with coordinated ",
+    "recommendation_reason": "Relevance: 6/10. Google DeepMind demonstrates AI training robots for soccer. Physical AI embodiment with coordinated",
     "key_insights": [
       "Google DeepMind demonstrates AI training robots for soccer. Physical AI embodime"
     ],
     "scoring_inputs": {
-      "relevance": 6,
+      "relevance": 6.0,
       "practical_value": 7.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -682,7 +682,7 @@
       "Turn Obsidian into self-running second brain with AI agents. Automated knowledge"
     ],
     "scoring_inputs": {
-      "relevance": 6,
+      "relevance": 6.0,
       "practical_value": 8.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -709,7 +709,7 @@
       "Roadmap for transitioning to AI engineering. Skills and projects needed for care"
     ],
     "scoring_inputs": {
-      "relevance": 5,
+      "relevance": 5.0,
       "practical_value": 8.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -736,7 +736,7 @@
       "Manifesto on AI centralization vs open source. Philosophical argument for open A"
     ],
     "scoring_inputs": {
-      "relevance": 5,
+      "relevance": 5.0,
       "practical_value": 4.0,
       "actionability": 6.0,
       "stage_fit": 4.0,
@@ -763,7 +763,7 @@
       "Karpathy reviews Project Hail Mary movie. Entertainment content."
     ],
     "scoring_inputs": {
-      "relevance": 2,
+      "relevance": 2.0,
       "practical_value": 4.0,
       "actionability": 6.0,
       "stage_fit": 4.0,
@@ -787,7 +787,7 @@
     "summary": "Shift from static workflows to dynamic self-improving agents. Agents that learn and adapt over time.",
     "recommendation_reason": "Relevance: 8.5/10. Shift from static workflows to dynamic self-improving agents. Agents that learn and adapt over time.",
     "key_insights": [
-      "Shift from static workflows to dynamic self-improving agents. Agents that learn "
+      "Shift from static workflows to dynamic self-improving agents. Agents that learn"
     ],
     "scoring_inputs": {
       "relevance": 8.5,
@@ -817,7 +817,7 @@
       "Full development methodology for building AI-powered applications. End-to-end pr"
     ],
     "scoring_inputs": {
-      "relevance": 6,
+      "relevance": 6.0,
       "practical_value": 6.5,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -844,7 +844,7 @@
       "Forbes analysis of AI impact on global workforce. Three high-paying skills for 2"
     ],
     "scoring_inputs": {
-      "relevance": 5,
+      "relevance": 5.0,
       "practical_value": 4.0,
       "actionability": 6.0,
       "stage_fit": 4.0,
@@ -868,7 +868,7 @@
     "summary": "Personal trading decision dashboard. Data-driven approach to trading decisions. Pattern for your own trading system.",
     "recommendation_reason": "Relevance: 7.5/10. Personal trading decision dashboard. Data-driven approach to trading decisions. Pattern for your own",
     "key_insights": [
-      "Personal trading decision dashboard. Data-driven approach to trading decisions. "
+      "Personal trading decision dashboard. Data-driven approach to trading decisions."
     ],
     "scoring_inputs": {
       "relevance": 7.5,
@@ -898,7 +898,7 @@
       "Speculative analysis of future AI intelligence landscape. Long-term strategic th"
     ],
     "scoring_inputs": {
-      "relevance": 3,
+      "relevance": 3.0,
       "practical_value": 4.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -952,7 +952,7 @@
       "Trading psychology and strategy insights. Risk management and systematic approac"
     ],
     "scoring_inputs": {
-      "relevance": 7,
+      "relevance": 7.0,
       "practical_value": 4.0,
       "actionability": 4.0,
       "stage_fit": 5.0,
@@ -974,12 +974,12 @@
   {
     "bookmark_id": "bookmark_zodchiii_poker",
     "summary": "Parallels between poker strategy, startup decisions, and prediction markets. Probabilistic thinking frameworks.",
-    "recommendation_reason": "Relevance: 6/10. Parallels between poker strategy, startup decisions, and prediction markets. Probabilistic thinking ",
+    "recommendation_reason": "Relevance: 6/10. Parallels between poker strategy, startup decisions, and prediction markets. Probabilistic thinking",
     "key_insights": [
       "Parallels between poker strategy, startup decisions, and prediction markets. Pro"
     ],
     "scoring_inputs": {
-      "relevance": 6,
+      "relevance": 6.0,
       "practical_value": 4.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -1006,7 +1006,7 @@
       "20-year-old student built AI simulation system. Young builder creating sophistic"
     ],
     "scoring_inputs": {
-      "relevance": 5,
+      "relevance": 5.0,
       "practical_value": 4.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -1033,7 +1033,7 @@
       "Alibaba SWE-CI benchmark testing AI agents on real coding tasks. Performance com"
     ],
     "scoring_inputs": {
-      "relevance": 5,
+      "relevance": 5.0,
       "practical_value": 4.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -1060,7 +1060,7 @@
       "NVIDIA perspective on AI stack layers. Infrastructure view of AI ecosystem."
     ],
     "scoring_inputs": {
-      "relevance": 5,
+      "relevance": 5.0,
       "practical_value": 4.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -1087,7 +1087,7 @@
       "How reCAPTCHA and Google services use user data to train AI. Data labor awarenes"
     ],
     "scoring_inputs": {
-      "relevance": 3,
+      "relevance": 3.0,
       "practical_value": 4.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -1141,7 +1141,7 @@
       "MiniMax released M2.7 model in their agent platform. Alternative AI agent platfo"
     ],
     "scoring_inputs": {
-      "relevance": 5,
+      "relevance": 5.0,
       "practical_value": 4.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -1168,7 +1168,7 @@
       "MiniMax M2.7 model announcement. First model deeply participating in its own evo"
     ],
     "scoring_inputs": {
-      "relevance": 4,
+      "relevance": 4.0,
       "practical_value": 4.0,
       "actionability": 4.0,
       "stage_fit": 4.0,
@@ -1190,12 +1190,12 @@
   {
     "bookmark_id": "bookmark_aakashgupta_2034851259442749",
     "summary": "Karpathy autoresearch pattern for any measurable task. Agent modifies code, runs 5-min experiments, keeps improvements. Apply to skills, trading, predictions.",
-    "recommendation_reason": "Relevance: 9/10. Karpathy autoresearch pattern for any measurable task. Agent modifies code, runs 5-min experiments, ",
+    "recommendation_reason": "Relevance: 9/10. Karpathy autoresearch pattern for any measurable task. Agent modifies code, runs 5-min experiments,",
     "key_insights": [
       "Karpathy autoresearch pattern for any measurable task. Agent modifies code, runs"
     ],
     "scoring_inputs": {
-      "relevance": 9,
+      "relevance": 9.0,
       "practical_value": 9.0,
       "actionability": 9.0,
       "stage_fit": 8.0,
@@ -1209,7 +1209,10 @@
     "priority_score": 6.5,
     "recommendation_bucket": "test_this_week",
     "analysis_source": "garfis",
-    "analyzed_at": "2026-03-23T10:19:26.554641+00:00"
+    "analyzed_at": "2026-03-23T10:19:26.554641+00:00",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_TimDenning_2036022953385873",
@@ -1237,7 +1240,10 @@
     "priority_score": 1.5,
     "recommendation_bucket": "ignore",
     "analysis_source": "deepseek",
-    "analyzed_at": "2026-03-23T11:44:03.241407+00:00"
+    "analyzed_at": "2026-03-23T11:44:03.241407+00:00",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_openclaw_2036043904949330",
@@ -1265,6 +1271,37 @@
     "priority_score": 9.2,
     "recommendation_bucket": "test_this_week",
     "analysis_source": "deepseek",
-    "analyzed_at": "2026-03-23T11:58:15.378341+00:00"
+    "analyzed_at": "2026-03-23T11:58:15.378341+00:00",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
+  },
+  {
+    "bookmark_id": "bookmark_1113ab5a3462",
+    "summary": "Multi-agent AI R&D department setup using OpenClaw. 5 different AI models meet twice daily to autonomously discuss and analyze business operations.",
+    "recommendation_reason": "Directly relevant to your multi-agent goals. Demonstrates production-ready autonomous AI team pattern with scheduled collaboration.",
+    "key_insights": [
+      "5 AI models collaborate autonomously",
+      "Scheduled meetings (twice daily) for consistency",
+      "Business-focused R&D automation pattern",
+      "Uses OpenClaw as orchestration layer",
+      "Real production use case (not theoretical)"
+    ],
+    "scoring_inputs": {
+      "relevance": 9.0,
+      "practical_value": 8.0,
+      "actionability": 7.0,
+      "stage_fit": 8.0,
+      "novelty": 8.0,
+      "excitement": 9.0,
+      "difficulty": 6.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 8.5,
+    "effort_score": 5.5,
+    "priority_score": 8.2,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis_manual",
+    "analyzed_at": "2026-03-23T16:56:25.997412+00:00"
   }
 ]

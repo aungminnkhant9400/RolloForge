@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import { FilterSidebar } from './FilterSidebar';
 import { SearchBar } from './SearchBar';
 import { BookmarkList } from './BookmarkList';
+import { NotesSync } from './NotesSync';
 import { BookmarkWithAnalysis } from '@/lib/data';
 
 interface BookmarksContentProps {
@@ -74,6 +75,7 @@ export function BookmarksContent({ allBookmarks, allTags }: BookmarksContentProp
       
       <div>
         <SearchBar value={searchQuery} onChange={setSearchQuery} />
+        <NotesSync />
         <BookmarkList bookmarks={filteredBookmarks} />
       </div>
     </div>
