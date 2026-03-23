@@ -1,5 +1,23 @@
 [
   {
+    "id": "bookmark_openclaw_2036043904949330",
+    "source": "x",
+    "url": "https://x.com/openclaw/status/2036043904949330407?s=20",
+    "text": "OpenClaw 2026.3.22 \n\n ClawHub plugin marketplace\n MiniMax M2.7, GPT-5.4-mini/nano + per-agent reasoning\n /btw side questions\n OpenShell + SSH sandboxes\n Exa, Tavily, Firecrawl search\n\nThis release is so big it needs its own table of contents.",
+    "title": "OpenClaw 2026 Major Release Features Plugin Marketplace and Agent Enhancements",
+    "author": "openclaw",
+    "created_at": "2026-03-23T11:58:15.376441+00:00",
+    "bookmarked_at": "2026-03-23T11:58:15.376456+00:00",
+    "tags": [
+      "general"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
+  },
+  {
     "id": "bookmark_TimDenning_2036022953385873",
     "source": "x",
     "url": "https://x.com/Tim_Denning/status/2036022953385873708?s=20",
