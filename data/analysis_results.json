@@ -1369,15 +1369,14 @@
   },
   {
     "bookmark_id": "bookmark_aakashgupta_2034851259442749",
-    "summary": "Garfis Analysis: Karpathy's autoresearch pattern applied beyond ML.\n\nWHAT IT IS:\nAgent modifies code \u2192 5-min experiment \u2192 measures score \u2192 keeps if improved. 12 cycles/hour, 100 overnight. $25 + single GPU.\n\nWHY YOU SHOULD CARE:\n\u2022 OpenClaw skill files = perfect target (measurable improvement)\n\u2022 Trading strategies = score with P&L  \n\u2022 Polymarket predictions = binary outcomes\n\nPATTERN: Works on ANYTHING with a numerical score - not just ML loss functions.\n\nEXAMPLE: Tobi Lutke applied to Shopify Liquid templating \u2192 53% faster rendering from 93 automated commits.",
-    "recommendation_reason": "Directly applicable to your OpenClaw skill files and trading strategies. Pattern: agent edits \u2192 5min experiment \u2192 score up=commit, down=reset. Apply to anything with numerical score.",
+    "summary": "Karpathy's autoresearch pattern applied to any measurable task. Agent modifies code, runs 5-minute experiments, keeps improvements. Works on OpenClaw skills, trading strategies, anything with a numerical score. 12 cycles per hour, 100 overnight. Tobi Lutke used this on Shopify templating for 53% speed improvement.",
+    "recommendation_reason": "Apply to OpenClaw skills and trading strategies. Pattern works on anything with a score.",
     "key_insights": [
-      "Pattern works on anything with a score - not just ML code",
-      "Apply to OpenClaw skill files, trading strategies, polymarket predictions",
+      "Works on any measurable task, not just ML",
       "12 experiments/hour, 100 overnight",
       "$25 + single GPU cost",
-      "Tobi Lutke applied to Shopify: 53% faster rendering",
-      "Six use cases + eval mistakes in guide"
+      "Apply to skill files, trading, predictions",
+      "Tobi Lutke: 53% faster Shopify rendering"
     ],
     "scoring_inputs": {
       "relevance": 9.0,
@@ -1391,9 +1390,9 @@
     },
     "worth_score": 8.5,
     "effort_score": 5.0,
-    "priority_score": 6.0,
+    "priority_score": 6.5,
     "recommendation_bucket": "test_this_week",
-    "analysis_source": "garfis_manual",
+    "analysis_source": "garfis",
     "analyzed_at": "2026-03-23T10:19:26.554641+00:00"
   }
 ]
