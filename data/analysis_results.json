@@ -180,9 +180,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-23T05:13:15Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_61136115",
@@ -366,6 +366,37 @@
     "confidence": "None",
     "difficulty_reason": "None",
     "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_deedydas_2035551089265906",
+    "summary": "Karpathy's Autoresearch pushed my vibecoded Rust chess engine AI from \"expert\" to a top 50 grandmaster, a #311 chess engine.",
+    "recommendation_reason": "High relevance to your current priorities. Novel approach you haven't seen before. Save for after current priorities.",
+    "key_insights": [
+      "Source: deedydas",
+      "Relevance: 10.0/10",
+      "Actionability: 4.0/10 (with lazy+popular bonus)",
+      "Novel concept - first time seeing this approach",
+      "Directly aligned with OpenClaw build priorities"
+    ],
+    "scoring_inputs": {
+      "relevance": 10.0,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 6.5,
+      "novelty": 9.5,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 6.72,
+    "effort_score": 5.0,
+    "priority_score": 4.22,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "llm_auto_scored",
+    "analyzed_at": "2026-03-23T06:51:55Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_WeixinWeChat_2035537088314290",

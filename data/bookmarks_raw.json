@@ -1,5 +1,23 @@
 [
   {
+    "id": "bookmark_deedydas_2035551089265906",
+    "source": "x",
+    "url": "https://x.com/deedydas/status/2035551089265906051?s=46",
+    "text": "Karpathy's Autoresearch pushed my vibecoded Rust chess engine AI from \"expert\" to a top 50 grandmaster, a #311 chess engine.\n\nIt ran over 70 experiments on its own and tried to hill climb to the top ELO score it could, landing at 2718!",
+    "title": "Karpathy's Autoresearch pushed my vibecoded Rust chess engine AI from \"expert\"...",
+    "author": "deedydas",
+    "created_at": "2026-03-23T06:51:48.044013+00:00",
+    "bookmarked_at": "2026-03-23T06:51:48.044030+00:00",
+    "tags": [
+      "general"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
+  },
+  {
     "id": "bookmark_nickspisak_2035311693312536",
     "source": "x",
     "url": "https://x.com/nickspisak_/status/2035311693312536736?s=46",
