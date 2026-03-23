@@ -1,5 +1,23 @@
 [
   {
+    "id": "bookmark_nickspisak_2035311693312536",
+    "source": "x",
+    "url": "https://x.com/nickspisak_/status/2035311693312536736?s=46",
+    "text": "10 Practical Business Experiments with Auto Research\n\nKarpathy's autoresearch: AI agents running research on single-GPU nanochat training automatically.\n\nThe idea: give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies the code, trains for 5 minutes, checks if the result improved, keeps or discards, and repeats. You wake up in the morning to a log of experiments and (hopefully) a better model.\n\nKey components:\n- prepare.py \u2014 fixed constants, data prep (do not modify)\n- train.py \u2014 model, optimizer, training loop (agent modifies this)\n- program.md \u2014 agent instructions (human modifies this)\n\nRequirements: Single NVIDIA GPU, Python 3.10+, uv.\n\nRuns for fixed 5-minute time budget, ~12 experiments/hour, ~100 experiments overnight.\n\nLinks:\n- GitHub: https://github.com/karpathy/autoresearch\n- Newsletter: https://return-my-time.kit.com/",
+    "title": "Karpathy autoresearch: AI agents for autonomous LLM training experiments",
+    "author": "nickspisak_",
+    "created_at": "2026-03-23T05:12:35.290310+00:00",
+    "bookmarked_at": "2026-03-23T05:12:35.290327+00:00",
+    "tags": [
+      "general"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
+  },
+  {
     "id": "bookmark_yacinemtb_2035779012908175",
     "source": "x",
     "url": "https://x.com/yacinemtb/status/2035779012908175740?s=46",
