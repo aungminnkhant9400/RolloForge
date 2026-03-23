@@ -1,5 +1,24 @@
 [
   {
+    "id": "bookmark_aakashgupta_2034851259442749",
+    "source": "x",
+    "url": "https://x.com/aakashgupta/status/2034851259442749909?s=20",
+    "text": "X post from @aakashgupta",
+    "title": "X Post",
+    "author": null,
+    "created_at": "2026-03-23T10:19:26.552928+00:00",
+    "bookmarked_at": "2026-03-23T10:19:26.552939+00:00",
+    "tags": [
+      "general"
+    ],
+    "note": null,
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "manual",
+      "scraped_via": null
+    }
+  },
+  {
     "id": "bookmark_deedydas_2035551089265906",
     "source": "x",
     "url": "https://x.com/deedydas/status/2035551089265906051?s=46",
