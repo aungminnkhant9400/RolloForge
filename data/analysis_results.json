@@ -1,7 +1,7 @@
 [
   {
     "bookmark_id": "bookmark_6a9e603c",
-    "summary": "Karpathy podcast highlights - 10 most interesting things - Deedy Karpathy says: \"I haven't typed a line of code since...",
+    "summary": "Karpathy podcast highlights - 10 most interesting things - Deedy.",
     "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Contains actionable implementation details. Ready to try when you have time. Novel approach you haven't seen before. High priority for your current build phase.",
     "key_insights": [
       "Source: deedydas",
@@ -25,14 +25,14 @@
     "priority_score": 7.4,
     "recommendation_bucket": "test_this_week",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_cad9e7c3",
-    "summary": "How to build a company run entirely by AI agents (free, open source, 5-minute setup) Paperclip is a free, open-source...",
+    "summary": "How to build a company run entirely by AI agents (free, open source, 5-minute setup).",
     "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Contains actionable implementation details. Ready to try when you have time. High priority for your current build phase.",
     "key_insights": [
       "Source: nickspisak_",
@@ -56,14 +56,14 @@
     "priority_score": 6.7,
     "recommendation_bucket": "test_this_week",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_bd9fdb00",
-    "summary": "The Karpathy Loop - Aakash Gupta on autoresearch For 25 dollars and a single GPU, you can now run 100 experiments ove...",
+    "summary": "The Karpathy Loop - Aakash Gupta on autoresearch.",
     "recommendation_reason": "High relevance to your current priorities. Contains actionable implementation details. Good candidate for when this becomes popular. Novel approach you haven't seen before. High priority for your current build phase.",
     "key_insights": [
       "Source: aakashgupta",
@@ -87,14 +87,14 @@
     "priority_score": 6.62,
     "recommendation_bucket": "test_this_week",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_c1eed805",
-    "summary": "THE ULTIMATE GUIDE TO OPENCLAW (1hr free masterclass)\n\n1.",
+    "summary": "THE ULTIMATE GUIDE TO OPENCLAW (1hr free masterclass).",
     "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Contains actionable implementation details. Ready to try when you have time. High priority for your current build phase.",
     "key_insights": [
       "Source: gregisenberg",
@@ -118,14 +118,14 @@
     "priority_score": 6.5,
     "recommendation_bucket": "test_this_week",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_f0776159",
-    "summary": "Maybe the sickest OpenClaw use case I have ever built I now have my own R&D department Twice a day 5 different AI mod...",
+    "summary": "Maybe the sickest OpenClaw use case I have ever built.",
     "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Contains actionable implementation details. Ready to try when you have time. Save for after current priorities.",
     "key_insights": [
       "Source: alexfinn",
@@ -148,14 +148,14 @@
     "priority_score": 5.6,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_61136115",
-    "summary": "SEND THIS PROMPT TO YOUR OPENCLAW TO MAKE IT MORE EFFICIENT:\n\n\"Implement an execution-focused operating mode.",
+    "summary": "SEND THIS PROMPT TO YOUR OPENCLAW TO MAKE IT MORE EFFICIENT:.",
     "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Contains actionable implementation details. Ready to try when you have time. Save for after current priorities.",
     "key_insights": [
       "Source: 0xMarioNawfal",
@@ -178,14 +178,14 @@
     "priority_score": 5.0,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_c04e3c42",
-    "summary": "Karpathy autoresearch repo for improving AI skills - Aakash Gupta\n\nKarpathy's autoresearch repo has 42K stars.",
+    "summary": "Karpathy autoresearch repo for improving AI skills - Aakash Gupta.",
     "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Contains actionable implementation details. Ready to try when you have time. Novel approach you haven't seen before. Save for after current priorities.",
     "key_insights": [
       "Source: aakashgupta",
@@ -209,10 +209,10 @@
     "priority_score": 4.97,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_steipete_soul",
@@ -239,14 +239,14 @@
     "priority_score": 4.8,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_5f137c14",
-    "summary": "LarryLoop - AI marketing agent that generates TikTok slideshows autonomously Larry is an AI agent that generated 1.6...",
+    "summary": "LarryLoop - AI marketing agent that generates TikTok slideshows autonomously.",
     "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Ready to try when you have time. Save for after current priorities.",
     "key_insights": [
       "Source: oliverhenry",
@@ -269,14 +269,14 @@
     "priority_score": 4.8,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_roundtable_github",
-    "summary": "5 fastest growing GitHub projects: openclaw/openclaw (+122K), obra/superpowers (+30.7K), ruvnet/RuView (+30.4K), 666g...",
+    "summary": "5 fastest growing GitHub projects: openclaw/openclaw (+122K), obra/superpowers (+30.7K), ruvnet/RuView (+30.4K), 666ghj/MiroFish (+17K), moeru-ai/airi (+16K).",
     "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Good candidate for when this becomes popular. Save for after current priorities.",
     "key_insights": [
       "Source: roundtablespace",
@@ -300,14 +300,14 @@
     "priority_score": 4.25,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_2694bfae",
-    "summary": "Karpathy Autoresearch results - Deedy Karpathy Autoresearch pushed my vibecoded Rust chess engine AI from expert to a...",
+    "summary": "Karpathy Autoresearch results - Deedy.",
     "recommendation_reason": "High relevance to your current priorities. Novel approach you haven't seen before. Save for after current priorities.",
     "key_insights": [
       "Source: deedydas",
@@ -331,14 +331,14 @@
     "priority_score": 4.22,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_WeixinWeChat_2035537088314290",
-    "summary": "Today, we are officially opening the capability to integrate #OpenClaw into #Weixin. With the launch of the #WeixinCl...",
+    "summary": "Today, we are officially opening the capability to integrate #OpenClaw into #Weixin.",
     "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Ready to try when you have time. Save for after current priorities.",
     "key_insights": [
       "Source: Weixin_WeChat",
@@ -361,14 +361,14 @@
     "priority_score": 4.2,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:52:02Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_saranormous_2035080458304987603",
-    "summary": "Caught up with @karpathy for a new @NoPriorsPod : on the phase shift in engineering, AI psychosis, claws, AutoResearc...",
+    "summary": "Caught up with.",
     "recommendation_reason": "High relevance to your current priorities. Novel approach you haven't seen before. Save for after current priorities.",
     "key_insights": [
       "Source: saranormous",
@@ -392,14 +392,14 @@
     "priority_score": 4.17,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_0xSero_2035680567274975",
-    "summary": "In 72 hours I got over 100k of value\n\n1.",
+    "summary": "In 72 hours I got over 100k of value.",
     "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Ready to try when you have time. Save for after current priorities.",
     "key_insights": [
       "Source: 0xSero",
@@ -422,10 +422,10 @@
     "priority_score": 4.17,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:47:45Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_startupideaspod_agents",
@@ -451,10 +451,10 @@
     "priority_score": 3.95,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_trq212_claude_skills",
@@ -480,10 +480,10 @@
     "priority_score": 3.85,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_alexfinn_openclaw_speed",
@@ -509,10 +509,10 @@
     "priority_score": 3.8,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_ernestosoftware_2033917717762191659",
@@ -538,10 +538,10 @@
     "priority_score": 3.8,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_antpalkin_spx",
@@ -568,14 +568,14 @@
     "priority_score": 3.4,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_6c2ebc23",
-    "summary": "How I built an Autonomous AI Agent team that runs 24/7 - Shubham Saboo\n\nSix AI agents run my entire life while I sleep.",
+    "summary": "How I built an Autonomous AI Agent team that runs 24/7 - Shubham Saboo.",
     "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Ready to try when you have time. Save for after current priorities.",
     "key_insights": [
       "Source: saboo_shubham_",
@@ -598,10 +598,10 @@
     "priority_score": 3.3,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_zeneca_vibe_code",
@@ -627,14 +627,14 @@
     "priority_score": 3.25,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_4c78f48b",
-    "summary": "How to articulate yourself intelligently - Dan Koe When I was young, I was always drawn to people who sounded intelli...",
+    "summary": "How to articulate yourself intelligently - Dan Koe.",
     "recommendation_reason": "Contains actionable implementation details. Good candidate for when this becomes popular. Save for after current priorities.",
     "key_insights": [
       "Source: thedankoe",
@@ -656,10 +656,10 @@
     "priority_score": 3.15,
     "recommendation_bucket": "build_later",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_austiinxbt_polymarket",
@@ -685,10 +685,10 @@
     "priority_score": 2.85,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_atenov_obsidian",
@@ -714,10 +714,10 @@
     "priority_score": 2.6,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_heynavtoor_ai_engineer",
@@ -743,14 +743,14 @@
     "priority_score": 2.6,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_255f5753",
-    "summary": "Open Source must win - 0xSero manifesto This article is my mission statement and commitment for the next decade of my...",
+    "summary": "Open Source must win - 0xSero manifesto.",
     "recommendation_reason": "Good candidate for when this becomes popular. Novel approach you haven't seen before. Reference material for future projects.",
     "key_insights": [
       "Source: 0xSero",
@@ -773,14 +773,14 @@
     "priority_score": 2.5,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_6ea58733",
-    "summary": "Project Hail Mary movie review - Andrej Karpathy Had to go see Project Hail Mary right away (based on the book by And...",
+    "summary": "Project Hail Mary movie review - Andrej Karpathy.",
     "recommendation_reason": "Good candidate for when this becomes popular. Reference material for future projects.",
     "key_insights": [
       "Source: karpathy",
@@ -802,14 +802,14 @@
     "priority_score": 2.45,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_gkisokay_self_improving",
-    "summary": "Stop building workflows.",
+    "summary": "Build agents that improve themselves.",
     "recommendation_reason": "Ready to try when you have time. Reference material for future projects.",
     "key_insights": [
       "Source: gkisokay",
@@ -831,10 +831,10 @@
     "priority_score": 2.4,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_ihtesham_superpowers",
@@ -860,10 +860,10 @@
     "priority_score": 2.22,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_forbes_ai_jobs",
@@ -889,14 +889,14 @@
     "priority_score": 2.0,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_56c3fee3",
-    "summary": "I made a \"should I be trading?\" dashboard. Scores the market across 5 pillars: - volatility (put/call ratio, vix, pos...",
+    "summary": "I made a \"should I be trading?\" dashboard.",
     "recommendation_reason": "Reference material for future projects.",
     "key_insights": [
       "Source: investingluc",
@@ -918,10 +918,10 @@
     "priority_score": 1.9,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_citrini_crisis",
@@ -947,14 +947,14 @@
     "priority_score": 1.8,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_dr_cintas_2035387052460536",
-    "summary": "China has released an AI employee that runs 100% locally. It can do research, code, build websites, create slide deck...",
+    "summary": "China has released an AI employee that runs 100% locally.",
     "recommendation_reason": "Reference material for future projects.",
     "key_insights": [
       "Source: dr_cintas",
@@ -976,10 +976,10 @@
     "priority_score": 1.8,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T12:36:20Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_theflowhorse_trading",
@@ -1005,10 +1005,10 @@
     "priority_score": 1.75,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_zodchiii_poker",
@@ -1034,10 +1034,10 @@
     "priority_score": 1.6,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_saccc_mirofish",
@@ -1063,10 +1063,10 @@
     "priority_score": 1.6,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_pvergadia_alibaba",
@@ -1092,14 +1092,14 @@
     "priority_score": 1.6,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_nvidia_fivelayer",
-    "summary": "AI is a Five-Layer Cake.",
+    "summary": "NVIDIA explains AI infrastructure: Energy, Chips, Systems, AI Factories, and Applications.",
     "recommendation_reason": "Reference material for future projects.",
     "key_insights": [
       "Source: nvidia",
@@ -1121,10 +1121,10 @@
     "priority_score": 1.6,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_sharbel_recaptcha",
@@ -1150,10 +1150,10 @@
     "priority_score": 1.6,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_googlecloud_adk_patterns",
@@ -1179,10 +1179,10 @@
     "priority_score": 1.6,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_minimax_agent",
@@ -1208,10 +1208,10 @@
     "priority_score": 1.6,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_minimax_m27_official",
@@ -1237,48 +1237,20 @@
     "priority_score": 1.6,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T11:17:07Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
-  },
-  {
-    "bookmark_id": "bookmark_0xsunnft_2035722514090062",
-    "summary": "最近看到很多对比AI和Crypto行业的讨论，大部分是拉AI踩Crypto，而且往往来自币圈业内人士，作为勉强算两个领域都涉足过的人，也分享一下我的主观看法吧。 无可质疑，AI确实是现在最炙手可热，也很可能是智力密度最高的行业，互联网...",
-    "recommendation_reason": "Reference material for future projects.",
-    "key_insights": [
-      "Source: 0xsunnft",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.1,
-    "effort_score": 5.0,
-    "priority_score": 1.6,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T18:00:03Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
   },
   {
     "bookmark_id": "bookmark_yacinemtb_2035779012908175",
-    "summary": "being a human in the singularity.",
-    "recommendation_reason": "Reference material for future projects.",
+    "summary": "Minimal content available - only title captured: 'being a human in the singularity'. Likely a media post (image/video) or X blocked full content.",
+    "recommendation_reason": "Insufficient content for meaningful analysis. Scraper only captured title (32 chars). May need to view directly on X.",
     "key_insights": [
-      "Source: yacinemtb",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
+      "Only 32 chars of content captured",
+      "Likely media-heavy post (image/video) not scrapable",
+      "Topic: human perspective on AI singularity",
+      "Recommend: view directly on X for full content"
     ],
     "scoring_inputs": {
       "relevance": 4.0,
@@ -1292,10 +1264,42 @@
     },
     "worth_score": 4.1,
     "effort_score": 5.0,
-    "priority_score": 1.6,
+    "priority_score": 1.0,
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-23T04:42:02Z",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
+  },
+  {
+    "bookmark_id": "bookmark_0xsunnft_2035722514090062",
+    "summary": "Author compares AI vs Crypto industries from personal experience. Argues AI is competitive/hard for average people to benefit, while Crypto offers accessible opportunities through airdrops, early participation, and compressed timelines. Uses Hyperliquid vs Cursor valuation comparison. Personal strategy: maintain Crypto position while exploring AI/stock investments.",
+    "recommendation_reason": "Thoughtful industry comparison from someone with 4 years in crypto and CS background. Provides practical perspective on which industry is more accessible for ordinary people. Contains specific examples (Hyperliquid revenue, Trump token).",
+    "key_insights": [
+      "AI industry competitive - hard for average person to benefit despite hype",
+      "Crypto advantage: airdrops let users capture value (not just shareholders)",
+      "Compressed timelines in crypto (1-3 yrs vs 5-10 for IPO)",
+      "Hyperliquid example: $38B valuation, $844M revenue vs Cursor's $2B ARR",
+      "Author's strategy: stay in crypto + explore AI/stock investments",
+      "Permissionless nature of crypto creates opportunities but also scams"
+    ],
+    "scoring_inputs": {
+      "relevance": 7.0,
+      "practical_value": 8.0,
+      "actionability": 6.0,
+      "stage_fit": 4.0,
+      "novelty": 7.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 6.6,
+    "effort_score": 5.0,
+    "priority_score": 4.1,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "llm_auto_scored",
+    "analyzed_at": "2026-03-23T04:48:38Z",
     "confidence": null,
     "difficulty_reason": null,
     "next_action": null
