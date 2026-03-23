@@ -3,12 +3,14 @@
 import { useState, useEffect } from 'react';
 import { EditableBookmarkCard } from './EditableBookmarkCard';
 import { BookmarkWithAnalysis } from '@/lib/data';
+import { useAuth } from './AuthContext';
 
 interface BookmarkListProps {
   bookmarks: BookmarkWithAnalysis[];
 }
 
 export function BookmarkList({ bookmarks }: BookmarkListProps) {
+  const { isEditMode } = useAuth();
   const [localBookmarks, setLocalBookmarks] = useState<BookmarkWithAnalysis[]>(bookmarks);
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   
@@ -124,8 +126,8 @@ export function BookmarkList({ bookmarks }: BookmarkListProps) {
 
   return (
     <>
-      {/* Bulk actions bar */}
-      {selectedIds.size > 0 && (
+      {/* Bulk actions bar - only in edit mode */}
+      {isEditMode && selectedIds.size > 0 && (
         <div style={{
           background: 'var(--accent)',
           color: 'white',
@@ -199,30 +201,34 @@ export function BookmarkList({ bookmarks }: BookmarkListProps) {
       
       <div className="results-count">
         Showing {localBookmarks.length} bookmarks
-        {selectedIds.size > 0 && ` (${selectedIds.size} selected)`}
+        {isEditMode && selectedIds.size > 0 && ` (${selectedIds.size} selected)`}
       </div>
       
       <div className="bookmark-list">
         {localBookmarks.length > 0 ? (
           localBookmarks.map((bookmark) => (
             <div key={bookmark.id} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-              <input
-                type="checkbox"
-                checked={selectedIds.has(bookmark.id)}
-                onChange={() => handleSelect(bookmark.id)}
-                style={{
-                  marginTop: '20px',
-                  width: '18px',
-                  height: '18px',
-                  cursor: 'pointer'
-                }}
-              />
+              {/* Checkbox only in edit mode */}
+              {isEditMode && (
+                <input
+                  type="checkbox"
+                  checked={selectedIds.has(bookmark.id)}
+                  onChange={() => handleSelect(bookmark.id)}
+                  style={{
+                    marginTop: '20px',
+                    width: '18px',
+                    height: '18px',
+                    cursor: 'pointer'
+                  }}
+                />
+              )}
               <div style={{ flex: 1 }}>
                 <EditableBookmarkCard
                   bookmark={bookmark}
                   onUpdate={handleUpdate}
                   onDelete={handleDelete}
                   onMove={handleMove}
+                  isEditMode={isEditMode}
                 />
               </div>
             </div>

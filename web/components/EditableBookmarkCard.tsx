@@ -10,6 +10,7 @@ interface EditableBookmarkCardProps {
   onUpdate: (id: string, updates: Partial<BookmarkWithAnalysis>) => void;
   onDelete: (id: string) => void;
   onMove: (id: string, newBucket: string) => void;
+  isEditMode?: boolean;
 }
 
 const bucketColors = {
@@ -30,13 +31,13 @@ const bucketLabels = {
 
 const allBuckets = ['test_this_week', 'build_later', 'archive', 'ignore'];
 
-export function EditableBookmarkCard({ bookmark, onUpdate, onDelete, onMove }: EditableBookmarkCardProps) {
+export function EditableBookmarkCard({ bookmark, onUpdate, onDelete, onMove, isEditMode = false }: EditableBookmarkCardProps) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedNotes, setEditedNotes] = useState(bookmark.analysis?.personal_notes || '');
   const [showMoveMenu, setShowMoveMenu] = useState(false);
-  
+
   const bucket = bookmark.analysis?.recommendation_bucket || 'archive';
-  
+
   const handleSaveNotes = () => {
     onUpdate(bookmark.id, {
       analysis: {
@@ -46,7 +47,7 @@ export function EditableBookmarkCard({ bookmark, onUpdate, onDelete, onMove }: E
     });
     setIsEditing(false);
   };
-  
+
   const handleMove = (newBucket: string) => {
     onMove(bookmark.id, newBucket);
     setShowMoveMenu(false);
@@ -61,53 +62,55 @@ export function EditableBookmarkCard({ bookmark, onUpdate, onDelete, onMove }: E
             <span className={`badge ${bucketColors[bucket as keyof typeof bucketColors]}`}>
               {bucketLabels[bucket as keyof typeof bucketLabels]}
             </span>
-            
-            {/* Move dropdown */}
-            <div style={{ position: 'relative' }}>
-              <button 
-                onClick={() => setShowMoveMenu(!showMoveMenu)}
-                className="theme-toggle"
-                style={{ padding: '4px 8px', fontSize: '0.75rem' }}
-              >
-                <Move size={12} /> Move
-              </button>
-              
-              {showMoveMenu && (
-                <div style={{
-                  position: 'absolute',
-                  top: '100%',
-                  left: 0,
-                  background: 'var(--panel)',
-                  border: '1px solid var(--line)',
-                  borderRadius: '8px',
-                  padding: '8px',
-                  zIndex: 10,
-                  minWidth: '150px'
-                }}>
-                  {allBuckets.map(b => (
-                    <button
-                      key={b}
-                      onClick={() => handleMove(b)}
-                      style={{
-                        display: 'block',
-                        width: '100%',
-                        padding: '6px 12px',
-                        textAlign: 'left',
-                        border: 'none',
-                        background: b === bucket ? 'var(--panel-strong)' : 'transparent',
-                        borderRadius: '4px',
-                        cursor: 'pointer',
-                        fontSize: '0.875rem'
-                      }}
-                    >
-                      {bucketLabels[b as keyof typeof bucketLabels]}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
+
+            {/* Move dropdown - only in edit mode */}
+            {isEditMode && (
+              <div style={{ position: 'relative' }}>
+                <button 
+                  onClick={() => setShowMoveMenu(!showMoveMenu)}
+                  className="theme-toggle"
+                  style={{ padding: '4px 8px', fontSize: '0.75rem' }}
+                >
+                  <Move size={12} /> Move
+                </button>
+
+                {showMoveMenu && (
+                  <div style={{
+                    position: 'absolute',
+                    top: '100%',
+                    left: 0,
+                    background: 'var(--panel)',
+                    border: '1px solid var(--line)',
+                    borderRadius: '8px',
+                    padding: '8px',
+                    zIndex: 10,
+                    minWidth: '150px'
+                  }}>
+                    {allBuckets.map(b => (
+                      <button
+                        key={b}
+                        onClick={() => handleMove(b)}
+                        style={{
+                          display: 'block',
+                          width: '100%',
+                          padding: '6px 12px',
+                          textAlign: 'left',
+                          border: 'none',
+                          background: b === bucket ? 'var(--panel-strong)' : 'transparent',
+                          borderRadius: '4px',
+                          cursor: 'pointer',
+                          fontSize: '0.875rem'
+                        }}
+                      >
+                        {bucketLabels[b as keyof typeof bucketLabels]}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
-          
+
           {/* Title */}
           <h3 className="card-title">
             <Link href={bookmark.url} target="_blank" rel="noopener noreferrer">
@@ -116,52 +119,54 @@ export function EditableBookmarkCard({ bookmark, onUpdate, onDelete, onMove }: E
             </Link>
           </h3>
         </div>
-        
-        {/* Actions */}
-        <div style={{ display: 'flex', gap: '8px' }}>
-          {!isEditing ? (
-            <button 
-              onClick={() => setIsEditing(true)}
-              className="theme-toggle"
-              style={{ padding: '6px' }}
-              title="Edit notes"
-            >
-              <Edit2 size={16} />
-            </button>
-          ) : (
-            <>
-              <button 
-                onClick={handleSaveNotes}
-                className="theme-toggle"
-                style={{ padding: '6px', background: 'var(--good)', color: 'white' }}
-              >
-                <Check size={16} />
-              </button>
-              <button 
-                onClick={() => {setIsEditing(false); setEditedNotes(bookmark.analysis?.personal_notes || '');}}
+
+        {/* Actions - only in edit mode */}
+        {isEditMode && (
+          <div style={{ display: 'flex', gap: '8px' }}>
+            {!isEditing ? (
+              <button
+                onClick={() => setIsEditing(true)}
                 className="theme-toggle"
                 style={{ padding: '6px' }}
+                title="Edit notes"
               >
-                <X size={16} />
+                <Edit2 size={16} />
               </button>
-            </>
-          )}
-          <button 
-            onClick={() => onDelete(bookmark.id)}
-            className="theme-toggle"
-            style={{ padding: '6px', color: 'var(--bad)' }}
-            title="Delete"
-          >
-            <Trash2 size={16} />
-          </button>
-        </div>
+            ) : (
+              <>
+                <button
+                  onClick={handleSaveNotes}
+                  className="theme-toggle"
+                  style={{ padding: '6px', background: 'var(--good)', color: 'white' }}
+                >
+                  <Check size={16} />
+                </button>
+                <button
+                  onClick={() => {setIsEditing(false); setEditedNotes(bookmark.analysis?.personal_notes || '');}}
+                  className="theme-toggle"
+                  style={{ padding: '6px' }}
+                >
+                  <X size={16} />
+                </button>
+              </>
+            )}
+            <button
+              onClick={() => onDelete(bookmark.id)}
+              className="theme-toggle"
+              style={{ padding: '6px', color: 'var(--bad)' }}
+              title="Delete"
+            >
+              <Trash2 size={16} />
+            </button>
+          </div>
+        )}
       </div>
-      
+
       {/* Summary */}
       {bookmark.analysis?.summary && (
         <p className="card-summary">{bookmark.analysis.summary}</p>
       )}
-      
+
       {/* Personal Notes - Editable */}
       <div style={{ marginBottom: '16px' }}>
         {isEditing ? (
@@ -194,7 +199,7 @@ export function EditableBookmarkCard({ bookmark, onUpdate, onDelete, onMove }: E
           </div>
         ) : null}
       </div>
-      
+
       {/* Meta */}
       <div className="card-meta">
         {bookmark.author && (
@@ -213,7 +218,7 @@ export function EditableBookmarkCard({ bookmark, onUpdate, onDelete, onMove }: E
           </span>
         )}
       </div>
-      
+
       {/* Tags */}
       {bookmark.tags?.length > 0 && (
         <div className="tags">
