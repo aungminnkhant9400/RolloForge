@@ -1,5 +1,23 @@
 [
   {
+    "id": "bookmark_TimDenning_2036022953385873",
+    "source": "x",
+    "url": "https://x.com/Tim_Denning/status/2036022953385873708?s=20",
+    "text": "Lock the F*ck in and Make the next 6 Months Better than the Last 10 Years",
+    "title": "Motivational content on personal productivity and focus",
+    "author": "Tim_Denning",
+    "created_at": "2026-03-23T11:44:03.237883+00:00",
+    "bookmarked_at": "2026-03-23T11:44:03.237901+00:00",
+    "tags": [
+      "general"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
+  },
+  {
     "id": "bookmark_aakashgupta_2034851259442749",
     "source": "x",
     "url": "https://x.com/aakashgupta/status/2034851259442749909?s=20",

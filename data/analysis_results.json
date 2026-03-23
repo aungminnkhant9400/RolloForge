@@ -1210,5 +1210,33 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "garfis",
     "analyzed_at": "2026-03-23T10:19:26.554641+00:00"
+  },
+  {
+    "bookmark_id": "bookmark_TimDenning_2036022953385873",
+    "summary": "This is a motivational social media post encouraging intense focus and productivity over the next six months. For this user building OpenClaw systems and AI trading tools, it offers no technical guidance, actionable strategies, or specific insights related to their high-priority interests in multi-agent workflows, prediction markets, or trading automation.",
+    "recommendation_reason": "This content is purely motivational without any technical substance, code examples, or specific insights related to OpenClaw, AI trading, prediction markets, or stock analysis. It doesn't address any of the user's high-priority topics and offers no practical value for their 'building by learning' stage. The source isn't from trusted AI builders or trading experts, and the content lacks the actionable, hands-on approach the user prefers.",
+    "key_insights": [
+      "General motivational message about focusing efforts",
+      "Encouragement to make significant progress in a short timeframe",
+      "No specific technical or trading insights provided",
+      "No actionable steps for AI systems or automation",
+      "Content is generic rather than domain-specific"
+    ],
+    "scoring_inputs": {
+      "relevance": 1.0,
+      "practical_value": 1.0,
+      "actionability": 1.0,
+      "stage_fit": 5.0,
+      "novelty": 3.0,
+      "excitement": 4.0,
+      "difficulty": 3.0,
+      "time_cost": 3.0
+    },
+    "worth_score": 1.0,
+    "effort_score": 3.0,
+    "priority_score": 1.5,
+    "recommendation_bucket": "ignore",
+    "analysis_source": "deepseek",
+    "analyzed_at": "2026-03-23T11:44:03.241407+00:00"
   }
 ]
