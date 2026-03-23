@@ -54,33 +54,6 @@
     "next_action": "None"
   },
   {
-    "bookmark_id": "bookmark_bd9fdb00",
-    "summary": "Automated research and experimentation system. Agent iterates on code autonomously with feedback loop. Foundation for self-improving systems.",
-    "recommendation_reason": "Relevance: 8.5/10. Automated research and experimentation system. Agent iterates on code autonomously with feedback loo",
-    "key_insights": [
-      "Automated research and experimentation system. Agent iterates on code autonomous"
-    ],
-    "scoring_inputs": {
-      "relevance": 8.5,
-      "practical_value": 8.0,
-      "actionability": 6.0,
-      "stage_fit": 6.5,
-      "novelty": 9.5,
-      "excitement": 5.0,
-      "difficulty": 3.0,
-      "time_cost": 3.0
-    },
-    "worth_score": 8.12,
-    "effort_score": 3.0,
-    "priority_score": 7.0,
-    "recommendation_bucket": "test_this_week",
-    "analysis_source": "garfis",
-    "analyzed_at": "2026-03-23T04:48:38Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
-  },
-  {
     "bookmark_id": "bookmark_c1eed805",
     "summary": "Comprehensive OpenClaw guide for beginners to advanced. One-hour deep dive into capabilities and workflows.",
     "recommendation_reason": "Relevance: 9/10. Comprehensive OpenClaw guide for beginners to advanced. One-hour deep dive into capabilities and wor",
@@ -290,33 +263,6 @@
     "effort_score": 5.0,
     "priority_score": 4.0,
     "recommendation_bucket": "archive",
-    "analysis_source": "garfis",
-    "analyzed_at": "2026-03-23T04:48:38Z",
-    "confidence": "None",
-    "difficulty_reason": "None",
-    "next_action": "None"
-  },
-  {
-    "bookmark_id": "bookmark_2694bfae",
-    "summary": "Deedy applied autoresearch to vibecoded Rust chess engine. Improved from expert to top 50 grandmaster level. Shows autoresearch works beyond ML.",
-    "recommendation_reason": "Relevance: 8.5/10. Deedy applied autoresearch to vibecoded Rust chess engine. Improved from expert to top 50 grandmaste",
-    "key_insights": [
-      "Deedy applied autoresearch to vibecoded Rust chess engine. Improved from expert "
-    ],
-    "scoring_inputs": {
-      "relevance": 8.5,
-      "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 6.5,
-      "novelty": 9.5,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 6.72,
-    "effort_score": 5.0,
-    "priority_score": 7.5,
-    "recommendation_bucket": "test_this_week",
     "analysis_source": "garfis",
     "analyzed_at": "2026-03-23T04:48:38Z",
     "confidence": "None",
