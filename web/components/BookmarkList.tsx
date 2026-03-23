@@ -138,7 +138,7 @@ export function BookmarkList({ bookmarks }: BookmarkListProps) {
         }}>
           <span>{selectedIds.size} selected</span>
           
-003cbutton 
+          <button 
             onClick={() => handleBulkMove('test_this_week')}
             style={{
               padding: '6px 12px',

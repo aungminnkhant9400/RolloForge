@@ -1,309 +1,202 @@
 [
   {
-    "bookmark_id": "bookmark_zeneca_vibe_code",
-    "summary": "How to Vibe Code a Prediction Model.",
-    "recommendation_reason": "Contains actionable implementation details. Save for after current priorities.",
+    "bookmark_id": "bookmark_6a9e603c",
+    "summary": "Karpathy shares 10 most interesting things he is thinking about. General insights.",
+    "recommendation_reason": "Relevance: 5/10. Karpathy shares 10 most interesting things he is thinking about. General insights.",
     "key_insights": [
-      "Source: Zeneca",
-      "Relevance: 4.5/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
+      "Karpathy shares 10 most interesting things he is thinking about. General insight"
     ],
     "scoring_inputs": {
-      "relevance": 4.5,
+      "relevance": 5,
       "practical_value": 8.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
+      "actionability": 8.0,
+      "stage_fit": 9.0,
+      "novelty": 9.5,
       "excitement": 5.0,
-      "difficulty": 4.0,
-      "time_cost": 4.0
+      "difficulty": 3.0,
+      "time_cost": 3.0
     },
-    "worth_score": 5.25,
-    "effort_score": 4.0,
-    "priority_score": 3.25,
-    "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_forbes_ai_jobs",
-    "summary": "AI will reshape 92 million jobs globally.",
-    "recommendation_reason": "Good candidate for when this becomes popular. Reference material for future projects.",
-    "key_insights": [
-      "Source: Forbes",
-      "Relevance: 4.0/10",
-      "Actionability: 6.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 4.0,
-      "actionability": 6.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.5,
-    "effort_score": 5.0,
-    "priority_score": 2.0,
+    "worth_score": 8.9,
+    "effort_score": 3.0,
+    "priority_score": 4.0,
     "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
-    "bookmark_id": "bookmark_atenov_obsidian",
-    "summary": "How to turn Obsidian into a second brain that runs itself with AI agent.",
-    "recommendation_reason": "Contains actionable implementation details. Reference material for future projects.",
+    "bookmark_id": "bookmark_cad9e7c3",
+    "summary": "Build a company run entirely by AI agents. Experimental autonomous business concept.",
+    "recommendation_reason": "Relevance: 6.5/10. Build a company run entirely by AI agents. Experimental autonomous business concept.",
     "key_insights": [
-      "Source: Atenov_D",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
+      "Build a company run entirely by AI agents. Experimental autonomous business conc"
     ],
     "scoring_inputs": {
-      "relevance": 4.0,
+      "relevance": 6.5,
       "practical_value": 8.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
+      "actionability": 10.0,
+      "stage_fit": 10.0,
+      "novelty": 7.0,
       "excitement": 5.0,
       "difficulty": 5.0,
       "time_cost": 5.0
     },
-    "worth_score": 5.1,
+    "worth_score": 9.2,
     "effort_score": 5.0,
-    "priority_score": 2.6,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_antpalkin_spx",
-    "summary": "Chinese quant built SPX price prediction system with multi-agent simulation.",
-    "recommendation_reason": "High relevance to your current priorities. Save for after current priorities.",
-    "key_insights": [
-      "Source: antpalkin",
-      "Relevance: 10.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)",
-      "Directly aligned with OpenClaw build priorities"
-    ],
-    "scoring_inputs": {
-      "relevance": 10.0,
-      "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 5.9,
-    "effort_score": 5.0,
-    "priority_score": 3.4,
+    "priority_score": 5.5,
     "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
-    "bookmark_id": "bookmark_austiinxbt_polymarket",
-    "summary": "How to farm Polymarket LP rewards with $500 or less.",
-    "recommendation_reason": "Contains actionable implementation details. Reference material for future projects.",
+    "bookmark_id": "bookmark_c1eed805",
+    "summary": "Comprehensive OpenClaw guide for beginners to advanced. One-hour deep dive into capabilities and workflows.",
+    "recommendation_reason": "Relevance: 9/10. Comprehensive OpenClaw guide for beginners to advanced. One-hour deep dive into capabilities and wor",
     "key_insights": [
-      "Source: austiinxbt",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
+      "Comprehensive OpenClaw guide for beginners to advanced. One-hour deep dive into "
     ],
     "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 9.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
+      "relevance": 9,
+      "practical_value": 8.0,
+      "actionability": 10.0,
+      "stage_fit": 10.0,
       "novelty": 5.0,
       "excitement": 5.0,
       "difficulty": 5.0,
       "time_cost": 5.0
     },
-    "worth_score": 5.35,
+    "worth_score": 9.0,
     "effort_score": 5.0,
-    "priority_score": 2.85,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "priority_score": 7.0,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
-    "bookmark_id": "bookmark_roundtable_github",
-    "summary": "5 fastest growing GitHub projects: openclaw/openclaw (+122K), obra/superpowers (+30.7K), ruvnet/RuView (+30.4K), 666g...",
-    "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Good candidate for when this becomes popular. Save for after current priorities.",
+    "bookmark_id": "bookmark_f0776159",
+    "summary": "OpenClaw use case with 5 AI models meeting twice daily as R&D department for business growth. Demonstrates multi-agent coordination pattern.",
+    "recommendation_reason": "Relevance: 9/10. OpenClaw use case with 5 AI models meeting twice daily as R&D department for business growth. Demons",
     "key_insights": [
-      "Source: roundtablespace",
-      "Relevance: 9.0/10",
-      "Actionability: 6.0/10 (with lazy+popular bonus)",
-      "Directly aligned with OpenClaw build priorities",
-      "Medium priority - good for build-later queue"
+      "OpenClaw use case with 5 AI models meeting twice daily as R&D department for bus"
     ],
     "scoring_inputs": {
-      "relevance": 9.0,
-      "practical_value": 4.0,
-      "actionability": 6.0,
+      "relevance": 9,
+      "practical_value": 8.0,
+      "actionability": 10.0,
       "stage_fit": 9.0,
       "novelty": 5.0,
       "excitement": 5.0,
       "difficulty": 5.0,
       "time_cost": 5.0
     },
-    "worth_score": 6.75,
+    "worth_score": 8.1,
     "effort_score": 5.0,
-    "priority_score": 4.25,
+    "priority_score": 7.5,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_nickspisak_2035311693312536",
+    "summary": "Comprehensive guide on applying autoresearch to business tasks. Pattern works on anything measurable: ad copy, emails, skill files. 100 experiments overnight.",
+    "recommendation_reason": "Relevance: 9/10. Comprehensive guide on applying autoresearch to business tasks. Pattern works on anything measurable",
+    "key_insights": [
+      "Comprehensive guide on applying autoresearch to business tasks. Pattern works on"
+    ],
+    "scoring_inputs": {
+      "relevance": 9,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 6.5,
+      "novelty": 9.5,
+      "excitement": 5.0,
+      "difficulty": 3.0,
+      "time_cost": 3.0
+    },
+    "worth_score": 6.58,
+    "effort_score": 3.0,
+    "priority_score": 7.0,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T05:13:15Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_61136115",
+    "summary": "Execution tips for improving OpenClaw performance. Speed and efficiency optimizations.",
+    "recommendation_reason": "Relevance: 7/10. Execution tips for improving OpenClaw performance. Speed and efficiency optimizations.",
+    "key_insights": [
+      "Execution tips for improving OpenClaw performance. Speed and efficiency optimiza"
+    ],
+    "scoring_inputs": {
+      "relevance": 7,
+      "practical_value": 9.0,
+      "actionability": 10.0,
+      "stage_fit": 9.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 7.0,
+      "time_cost": 7.0
+    },
+    "worth_score": 8.5,
+    "effort_score": 7.0,
+    "priority_score": 6.0,
     "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
-    "bookmark_id": "bookmark_zodchiii_poker",
-    "summary": "What Poker, Startups and Prediction Markets Have in Common.",
-    "recommendation_reason": "Reference material for future projects.",
+    "bookmark_id": "bookmark_c04e3c42",
+    "summary": "Official autoresearch repo for AI skill improvement. 42K stars. Clone and apply to your OpenClaw skills for automated optimization.",
+    "recommendation_reason": "Relevance: 8/10. Official autoresearch repo for AI skill improvement. 42K stars. Clone and apply to your OpenClaw ski",
     "key_insights": [
-      "Source: zodchiii",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
+      "Official autoresearch repo for AI skill improvement. 42K stars. Clone and apply "
     ],
     "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
+      "relevance": 8,
+      "practical_value": 9.0,
+      "actionability": 8.0,
+      "stage_fit": 6.5,
+      "novelty": 9.5,
       "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
+      "difficulty": 7.0,
+      "time_cost": 7.0
     },
-    "worth_score": 4.1,
-    "effort_score": 5.0,
-    "priority_score": 1.6,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_saccc_mirofish",
-    "summary": "MiroFish - 20-year-old student's AI simulation engine.",
-    "recommendation_reason": "Reference material for future projects.",
-    "key_insights": [
-      "Source: saccc_c",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.1,
-    "effort_score": 5.0,
-    "priority_score": 1.6,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_pvergadia_alibaba",
-    "summary": "Alibaba SWE-CI benchmark tests AI agents on 100 real codebases over 233 days.",
-    "recommendation_reason": "Reference material for future projects.",
-    "key_insights": [
-      "Source: pvergadia",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.1,
-    "effort_score": 5.0,
-    "priority_score": 1.6,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_citrini_crisis",
-    "summary": "THE 2028 GLOBAL INTELLIGENCE CRISIS - 100 hours research, scenario-based analysis (not prediction).",
-    "recommendation_reason": "Reference material for future projects.",
-    "key_insights": [
-      "Source: citrini7",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 7.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.3,
-    "effort_score": 5.0,
-    "priority_score": 1.8,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "worth_score": 8.47,
+    "effort_score": 7.0,
+    "priority_score": 7.0,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_steipete_soul",
-    "summary": "How to make your OpenClaw AI have personality.",
-    "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Contains actionable implementation details. Good candidate for when this becomes popular. Save for after current priorities.",
+    "summary": "How to make OpenClaw agents have personality and character. Beyond utility to engaging user experience.",
+    "recommendation_reason": "Relevance: 6.5/10. How to make OpenClaw agents have personality and character. Beyond utility to engaging user experien",
     "key_insights": [
-      "Source: steipete",
-      "Relevance: 7.5/10",
-      "Actionability: 6.0/10 (with lazy+popular bonus)",
-      "Medium priority - good for build-later queue"
+      "How to make OpenClaw agents have personality and character. Beyond utility to en"
     ],
     "scoring_inputs": {
-      "relevance": 7.5,
+      "relevance": 6.5,
       "practical_value": 8.0,
       "actionability": 6.0,
       "stage_fit": 9.0,
@@ -314,80 +207,236 @@
     },
     "worth_score": 7.3,
     "effort_score": 5.0,
-    "priority_score": 4.8,
+    "priority_score": 5.5,
     "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
-    "bookmark_id": "bookmark_theflowhorse_trading",
-    "summary": "You Can Make a Fortune Trading - Don't Let Anyone Tell You Otherwise.",
-    "recommendation_reason": "Reference material for future projects.",
+    "bookmark_id": "bookmark_5f137c14",
+    "summary": "AI agent autonomously generates TikTok slideshows for marketing. Demonstrates content creation automation with minimal human input.",
+    "recommendation_reason": "Relevance: 7/10. AI agent autonomously generates TikTok slideshows for marketing. Demonstrates content creation autom",
     "key_insights": [
-      "Source: theflowhorse",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
+      "AI agent autonomously generates TikTok slideshows for marketing. Demonstrates co"
     ],
     "scoring_inputs": {
-      "relevance": 4.0,
+      "relevance": 7,
       "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 5.0,
+      "actionability": 10.0,
+      "stage_fit": 9.0,
+      "novelty": 7.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 7.3,
+    "effort_score": 5.0,
+    "priority_score": 6.0,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_roundtable_github",
+    "summary": "Analysis of fastest growing GitHub projects this week. Trend spotting in open source.",
+    "recommendation_reason": "Relevance: 5/10. Analysis of fastest growing GitHub projects this week. Trend spotting in open source.",
+    "key_insights": [
+      "Analysis of fastest growing GitHub projects this week. Trend spotting in open so"
+    ],
+    "scoring_inputs": {
+      "relevance": 5,
+      "practical_value": 4.0,
+      "actionability": 6.0,
+      "stage_fit": 9.0,
       "novelty": 5.0,
       "excitement": 5.0,
       "difficulty": 5.0,
       "time_cost": 5.0
     },
-    "worth_score": 4.25,
+    "worth_score": 6.75,
     "effort_score": 5.0,
-    "priority_score": 1.75,
+    "priority_score": 4.0,
     "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_deedydas_2035551089265906",
+    "summary": "Deedy used Karpathy autoresearch on Rust chess engine. Improved from expert to grandmaster level. Demonstrates effectiveness on non-ML projects.",
+    "recommendation_reason": "Relevance: 8.5/10. Deedy used Karpathy autoresearch on Rust chess engine. Improved from expert to grandmaster level. De",
+    "key_insights": [
+      "Deedy used Karpathy autoresearch on Rust chess engine. Improved from expert to g"
+    ],
+    "scoring_inputs": {
+      "relevance": 8.5,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 6.5,
+      "novelty": 9.5,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 6.72,
+    "effort_score": 5.0,
+    "priority_score": 7.5,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T06:51:55Z",
     "confidence": null,
     "difficulty_reason": null,
     "next_action": null
   },
   {
-    "bookmark_id": "bookmark_nvidia_fivelayer",
-    "summary": "AI is a Five-Layer Cake.",
-    "recommendation_reason": "Reference material for future projects.",
+    "bookmark_id": "bookmark_WeixinWeChat_2035537088314290",
+    "summary": "WeChat now supports OpenClaw through WeixinClawBot. Users can send/receive OpenClaw messages like texting. Major platform adoption signal for agent-based messaging.",
+    "recommendation_reason": "Relevance: 10/10. WeChat now supports OpenClaw through WeixinClawBot. Users can send/receive OpenClaw messages like te",
     "key_insights": [
-      "Source: nvidia",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
+      "WeChat now supports OpenClaw through WeixinClawBot. Users can send/receive OpenC"
     ],
     "scoring_inputs": {
-      "relevance": 4.0,
+      "relevance": 10,
       "practical_value": 4.0,
+      "actionability": 8.0,
+      "stage_fit": 9.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 6.7,
+    "effort_score": 5.0,
+    "priority_score": 8.0,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_saranormous_2035080458304987603",
+    "summary": "Karpathy discusses fundamental shift in engineering workflows with AI. Multi-window agent patterns becoming standard. Engineering practice evolving rapidly.",
+    "recommendation_reason": "Relevance: 7.5/10. Karpathy discusses fundamental shift in engineering workflows with AI. Multi-window agent patterns b",
+    "key_insights": [
+      "Karpathy discusses fundamental shift in engineering workflows with AI. Multi-win"
+    ],
+    "scoring_inputs": {
+      "relevance": 7.5,
+      "practical_value": 5.0,
       "actionability": 4.0,
+      "stage_fit": 6.5,
+      "novelty": 9.5,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 6.67,
+    "effort_score": 5.0,
+    "priority_score": 6.5,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_0xSero_2035680567274975",
+    "summary": "Author built self-improving OpenClaw marketing agent for their app. System optimizes content automatically driving $300K/year revenue without manual intervention.",
+    "recommendation_reason": "Relevance: 10/10. Author built self-improving OpenClaw marketing agent for their app. System optimizes content automat",
+    "key_insights": [
+      "Author built self-improving OpenClaw marketing agent for their app. System optim"
+    ],
+    "scoring_inputs": {
+      "relevance": 10,
+      "practical_value": 6.5,
+      "actionability": 8.0,
+      "stage_fit": 9.0,
+      "novelty": 7.0,
+      "excitement": 5.0,
+      "difficulty": 7.0,
+      "time_cost": 7.0
+    },
+    "worth_score": 7.67,
+    "effort_score": 7.0,
+    "priority_score": 8.5,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_0xsunnft_2035722514090062",
+    "summary": "4-year crypto veteran compares AI and Crypto industries. Argues crypto more accessible for average people to capture value.",
+    "recommendation_reason": "Relevance: 7.5/10. 4-year crypto veteran compares AI and Crypto industries. Argues crypto more accessible for average p",
+    "key_insights": [
+      "4-year crypto veteran compares AI and Crypto industries. Argues crypto more acce"
+    ],
+    "scoring_inputs": {
+      "relevance": 7.5,
+      "practical_value": 8.0,
+      "actionability": 6.0,
       "stage_fit": 4.0,
+      "novelty": 7.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 6.6,
+    "effort_score": 5.0,
+    "priority_score": 6.0,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_startupideaspod_agents",
+    "summary": "Complete system for building digital employees with AI agents. End-to-end automation of knowledge work.",
+    "recommendation_reason": "Relevance: 7.5/10. Complete system for building digital employees with AI agents. End-to-end automation of knowledge wo",
+    "key_insights": [
+      "Complete system for building digital employees with AI agents. End-to-end automa"
+    ],
+    "scoring_inputs": {
+      "relevance": 7.5,
+      "practical_value": 4.0,
+      "actionability": 6.0,
+      "stage_fit": 9.0,
       "novelty": 5.0,
       "excitement": 5.0,
       "difficulty": 5.0,
       "time_cost": 5.0
     },
-    "worth_score": 4.1,
+    "worth_score": 6.45,
     "effort_score": 5.0,
-    "priority_score": 1.6,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "priority_score": 6.0,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_trq212_claude_skills",
-    "summary": "Lessons from Building Claude Code: How We Use Skills.",
-    "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Ready to try when you have time. Save for after current priorities.",
+    "summary": "Anthropic insights on building AI coding assistants. How they think about AI skill development.",
+    "recommendation_reason": "Relevance: 7.5/10. Anthropic insights on building AI coding assistants. How they think about AI skill development.",
     "key_insights": [
-      "Source: trq212",
-      "Relevance: 7.5/10",
-      "Actionability: 10.0/10 (with lazy+popular bonus)"
+      "Anthropic insights on building AI coding assistants. How they think about AI ski"
     ],
     "scoring_inputs": {
       "relevance": 7.5,
@@ -401,228 +450,23 @@
     },
     "worth_score": 6.35,
     "effort_score": 5.0,
-    "priority_score": 3.85,
+    "priority_score": 6.5,
     "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_ihtesham_superpowers",
-    "summary": "Superpowers - Full development methodology for AI coding agents.",
-    "recommendation_reason": "Reference material for future projects.",
-    "key_insights": [
-      "Source: ihtesham2005",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 6.5,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.72,
-    "effort_score": 5.0,
-    "priority_score": 2.22,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_startupideaspod_agents",
-    "summary": "AI system for building digital employees.",
-    "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Good candidate for when this becomes popular. Save for after current priorities.",
-    "key_insights": [
-      "Source: startupideaspod",
-      "Relevance: 8.0/10",
-      "Actionability: 6.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 8.0,
-      "practical_value": 4.0,
-      "actionability": 6.0,
-      "stage_fit": 9.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 6.45,
-    "effort_score": 5.0,
-    "priority_score": 3.95,
-    "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_heynavtoor_ai_engineer",
-    "summary": "How to Become an AI Engineer in 6 Months (Free Resources).",
-    "recommendation_reason": "Contains actionable implementation details. Reference material for future projects.",
-    "key_insights": [
-      "Source: heynavtoor",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 8.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 5.1,
-    "effort_score": 5.0,
-    "priority_score": 2.6,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_sharbel_recaptcha",
-    "summary": "You've been training Google's AI for 15 years.",
-    "recommendation_reason": "Reference material for future projects.",
-    "key_insights": [
-      "Source: sharbel",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.1,
-    "effort_score": 5.0,
-    "priority_score": 1.6,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_googlecloud_adk_patterns",
-    "summary": "5 Agent Skill design patterns every ADK developer should know.",
-    "recommendation_reason": "Reference material for future projects.",
-    "key_insights": [
-      "Source: googlecloudtech",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.1,
-    "effort_score": 5.0,
-    "priority_score": 1.6,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_minimax_agent",
-    "summary": "MiniMax-M2.7 just landed in MiniMax Agent.",
-    "recommendation_reason": "Reference material for future projects.",
-    "key_insights": [
-      "Source: minimaxagent",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.1,
-    "effort_score": 5.0,
-    "priority_score": 1.6,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_minimax_m27_official",
-    "summary": "MiniMax M2.7: First model deeply participating in its own evolution.",
-    "recommendation_reason": "Reference material for future projects.",
-    "key_insights": [
-      "Source: MiniMax_AI",
-      "Relevance: 4.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.0,
-      "practical_value": 4.0,
-      "actionability": 4.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.1,
-    "effort_score": 5.0,
-    "priority_score": 1.6,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_alexfinn_openclaw_speed",
-    "summary": "OpenClaw speed optimization - delete old cron session files in ~/.openclaw/agents/main/sessions/.",
-    "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Good candidate for when this becomes popular. Save for after current priorities.",
+    "summary": "Tips for cleaning old OpenClaw sessions to improve speed. Performance optimization.",
+    "recommendation_reason": "Relevance: 6.5/10. Tips for cleaning old OpenClaw sessions to improve speed. Performance optimization.",
     "key_insights": [
-      "Source: alexfinn",
-      "Relevance: 7.5/10",
-      "Actionability: 6.0/10 (with lazy+popular bonus)"
+      "Tips for cleaning old OpenClaw sessions to improve speed. Performance optimizati"
     ],
     "scoring_inputs": {
-      "relevance": 7.5,
+      "relevance": 6.5,
       "practical_value": 4.0,
       "actionability": 6.0,
       "stage_fit": 9.0,
@@ -633,327 +477,77 @@
     },
     "worth_score": 6.3,
     "effort_score": 5.0,
-    "priority_score": 3.8,
+    "priority_score": 5.5,
     "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
-    "bookmark_id": "bookmark_gkisokay_self_improving",
-    "summary": "Stop building workflows.",
-    "recommendation_reason": "Ready to try when you have time. Reference material for future projects.",
+    "bookmark_id": "bookmark_ernestosoftware_2033917717762191659",
+    "summary": "Commercial validation of OpenClaw for marketing automation. Self-improving agent system generates significant revenue demonstrating real business viability.",
+    "recommendation_reason": "Relevance: 9.5/10. Commercial validation of OpenClaw for marketing automation. Self-improving agent system generates si",
     "key_insights": [
-      "Source: gkisokay",
-      "Relevance: 4.0/10",
-      "Actionability: 8.0/10 (with lazy+popular bonus)"
+      "Commercial validation of OpenClaw for marketing automation. Self-improving agent"
     ],
     "scoring_inputs": {
-      "relevance": 4.0,
+      "relevance": 9.5,
       "practical_value": 4.0,
-      "actionability": 8.0,
-      "stage_fit": 4.0,
+      "actionability": 6.0,
+      "stage_fit": 9.0,
       "novelty": 5.0,
       "excitement": 5.0,
       "difficulty": 5.0,
       "time_cost": 5.0
     },
-    "worth_score": 4.9,
+    "worth_score": 6.3,
     "effort_score": 5.0,
-    "priority_score": 2.4,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "priority_score": 8.0,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
-    "bookmark_id": "bookmark_56c3fee3",
-    "summary": "I made a \"should I be trading?\" dashboard. Scores the market across 5 pillars: - volatility (put/call ratio, vix, pos...",
-    "recommendation_reason": "Reference material for future projects.",
+    "bookmark_id": "bookmark_antpalkin_spx",
+    "summary": "Chinese quantitative trading system for S&P 500 prediction. Algorithmic trading approach.",
+    "recommendation_reason": "Relevance: 6.5/10. Chinese quantitative trading system for S&P 500 prediction. Algorithmic trading approach.",
     "key_insights": [
-      "Source: investingluc",
-      "Relevance: 4.5/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)"
+      "Chinese quantitative trading system for S&P 500 prediction. Algorithmic trading "
     ],
     "scoring_inputs": {
-      "relevance": 4.5,
+      "relevance": 6.5,
       "practical_value": 4.0,
       "actionability": 4.0,
-      "stage_fit": 5.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.4,
-    "effort_score": 5.0,
-    "priority_score": 1.9,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_61136115",
-    "summary": "SEND THIS PROMPT TO YOUR OPENCLAW TO MAKE IT MORE EFFICIENT:\n\n\"Implement an execution-focused operating mode.",
-    "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Contains actionable implementation details. Ready to try when you have time. Save for after current priorities.",
-    "key_insights": [
-      "Source: 0xMarioNawfal",
-      "Relevance: 8.0/10",
-      "Actionability: 10.0/10 (with lazy+popular bonus)",
-      "Medium priority - good for build-later queue"
-    ],
-    "scoring_inputs": {
-      "relevance": 8.0,
-      "practical_value": 9.0,
-      "actionability": 10.0,
-      "stage_fit": 9.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 7.0,
-      "time_cost": 7.0
-    },
-    "worth_score": 8.5,
-    "effort_score": 7.0,
-    "priority_score": 5.0,
-    "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_cad9e7c3",
-    "summary": "How to build a company run entirely by AI agents (free, open source, 5-minute setup) Paperclip is a free, open-source...",
-    "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Contains actionable implementation details. Ready to try when you have time. High priority for your current build phase.",
-    "key_insights": [
-      "Source: nickspisak_",
-      "Relevance: 10.0/10",
-      "Actionability: 10.0/10 (with lazy+popular bonus)",
-      "Directly aligned with OpenClaw build priorities",
-      "High priority - consider trying this week"
-    ],
-    "scoring_inputs": {
-      "relevance": 10.0,
-      "practical_value": 8.0,
-      "actionability": 10.0,
-      "stage_fit": 10.0,
-      "novelty": 7.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 9.2,
-    "effort_score": 5.0,
-    "priority_score": 6.7,
-    "recommendation_bucket": "test_this_week",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_c1eed805",
-    "summary": "THE ULTIMATE GUIDE TO OPENCLAW (1hr free masterclass)\n\n1.",
-    "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Contains actionable implementation details. Ready to try when you have time. High priority for your current build phase.",
-    "key_insights": [
-      "Source: gregisenberg",
-      "Relevance: 10.0/10",
-      "Actionability: 10.0/10 (with lazy+popular bonus)",
-      "Directly aligned with OpenClaw build priorities",
-      "High priority - consider trying this week"
-    ],
-    "scoring_inputs": {
-      "relevance": 10.0,
-      "practical_value": 8.0,
-      "actionability": 10.0,
-      "stage_fit": 10.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 9.0,
-    "effort_score": 5.0,
-    "priority_score": 6.5,
-    "recommendation_bucket": "test_this_week",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_4c78f48b",
-    "summary": "How to articulate yourself intelligently - Dan Koe When I was young, I was always drawn to people who sounded intelli...",
-    "recommendation_reason": "Contains actionable implementation details. Good candidate for when this becomes popular. Save for after current priorities.",
-    "key_insights": [
-      "Source: thedankoe",
-      "Relevance: 4.5/10",
-      "Actionability: 6.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 4.5,
-      "practical_value": 8.0,
-      "actionability": 6.0,
       "stage_fit": 4.0,
       "novelty": 5.0,
       "excitement": 5.0,
       "difficulty": 5.0,
       "time_cost": 5.0
     },
-    "worth_score": 5.65,
+    "worth_score": 5.9,
     "effort_score": 5.0,
-    "priority_score": 3.15,
+    "priority_score": 5.5,
     "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_c04e3c42",
-    "summary": "Karpathy autoresearch repo for improving AI skills - Aakash Gupta\n\nKarpathy's autoresearch repo has 42K stars.",
-    "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Contains actionable implementation details. Ready to try when you have time. Novel approach you haven't seen before. Save for after current priorities.",
-    "key_insights": [
-      "Source: aakashgupta",
-      "Relevance: 9.0/10",
-      "Actionability: 8.0/10 (with lazy+popular bonus)",
-      "Novel concept - first time seeing this approach",
-      "Directly aligned with OpenClaw build priorities"
-    ],
-    "scoring_inputs": {
-      "relevance": 9.0,
-      "practical_value": 9.0,
-      "actionability": 8.0,
-      "stage_fit": 6.5,
-      "novelty": 9.5,
-      "excitement": 5.0,
-      "difficulty": 7.0,
-      "time_cost": 7.0
-    },
-    "worth_score": 8.47,
-    "effort_score": 7.0,
-    "priority_score": 4.97,
-    "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_6ea58733",
-    "summary": "Project Hail Mary movie review - Andrej Karpathy Had to go see Project Hail Mary right away (based on the book by And...",
-    "recommendation_reason": "Good candidate for when this becomes popular. Reference material for future projects.",
-    "key_insights": [
-      "Source: karpathy",
-      "Relevance: 5.5/10",
-      "Actionability: 6.0/10 (with lazy+popular bonus)"
-    ],
-    "scoring_inputs": {
-      "relevance": 5.5,
-      "practical_value": 4.0,
-      "actionability": 6.0,
-      "stage_fit": 4.0,
-      "novelty": 5.0,
-      "excitement": 5.0,
-      "difficulty": 5.0,
-      "time_cost": 5.0
-    },
-    "worth_score": 4.95,
-    "effort_score": 5.0,
-    "priority_score": 2.45,
-    "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_bd9fdb00",
-    "summary": "The Karpathy Loop - Aakash Gupta on autoresearch For 25 dollars and a single GPU, you can now run 100 experiments ove...",
-    "recommendation_reason": "High relevance to your current priorities. Contains actionable implementation details. Good candidate for when this becomes popular. Novel approach you haven't seen before. High priority for your current build phase.",
-    "key_insights": [
-      "Source: aakashgupta",
-      "Relevance: 10.0/10",
-      "Actionability: 6.0/10 (with lazy+popular bonus)",
-      "Novel concept - first time seeing this approach",
-      "Directly aligned with OpenClaw build priorities"
-    ],
-    "scoring_inputs": {
-      "relevance": 10.0,
-      "practical_value": 8.0,
-      "actionability": 6.0,
-      "stage_fit": 6.5,
-      "novelty": 9.5,
-      "excitement": 5.0,
-      "difficulty": 3.0,
-      "time_cost": 3.0
-    },
-    "worth_score": 8.12,
-    "effort_score": 3.0,
-    "priority_score": 6.62,
-    "recommendation_bucket": "test_this_week",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
-  },
-  {
-    "bookmark_id": "bookmark_6a9e603c",
-    "summary": "Karpathy podcast highlights - 10 most interesting things - Deedy Karpathy says: \"I haven't typed a line of code since...",
-    "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Contains actionable implementation details. Ready to try when you have time. Novel approach you haven't seen before. High priority for your current build phase.",
-    "key_insights": [
-      "Source: deedydas",
-      "Relevance: 10.0/10",
-      "Actionability: 8.0/10 (with lazy+popular bonus)",
-      "Novel concept - first time seeing this approach",
-      "Directly aligned with OpenClaw build priorities"
-    ],
-    "scoring_inputs": {
-      "relevance": 10.0,
-      "practical_value": 8.0,
-      "actionability": 8.0,
-      "stage_fit": 9.0,
-      "novelty": 9.5,
-      "excitement": 5.0,
-      "difficulty": 3.0,
-      "time_cost": 3.0
-    },
-    "worth_score": 8.9,
-    "effort_score": 3.0,
-    "priority_score": 7.4,
-    "recommendation_bucket": "test_this_week",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_6c2ebc23",
-    "summary": "How I built an Autonomous AI Agent team that runs 24/7 - Shubham Saboo\n\nSix AI agents run my entire life while I sleep.",
-    "recommendation_reason": "Directly related to your OpenClaw system build. High relevance to your current priorities. Ready to try when you have time. Save for after current priorities.",
+    "summary": "Guide to building teams of AI agents that work together autonomously. Multi-agent coordination patterns.",
+    "recommendation_reason": "Relevance: 8/10. Guide to building teams of AI agents that work together autonomously. Multi-agent coordination patte",
     "key_insights": [
-      "Source: saboo_shubham_",
-      "Relevance: 10.0/10",
-      "Actionability: 8.0/10 (with lazy+popular bonus)",
-      "Directly aligned with OpenClaw build priorities"
+      "Guide to building teams of AI agents that work together autonomously. Multi-agen"
     ],
     "scoring_inputs": {
-      "relevance": 10.0,
+      "relevance": 8,
       "practical_value": 4.0,
       "actionability": 8.0,
       "stage_fit": 10.0,
@@ -964,26 +558,185 @@
     },
     "worth_score": 7.8,
     "effort_score": 9.0,
-    "priority_score": 3.3,
+    "priority_score": 6.5,
     "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_zeneca_vibe_code",
+    "summary": "Step-by-step guide to building prediction models with AI. No ML background required.",
+    "recommendation_reason": "Relevance: 7/10. Step-by-step guide to building prediction models with AI. No ML background required.",
+    "key_insights": [
+      "Step-by-step guide to building prediction models with AI. No ML background requi"
+    ],
+    "scoring_inputs": {
+      "relevance": 7,
+      "practical_value": 8.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 4.0,
+      "time_cost": 4.0
+    },
+    "worth_score": 5.25,
+    "effort_score": 4.0,
+    "priority_score": 6.0,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_4c78f48b",
+    "summary": "Communication skills for intelligent expression. Soft skill development.",
+    "recommendation_reason": "Relevance: 3/10. Communication skills for intelligent expression. Soft skill development.",
+    "key_insights": [
+      "Communication skills for intelligent expression. Soft skill development."
+    ],
+    "scoring_inputs": {
+      "relevance": 3,
+      "practical_value": 8.0,
+      "actionability": 6.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 5.65,
+    "effort_score": 5.0,
+    "priority_score": 3.0,
+    "recommendation_bucket": "ignore",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_austiinxbt_polymarket",
+    "summary": "Farming Polymarket liquidity provider rewards with minimal capital. Prediction market passive income strategy.",
+    "recommendation_reason": "Relevance: 8/10. Farming Polymarket liquidity provider rewards with minimal capital. Prediction market passive income",
+    "key_insights": [
+      "Farming Polymarket liquidity provider rewards with minimal capital. Prediction m"
+    ],
+    "scoring_inputs": {
+      "relevance": 8,
+      "practical_value": 9.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 5.35,
+    "effort_score": 5.0,
+    "priority_score": 6.5,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_yacinemtb_2035779012908175",
+    "summary": "Google DeepMind demonstrates AI training robots for soccer. Physical AI embodiment with coordinated team behavior.",
+    "recommendation_reason": "Relevance: 6/10. Google DeepMind demonstrates AI training robots for soccer. Physical AI embodiment with coordinated ",
+    "key_insights": [
+      "Google DeepMind demonstrates AI training robots for soccer. Physical AI embodime"
+    ],
+    "scoring_inputs": {
+      "relevance": 6,
+      "practical_value": 7.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 8.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 5.15,
+    "effort_score": 5.0,
+    "priority_score": 5.5,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_atenov_obsidian",
+    "summary": "Turn Obsidian into self-running second brain with AI agents. Automated knowledge management.",
+    "recommendation_reason": "Relevance: 6/10. Turn Obsidian into self-running second brain with AI agents. Automated knowledge management.",
+    "key_insights": [
+      "Turn Obsidian into self-running second brain with AI agents. Automated knowledge"
+    ],
+    "scoring_inputs": {
+      "relevance": 6,
+      "practical_value": 8.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 5.1,
+    "effort_score": 5.0,
+    "priority_score": 5.0,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_heynavtoor_ai_engineer",
+    "summary": "Roadmap for transitioning to AI engineering. Skills and projects needed for career switch.",
+    "recommendation_reason": "Relevance: 5/10. Roadmap for transitioning to AI engineering. Skills and projects needed for career switch.",
+    "key_insights": [
+      "Roadmap for transitioning to AI engineering. Skills and projects needed for care"
+    ],
+    "scoring_inputs": {
+      "relevance": 5,
+      "practical_value": 8.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 5.1,
+    "effort_score": 5.0,
+    "priority_score": 4.5,
+    "recommendation_bucket": "archive",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_255f5753",
-    "summary": "Open Source must win - 0xSero manifesto This article is my mission statement and commitment for the next decade of my...",
-    "recommendation_reason": "Good candidate for when this becomes popular. Novel approach you haven't seen before. Reference material for future projects.",
+    "summary": "Manifesto on AI centralization vs open source. Philosophical argument for open AI.",
+    "recommendation_reason": "Relevance: 5/10. Manifesto on AI centralization vs open source. Philosophical argument for open AI.",
     "key_insights": [
-      "Source: 0xSero",
-      "Relevance: 4.5/10",
-      "Actionability: 6.0/10 (with lazy+popular bonus)",
-      "Novel concept - first time seeing this approach"
+      "Manifesto on AI centralization vs open source. Philosophical argument for open A"
     ],
     "scoring_inputs": {
-      "relevance": 4.5,
+      "relevance": 5,
       "practical_value": 4.0,
       "actionability": 6.0,
       "stage_fit": 4.0,
@@ -994,103 +747,524 @@
     },
     "worth_score": 5.0,
     "effort_score": 5.0,
-    "priority_score": 2.5,
+    "priority_score": 4.0,
     "recommendation_bucket": "archive",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-21T13:06:51Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
-    "bookmark_id": "bookmark_f0776159",
-    "summary": "Maybe the sickest OpenClaw use case I have ever built I now have my own R&D department Twice a day 5 different AI mod...",
-    "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Contains actionable implementation details. Ready to try when you have time. Save for after current priorities.",
+    "bookmark_id": "bookmark_6ea58733",
+    "summary": "Karpathy reviews Project Hail Mary movie. Entertainment content.",
+    "recommendation_reason": "Relevance: 2/10. Karpathy reviews Project Hail Mary movie. Entertainment content.",
     "key_insights": [
-      "Source: alexfinn",
-      "Relevance: 7.5/10",
-      "Actionability: 10.0/10 (with lazy+popular bonus)",
-      "Medium priority - good for build-later queue"
+      "Karpathy reviews Project Hail Mary movie. Entertainment content."
     ],
     "scoring_inputs": {
-      "relevance": 7.5,
-      "practical_value": 8.0,
-      "actionability": 10.0,
-      "stage_fit": 9.0,
+      "relevance": 2,
+      "practical_value": 4.0,
+      "actionability": 6.0,
+      "stage_fit": 4.0,
       "novelty": 5.0,
       "excitement": 5.0,
       "difficulty": 5.0,
       "time_cost": 5.0
     },
-    "worth_score": 8.1,
+    "worth_score": 4.95,
     "effort_score": 5.0,
-    "priority_score": 5.6,
-    "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T01:07:20Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "priority_score": 2.0,
+    "recommendation_bucket": "ignore",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
-    "bookmark_id": "bookmark_5f137c14",
-    "summary": "LarryLoop - AI marketing agent that generates TikTok slideshows autonomously Larry is an AI agent that generated 1.6...",
-    "recommendation_reason": "Directly related to your OpenClaw system build. Relevant to your multi-agent interests. Ready to try when you have time. Save for after current priorities.",
+    "bookmark_id": "bookmark_gkisokay_self_improving",
+    "summary": "Shift from static workflows to dynamic self-improving agents. Agents that learn and adapt over time.",
+    "recommendation_reason": "Relevance: 8.5/10. Shift from static workflows to dynamic self-improving agents. Agents that learn and adapt over time.",
     "key_insights": [
-      "Source: oliverhenry",
-      "Relevance: 7.5/10",
-      "Actionability: 10.0/10 (with lazy+popular bonus)",
-      "Medium priority - good for build-later queue"
+      "Shift from static workflows to dynamic self-improving agents. Agents that learn "
+    ],
+    "scoring_inputs": {
+      "relevance": 8.5,
+      "practical_value": 4.0,
+      "actionability": 8.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.9,
+    "effort_score": 5.0,
+    "priority_score": 7.0,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_ihtesham_superpowers",
+    "summary": "Full development methodology for building AI-powered applications. End-to-end process.",
+    "recommendation_reason": "Relevance: 6/10. Full development methodology for building AI-powered applications. End-to-end process.",
+    "key_insights": [
+      "Full development methodology for building AI-powered applications. End-to-end pr"
+    ],
+    "scoring_inputs": {
+      "relevance": 6,
+      "practical_value": 6.5,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.72,
+    "effort_score": 5.0,
+    "priority_score": 5.0,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_forbes_ai_jobs",
+    "summary": "Forbes analysis of AI impact on global workforce. Three high-paying skills for 2026.",
+    "recommendation_reason": "Relevance: 5/10. Forbes analysis of AI impact on global workforce. Three high-paying skills for 2026.",
+    "key_insights": [
+      "Forbes analysis of AI impact on global workforce. Three high-paying skills for 2"
+    ],
+    "scoring_inputs": {
+      "relevance": 5,
+      "practical_value": 4.0,
+      "actionability": 6.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.5,
+    "effort_score": 5.0,
+    "priority_score": 4.0,
+    "recommendation_bucket": "archive",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_56c3fee3",
+    "summary": "Personal trading decision dashboard. Data-driven approach to trading decisions. Pattern for your own trading system.",
+    "recommendation_reason": "Relevance: 7.5/10. Personal trading decision dashboard. Data-driven approach to trading decisions. Pattern for your own",
+    "key_insights": [
+      "Personal trading decision dashboard. Data-driven approach to trading decisions. "
     ],
     "scoring_inputs": {
       "relevance": 7.5,
       "practical_value": 4.0,
-      "actionability": 10.0,
-      "stage_fit": 9.0,
+      "actionability": 4.0,
+      "stage_fit": 5.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.4,
+    "effort_score": 5.0,
+    "priority_score": 6.0,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_citrini_crisis",
+    "summary": "Speculative analysis of future AI intelligence landscape. Long-term strategic thinking.",
+    "recommendation_reason": "Relevance: 3/10. Speculative analysis of future AI intelligence landscape. Long-term strategic thinking.",
+    "key_insights": [
+      "Speculative analysis of future AI intelligence landscape. Long-term strategic th"
+    ],
+    "scoring_inputs": {
+      "relevance": 3,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
       "novelty": 7.0,
       "excitement": 5.0,
       "difficulty": 5.0,
       "time_cost": 5.0
     },
-    "worth_score": 7.3,
+    "worth_score": 4.3,
     "effort_score": 5.0,
-    "priority_score": 4.8,
-    "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T01:11:17Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "priority_score": 3.0,
+    "recommendation_bucket": "ignore",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
-    "bookmark_id": "bookmark_2694bfae",
-    "summary": "Karpathy Autoresearch results - Deedy Karpathy Autoresearch pushed my vibecoded Rust chess engine AI from expert to a...",
-    "recommendation_reason": "High relevance to your current priorities. Novel approach you haven't seen before. Save for after current priorities.",
+    "bookmark_id": "bookmark_dr_cintas_2035387052460536",
+    "summary": "Chinese company released AI employee running 100% locally. Performs research and coordination without cloud dependency.",
+    "recommendation_reason": "Relevance: 5.5/10. Chinese company released AI employee running 100% locally. Performs research and coordination withou",
     "key_insights": [
-      "Source: deedydas",
-      "Relevance: 10.0/10",
-      "Actionability: 4.0/10 (with lazy+popular bonus)",
-      "Novel concept - first time seeing this approach",
-      "Directly aligned with OpenClaw build priorities"
+      "Chinese company released AI employee running 100% locally. Performs research and"
     ],
     "scoring_inputs": {
-      "relevance": 10.0,
+      "relevance": 5.5,
       "practical_value": 4.0,
       "actionability": 4.0,
-      "stage_fit": 6.5,
-      "novelty": 9.5,
+      "stage_fit": 4.0,
+      "novelty": 7.0,
       "excitement": 5.0,
       "difficulty": 5.0,
       "time_cost": 5.0
     },
-    "worth_score": 6.72,
+    "worth_score": 4.3,
     "effort_score": 5.0,
-    "priority_score": 4.22,
+    "priority_score": 4.0,
+    "recommendation_bucket": "archive",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_theflowhorse_trading",
+    "summary": "Trading psychology and strategy insights. Risk management and systematic approach to trading markets.",
+    "recommendation_reason": "Relevance: 7/10. Trading psychology and strategy insights. Risk management and systematic approach to trading markets",
+    "key_insights": [
+      "Trading psychology and strategy insights. Risk management and systematic approac"
+    ],
+    "scoring_inputs": {
+      "relevance": 7,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 5.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.25,
+    "effort_score": 5.0,
+    "priority_score": 5.5,
     "recommendation_bucket": "build_later",
-    "analysis_source": "llm_auto_scored",
-    "analyzed_at": "2026-03-22T04:10:58Z",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_zodchiii_poker",
+    "summary": "Parallels between poker strategy, startup decisions, and prediction markets. Probabilistic thinking frameworks.",
+    "recommendation_reason": "Relevance: 6/10. Parallels between poker strategy, startup decisions, and prediction markets. Probabilistic thinking ",
+    "key_insights": [
+      "Parallels between poker strategy, startup decisions, and prediction markets. Pro"
+    ],
+    "scoring_inputs": {
+      "relevance": 6,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.1,
+    "effort_score": 5.0,
+    "priority_score": 5.0,
+    "recommendation_bucket": "archive",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_saccc_mirofish",
+    "summary": "20-year-old student built AI simulation system. Young builder creating sophisticated agent projects.",
+    "recommendation_reason": "Relevance: 5/10. 20-year-old student built AI simulation system. Young builder creating sophisticated agent projects.",
+    "key_insights": [
+      "20-year-old student built AI simulation system. Young builder creating sophistic"
+    ],
+    "scoring_inputs": {
+      "relevance": 5,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.1,
+    "effort_score": 5.0,
+    "priority_score": 4.0,
+    "recommendation_bucket": "archive",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_pvergadia_alibaba",
+    "summary": "Alibaba SWE-CI benchmark testing AI agents on real coding tasks. Performance comparison data.",
+    "recommendation_reason": "Relevance: 5/10. Alibaba SWE-CI benchmark testing AI agents on real coding tasks. Performance comparison data.",
+    "key_insights": [
+      "Alibaba SWE-CI benchmark testing AI agents on real coding tasks. Performance com"
+    ],
+    "scoring_inputs": {
+      "relevance": 5,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.1,
+    "effort_score": 5.0,
+    "priority_score": 4.0,
+    "recommendation_bucket": "archive",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_nvidia_fivelayer",
+    "summary": "NVIDIA perspective on AI stack layers. Infrastructure view of AI ecosystem.",
+    "recommendation_reason": "Relevance: 5/10. NVIDIA perspective on AI stack layers. Infrastructure view of AI ecosystem.",
+    "key_insights": [
+      "NVIDIA perspective on AI stack layers. Infrastructure view of AI ecosystem."
+    ],
+    "scoring_inputs": {
+      "relevance": 5,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.1,
+    "effort_score": 5.0,
+    "priority_score": 4.0,
+    "recommendation_bucket": "archive",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_sharbel_recaptcha",
+    "summary": "How reCAPTCHA and Google services use user data to train AI. Data labor awareness.",
+    "recommendation_reason": "Relevance: 3/10. How reCAPTCHA and Google services use user data to train AI. Data labor awareness.",
+    "key_insights": [
+      "How reCAPTCHA and Google services use user data to train AI. Data labor awarenes"
+    ],
+    "scoring_inputs": {
+      "relevance": 3,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.1,
+    "effort_score": 5.0,
+    "priority_score": 3.0,
+    "recommendation_bucket": "ignore",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_googlecloud_adk_patterns",
+    "summary": "ADK design patterns for agent skills. Architectural patterns for building reliable agent systems.",
+    "recommendation_reason": "Relevance: 6.5/10. ADK design patterns for agent skills. Architectural patterns for building reliable agent systems.",
+    "key_insights": [
+      "ADK design patterns for agent skills. Architectural patterns for building reliab"
+    ],
+    "scoring_inputs": {
+      "relevance": 6.5,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.1,
+    "effort_score": 5.0,
+    "priority_score": 5.5,
+    "recommendation_bucket": "build_later",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_minimax_agent",
+    "summary": "MiniMax released M2.7 model in their agent platform. Alternative AI agent platform.",
+    "recommendation_reason": "Relevance: 5/10. MiniMax released M2.7 model in their agent platform. Alternative AI agent platform.",
+    "key_insights": [
+      "MiniMax released M2.7 model in their agent platform. Alternative AI agent platfo"
+    ],
+    "scoring_inputs": {
+      "relevance": 5,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.1,
+    "effort_score": 5.0,
+    "priority_score": 4.0,
+    "recommendation_bucket": "archive",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_minimax_m27_official",
+    "summary": "MiniMax M2.7 model announcement. First model deeply participating in its own evolution marketing.",
+    "recommendation_reason": "Relevance: 4/10. MiniMax M2.7 model announcement. First model deeply participating in its own evolution marketing.",
+    "key_insights": [
+      "MiniMax M2.7 model announcement. First model deeply participating in its own evo"
+    ],
+    "scoring_inputs": {
+      "relevance": 4,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.1,
+    "effort_score": 5.0,
+    "priority_score": 4.0,
+    "recommendation_bucket": "archive",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T04:48:38Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_aakashgupta_2034851259442749",
+    "summary": "Karpathy autoresearch pattern for any measurable task. Agent modifies code, runs 5-min experiments, keeps improvements. Apply to skills, trading, predictions.",
+    "recommendation_reason": "Relevance: 9/10. Karpathy autoresearch pattern for any measurable task. Agent modifies code, runs 5-min experiments, ",
+    "key_insights": [
+      "Karpathy autoresearch pattern for any measurable task. Agent modifies code, runs"
+    ],
+    "scoring_inputs": {
+      "relevance": 9,
+      "practical_value": 9.0,
+      "actionability": 9.0,
+      "stage_fit": 8.0,
+      "novelty": 7.0,
+      "excitement": 8.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 8.5,
+    "effort_score": 5.0,
+    "priority_score": 6.5,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-23T10:19:26.554641+00:00"
+  },
+  {
+    "bookmark_id": "bookmark_TimDenning_2036022953385873",
+    "summary": "This is a motivational social media post encouraging intense focus and productivity over the next six months. For this user building OpenClaw systems and AI trading tools, it offers no technical guidance, actionable strategies, or specific insights related to their high-priority interests in multi-agent workflows, prediction markets, or trading automation.",
+    "recommendation_reason": "This content is purely motivational without any technical substance, code examples, or specific insights related to OpenClaw, AI trading, prediction markets, or stock analysis. It doesn't address any of the user's high-priority topics and offers no practical value for their 'building by learning' stage. The source isn't from trusted AI builders or trading experts, and the content lacks the actionable, hands-on approach the user prefers.",
+    "key_insights": [
+      "General motivational message about focusing efforts",
+      "Encouragement to make significant progress in a short timeframe",
+      "No specific technical or trading insights provided",
+      "No actionable steps for AI systems or automation",
+      "Content is generic rather than domain-specific"
+    ],
+    "scoring_inputs": {
+      "relevance": 1.0,
+      "practical_value": 1.0,
+      "actionability": 1.0,
+      "stage_fit": 5.0,
+      "novelty": 3.0,
+      "excitement": 4.0,
+      "difficulty": 3.0,
+      "time_cost": 3.0
+    },
+    "worth_score": 1.0,
+    "effort_score": 3.0,
+    "priority_score": 1.5,
+    "recommendation_bucket": "ignore",
+    "analysis_source": "deepseek",
+    "analyzed_at": "2026-03-23T11:44:03.241407+00:00"
+  },
+  {
+    "bookmark_id": "bookmark_openclaw_2036043904949330",
+    "summary": "This is a major OpenClaw release announcement introducing ClawHub plugin marketplace, enhanced AI agent capabilities with MiniMax M2.7 and GPT-5.4-mini/nano models, and improved search integration. The user should care because it directly addresses their high-priority OpenClaw setup/customization and multi-agent workflow needs with practical tools for building trading and prediction market systems.",
+    "recommendation_reason": "Assigned 'test_this_week' because this is a direct update to the user's core tool (OpenClaw) with immediate practical applications for their trading and prediction market work. The plugin marketplace and agent enhancements offer quick wins within 1-2 hours of exploration. High relevance due to OpenClaw focus, high practical value from new features, and strong actionability for hands-on implementation.",
+    "key_insights": [
+      "ClawHub plugin marketplace enables rapid extension of OpenClaw functionality for trading and analysis workflows",
+      "MiniMax M2.7 and GPT-5.4-mini/nano models provide per-agent reasoning optimization for specialized trading agents",
+      "Exa, Tavily, and Firecrawl search integration enhances data gathering for market analysis and prediction research",
+      "OpenShell + SSH sandboxes offer secure execution environments for automated trading operations",
+      "Plugin marketplace structure suggests community-driven tool development for AI trading strategies"
+    ],
+    "scoring_inputs": {
+      "relevance": 9.5,
+      "practical_value": 8.8,
+      "actionability": 9.0,
+      "stage_fit": 5.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 9.1,
+    "effort_score": 5.0,
+    "priority_score": 9.2,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "deepseek",
+    "analyzed_at": "2026-03-23T11:58:15.378341+00:00"
   }
 ]

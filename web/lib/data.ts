@@ -37,6 +37,7 @@ export interface AnalysisResult {
   recommendation_bucket: 'test_this_week' | 'build_later' | 'archive' | 'ignore';
   analysis_source: string;
   analyzed_at: string;
+  personal_notes?: string;
 }
 
 export interface BookmarkWithAnalysis extends Bookmark {
