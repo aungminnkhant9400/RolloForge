@@ -4,7 +4,7 @@
     "source": "x",
     "url": "https://x.com/aakashgupta/status/2034851259442749909?s=20",
     "text": "",
-    "title": "Autoresearch Guide: Running 100 Experiments Overnight for $25",
+    "title": "Autoresearch Guide: 100 Experiments Overnight",
     "author": "aakashgupta",
     "created_at": "2026-03-23T10:19:26.552928+00:00",
     "bookmarked_at": "2026-03-23T10:19:26.552939+00:00",
@@ -23,7 +23,7 @@
     "source": "x",
     "url": "https://x.com/deedydas/status/2035551089265906051?s=46",
     "text": "Karpathy's Autoresearch pushed my vibecoded Rust chess engine AI from \"expert\" to a top 50 grandmaster, a #311 chess engine.\n\nIt ran over 70 experiments on its own and tried to hill climb to the top ELO score it could, landing at 2718!",
-    "title": "Karpathy's Autoresearch pushed my vibecoded Rust chess engine AI from \"expert\"...",
+    "title": "Autoresearch Improves Chess Engine",
     "author": "deedydas",
     "created_at": "2026-03-23T06:51:48.044013+00:00",
     "bookmarked_at": "2026-03-23T06:51:48.044030+00:00",
@@ -41,7 +41,7 @@
     "source": "x",
     "url": "https://x.com/nickspisak_/status/2035311693312536736?s=46",
     "text": "10 Practical Business Experiments with Auto Research\n\nKarpathy's autoresearch: AI agents running research on single-GPU nanochat training automatically.\n\nThe idea: give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies the code, trains for 5 minutes, checks if the result improved, keeps or discards, and repeats. You wake up in the morning to a log of experiments and (hopefully) a better model.\n\nKey components:\n- prepare.py \u2014 fixed constants, data prep (do not modify)\n- train.py \u2014 model, optimizer, training loop (agent modifies this)\n- program.md \u2014 agent instructions (human modifies this)\n\nRequirements: Single NVIDIA GPU, Python 3.10+, uv.\n\nRuns for fixed 5-minute time budget, ~12 experiments/hour, ~100 experiments overnight.\n\nLinks:\n- GitHub: https://github.com/karpathy/autoresearch\n- Newsletter: https://return-my-time.kit.com/",
-    "title": "Karpathy autoresearch: AI agents for autonomous LLM training experiments",
+    "title": "Autoresearch for Business Applications",
     "author": "nickspisak_",
     "created_at": "2026-03-23T05:12:35.290310+00:00",
     "bookmarked_at": "2026-03-23T05:12:35.290327+00:00",
@@ -59,7 +59,7 @@
     "source": "x",
     "url": "https://x.com/yacinemtb/status/2035779012908175740?s=46",
     "text": "being a human in the singularity\n\nVideo: Google DeepMind Demos AI Training Robots to Play Soccer / Football by PodiumVC",
-    "title": "DeepMind AI robots playing soccer (video)",
+    "title": "DeepMind AI Robots Playing Soccer",
     "author": "yacinemtb",
     "created_at": "2026-03-23T04:41:56.558955+00:00",
     "bookmarked_at": "2026-03-23T04:41:56.558971+00:00",
@@ -77,7 +77,7 @@
     "source": "x",
     "url": "https://x.com/0xsunnft/status/2035722514090062271?s=46",
     "text": "\u6700\u8fd1\u770b\u5230\u5f88\u591a\u5bf9\u6bd4AI\u548cCrypto\u884c\u4e1a\u7684\u8ba8\u8bba\uff0c\u5927\u90e8\u5206\u662f\u62c9AI\u8e29Crypto\uff0c\u800c\u4e14\u5f80\u5f80\u6765\u81ea\u5e01\u5708\u4e1a\u5185\u4eba\u58eb\uff0c\u4f5c\u4e3a\u52c9\u5f3a\u7b97\u4e24\u4e2a\u9886\u57df\u90fd\u6d89\u8db3\u8fc7\u7684\u4eba\uff0c\u4e5f\u5206\u4eab\u4e00\u4e0b\u6211\u7684\u4e3b\u89c2\u770b\u6cd5\u5427\u3002\n\n\u65e0\u53ef\u8d28\u7591\uff0cAI\u786e\u5b9e\u662f\u73b0\u5728\u6700\u7099\u624b\u53ef\u70ed\uff0c\u4e5f\u5f88\u53ef\u80fd\u662f\u667a\u529b\u5bc6\u5ea6\u6700\u9ad8\u7684\u884c\u4e1a\uff0c\u4e92\u8054\u7f51\u548c\u79d1\u6280\u5de8\u5934\u90fd\u5728\u62fc\u547d\u5377\uff0c\u4f20\u7edf\u884c\u4e1a\u4e5f\u4e89\u5148\u6050\u540e\u60f3\u8e0f\u4e0a\u8fd9\u6761\u8239\uff0c\u751f\u6015\u88abAI\u53d6\u4ee3\uff0c\u9762\u5bf9AI\u8fd9\u4e2a\u5168\u4e16\u754c\u594b\u52c7\u4e89\u5148\u7684\u884c\u4e1a\uff0cCrypto\u76f8\u5f62\u89c1\u7ecc\uff0c\u4e5f\u662f\u60c5\u7406\u4e4b\u4e2d\uff0c\u4f46\u6bd4\u4e0d\u8fc7\u7b2c\u4e00\u540d\u4e0d\u4ee3\u8868\u5c31\u662f\u5783\u573e\uff0c\u540c\u6837\u8fd8\u6709\u5f88\u591a\u884c\u4e1a\uff0c\u76f8\u6bd4Crypto\u673a\u4f1a\u66f4\u5c11\u3001\u524d\u666f\u66f4\u60e8\u6de1\u3002\n\n\u80fd\u7406\u89e3\u5927\u5bb6\u5bf9Crypto\u7684\u5931\u671b\uff0c\u56e0\u4e3a\u5f88\u591a\u66fe\u7ecf\u88ab\u5bc4\u4e88\u539a\u671b\u7684\u8d5b\u9053\uff0c\u4e0d\u4f46\u6ca1\u6709\u83b7\u5f97Mass Adoption\uff0c\u8fd8\u9010\u6e10\u5f0f\u5fae\u751a\u81f3\u6d88\u4ea1\u4e86\uff0c\u4f8b\u5982NFT\u3001\u5143\u5b87\u5b99\u3001GameFi\u7b49\u7b49\uff0c\u90fd\u5f15\u8d77\u8fc7\u5708\u5185\u9707\u52a8\u751a\u81f3\u7834\u5708\uff0c\u6700\u7ec8\u8fd8\u662f\u5043\u65d7\u606f\u9f13\u3002\u8d70\u5230\u5982\u4eca\uff0c\u662f\u70b9\u9519\u4e86\u79d1\u6280\u6811\u53d1\u5c55\u6b6a\u4e86\u4e5f\u597d\uff0c\u662f\u884c\u4e1a\u9886\u8896\u6ca1\u6709\u8d77\u5230\u5e94\u5c3d\u8d23\u4efb\u4e5f\u7f62\uff0c\u5f52\u6839\u7ed3\u5e95\uff0cCrypto\u53ea\u662f\u4e00\u4e2a\u4e0d\u523020\u5e74\u7684\u884c\u4e1a\uff0c\u5f88\u591a\u4ea7\u7269\u672c\u8eab\u5c31\u5e26\u6709\u5b9e\u9a8c\u6027\u8d28\uff0c\u5982\u4eca\u4e5f\u8fd8\u8fdc\u6ca1\u6709\u5230\u5224\u6b7b\u5211\u7684\u5730\u6b65\u3002\n\n\u800c\u4e14\uff0cCrypto\u4e5f\u8d21\u732e\u4e86\u4e00\u4e9b\u7ecf\u8fc7\u88ab\u771f\u5b9e\u9a8c\u8bc1\u8fc7\u7684\u5e94\u7528\u548c\u65b9\u5411\uff0c\u4f8b\u5982\u7a33\u5b9a\u5e01\u5728\u8de8\u5883\u652f\u4ed8\u4e0e\u8f6c\u79fb\u3001B2B\u7ed3\u7b97\u7b49\u573a\u666f\u7684\u4f7f\u7528\uff0c\u89c4\u6a21\u65e5\u76ca\u589e\u5927\u7684RWA\uff0c\u4ee5\u53ca\u4f5c\u4e3a\u6570\u5b57\u9ec4\u91d1\u7684\u5168\u7403\u5e02\u503c\u524d20\u8d44\u4ea7BTC\u7b49\u7b49\uff0c\u6240\u4ee5\u4e5f\u4e0d\u7528\u8fc7\u4e8e\u60b2\u89c2\u3002\n\n\u6211\u4e5f\u770b\u5230\u6709\u62ffHyperliquid\u4e3e\u4f8b\uff0c\u8bf4\u660e\u8fd9\u4e2a\u5468\u671f\u5728Crypto\u521b\u4e1a\u8270\u96be\u7684\uff0c\u8fd9\u540c\u6837\u6709\u4e9b\u8fc7\u4e8e\u4e25\u82db\u4e86\u3002Hyperliquid\u4f5c\u4e3a\u5168\u4e16\u754c\u4eba\u5747\u8425\u6536\u6700\u9ad8\u7684\u516c\u53f8\uff0c\u5728\u521b\u7acb\u77ed\u77ed\u51e0\u5e74\u5185\uff0c\u8fbe\u5230\u4e8638B\u7684\u4f30\u503c\uff0c2025\u5168\u5e74\u8425\u6536844M\u3002\u4f5c\u4e3a\u5bf9\u6bd4\uff0cCursor\u4f5c\u4e3a\u6709\u53f2\u4ee5\u6765\u6210\u957f\u901f\u5ea6\u6700\u5feb\u7684\u521d\u521b\u516c\u53f8\uff0c\u57282025\u5e7411\u6708\u878d\u8d44\u7684\u4f30\u503c\u662f29.3B\uff0c\u6700\u65b0\u62ab\u9732\u7684\u5e74\u5316\u6536\u5165\u662f2B\uff0c\u6b63\u5728\u5bfb\u6c4250B\u4f30\u503c\u7684\u878d\u8d44\u3002\u5982\u679c\u8fbe\u5230Hyperliquid\u7684\u9ad8\u5ea6\u624d\u80fd\u88ab\u5b9a\u4e49\u4e3a\u6210\u529f\uff0c\u90a3\u5373\u4f7f\u5728AI\u754c\u80fd\u53d6\u5f97\u8fd9\u6837\u6210\u5c31\u7684\u56e2\u961f\u4e5f\u662f\u51e4\u6bdb\u9e9f\u89d2\u3002\n\n\u6700\u91cd\u8981\u7684\u662f\uff0c\u5bf9\u4e8e\u5927\u90e8\u5206\u666e\u901a\u4eba\u800c\u8a00\uff0cAI\u884c\u4e1a\u662f\u5426\u84ec\u52c3\u53d1\u5c55\uff0c\u8ddf\u4f60\u662f\u5426\u80fd\u4eab\u53d7\u5230\u884c\u4e1a\u7ea2\u5229\uff0c\u5176\u5b9e\u5173\u7cfb\u4e0d\u5927\uff0c\u800c\u8fd9\u6070\u597d\u662fCrypto\u6700\u5927\u7684\u4f18\u52bf\u3002\u62ffJeff\u7684\u8bdd\u6765\u8bf4\uff0c\u201c\u5982\u679c\u4f60\u662f\u4e00\u540dChatGPT\u7684\u65e9\u671f\u4f7f\u7528\u8005\uff0cOpenAI\u4e0d\u4f1a\u8ba9\u4f60\u53d8\u5bcc\uff0c\u800c\u5728\u52a0\u5bc6\uff0c\u4f60\u53ea\u9700\u8981\u65e9\u671f\u4f7f\u7528Hyperliquid\uff0c\u5c31\u80fd\u62ff\u5230\u5de8\u989d\u7a7a\u6295\u201d\u3002\n\n\u4e3e\u4e24\u4e2a\u81ea\u8eab\u7684\u4f8b\u5b50\u3002\u7b2c\u4e00\u4e2a\uff0c\u5f88\u591a\u670b\u53cb\u77e5\u9053\u6211\u672c\u7855\u90fd\u662f985\u8ba1\u7b97\u673a\u4e13\u4e1a\uff0c\u4e5f\u5728\u5927\u5382\u505a\u8fc7\u7b97\u6cd5\u5b9e\u4e60\u751f\uff0c\u53ef\u4ee5\u8bf4\u6211\u7684\u667a\u529b\u548c\u5b66\u5386\u80dc\u8fc790%\u7684\u540c\u9f84\u4eba\uff0c\u4f46\u662f\u5728AI\u884c\u4e1a\uff0c\u6211\u9762\u5bf9\u7684\u662f1%\u751a\u81f30.1%\u7684\u9876\u5c16\u4eba\u624d\uff0c\u6beb\u65e0\u4f18\u52bf\u53ef\u8a00\u3002\u800c\u4e14\u6211\u5df2\u7ecf\u7b97\u662f\u62ff\u5230\u4e86\u6b65\u5165AI\u884c\u4e1a\u7684\u6572\u95e8\u7816\uff0c\u800c\u5927\u90e8\u5206\u4eba\u53ef\u80fd\u56e0\u4e3a\u6570\u7406\u80fd\u529b\u3001\u6559\u80b2\u3001\u6210\u957f\u7ecf\u5386\u7b49\u539f\u56e0\uff0c\u538b\u6839\u65e0\u6cd5\u771f\u6b63\u8fdb\u5165AI\u884c\u4e1a\uff0c\u90a3\u4e48\u5373\u4f7f\u4ed6\u4eec\u77e5\u9053AI\u4f1a\u84ec\u52c3\u53d1\u5c55\uff0c\u53c8\u6709\u4ec0\u4e48\u610f\u4e49\u5462\uff1f\u6050\u6015\u6700\u540e\u6700\u76f4\u63a5\u7684\u65b9\u5f0f\u4f9d\u7136\u662f\u5356\u8bfe\u6216\u662f\u4e0a\u95e8\u4ee3\u88c5\u5c0f\u9f99\u867e\uff0c\u4f46\u8fd9\u672c\u8d28\u662f\u8425\u9500\u548c\u628a\u63e1\u98ce\u53e3\u7684\u80fd\u529b\uff0c\u6362\u4e2a\u884c\u4e1a\u4e00\u6837\u8dd1\u7684\u901a\uff0c\u4e0eAI\u6ca1\u6709\u592a\u5927\u5173\u7cfb\u3002\n\n\u7b2c\u4e8c\u4e2a\uff0c\u6211\u4ece2\u6708\u4e2d\u65ec\u5f00\u59cb\u4e86\u89e3Pre-IPO\u6216\u8005\u8bf4\u79c1\u52df\u80a1\u6743\u7684\u6295\u8d44\u673a\u4f1a\uff0c\u4e5f\u662f\u5e0c\u671b\u5728AI\u8d5b\u9053\u914d\u7f6e\u4e00\u4e9b\u8d44\u4ea7\u655e\u53e3\uff0c\u4f46\u7ed3\u679c\u662f\u5230\u73b0\u5728\u90fd\u6ca1\u6709\u5b8c\u6210\u4e00\u4e2a\u5408\u9002\u7684Deal\u3002\u76f8\u6bd4\u5927\u90e8\u5206\u4eba\uff0c\u6211\u5728\u8fd9\u4ef6\u4e8b\u4e0a\u5df2\u7ecf\u7b97\u6709\u4f18\u52bf\u4e86\uff0c\u624b\u63e1\u81ea\u6709\u8d44\u91d1\uff0c\u4e5f\u6709\u4e00\u5b9a\u884c\u4e1a\u77e5\u540d\u5ea6\uff0c\u80fd\u6709\u76f8\u5bf9\u591a\u7684\u6e20\u9053\u4e86\u89e3\u4fe1\u606f\uff0c\u63a5\u89e6deal\uff0c\u4f46\u7ed3\u679c\u662f\uff0c\u5373\u4f7f\u5355\u4e2a\u9879\u76ee\u6211\u613f\u610f\u62951~3M\uff0c\u5728\u4f20\u7edf\u91d1\u878d\u8fd9\u4e2a\u91d1\u989d\u5b8c\u5168\u6392\u4e0d\u4e0a\u684c\uff0c\u6ca1\u6709\u4e3b\u52a8\u6743\uff0c\u53ea\u80fd\u88ab\u52a8\u7b49\u5f85\u5408\u9002\u7684\u673a\u4f1a\uff0c\u5e76\u4e14\u73b0\u5728\u5404\u5927\u673a\u6784\u4e5f\u90fd\u5bf9AI\u884c\u4e1a\u975e\u5e38Fomo\uff0c\u6392\u7740\u961f\u6253\u6b3e\u6295\u8d44\uff0c\u666e\u901a\u4eba\u53ea\u80fd\u770b\u7740\u4f30\u503c\u4e00\u8f6e\u8f6e\u6c34\u6da8\u8239\u9ad8\u3002\u66f4\u4e0d\u7528\u8bf4\u8fd9\u5176\u4e2d\u8fd8\u6d89\u53ca\u5230\u5404\u79cd\u8d39\u7528\u5bf9\u6bd4\u3001\u6e20\u9053\u662f\u5426\u9760\u8c31\u3001\u6cd5\u5f8b\u6587\u4ef6\u548c\u6295\u8d44\u8eab\u4efd\u662f\u5426\u7b26\u5408\u5bf9\u65b9\u9700\u6c42\u7b49\u4e00\u7cfb\u5217\u95ee\u9898\u3002\n\n\u8fd9\u5c31\u56de\u5230\u4e0a\u9762\u6240\u8bf4\u7684\uff0cCrypto\u884c\u4e1a\u5728\u4ef7\u503c\u5206\u914d\u7ed3\u6784\u4e0a\u5b58\u5728\u7684\u5de8\u5927\u4f18\u52bf\uff0c\u8ba9\u666e\u901a\u4eba\u6709\u673a\u4f1a\u4ec5\u4ec5\u4f5c\u4e3a\u53c2\u4e0e\u8005\uff0c\u4e5f\u80fd\u4eab\u53d7\u5230\u884c\u4e1a\u7ea2\u5229\u3002\n\n\u5728\u4f20\u7edf\u79d1\u6280\u884c\u4e1a\uff0c\u7528\u6237\u8981\u4e48\u4e3a\u4ea7\u54c1\u4ed8\u8d39\uff0c\u8981\u4e48\u6210\u4e3a\u4ea7\u54c1\u672c\u8eab\uff0c\u4e5f\u5c31\u662f\u6240\u8c13\u7684\u201cIf you're not paying for the product, you are the product\u201d\uff0c\u4f46\u6700\u7ec8\u4eab\u53d7\u5230\u7ecf\u6d4e\u56de\u62a5\u7684\u5e76\u975e\u7528\u6237\uff0c\u800c\u662f\u80a1\u4e1c\u3002\u800c\u5728\u5e01\u5708\uff0c\u56e0\u4e3a\u7a7a\u6295\u7684\u5b58\u5728\uff0c\u4f7f\u5f97\u7528\u6237\u5728\u8d21\u732e\u6570\u636e\u7684\u540c\u65f6\uff0c\u4e5f\u83b7\u5f97\u4e86\u6f5c\u5728\u4eab\u53d7\u4ef7\u503c\u7684\u53ef\u80fd\u3002\n\n\u540c\u6837\uff0cCrypto\u884c\u4e1a\u7684\u65f6\u95f4\u8f74\u76f8\u6bd4\u5176\u4ed6\u884c\u4e1a\u662f\u6781\u7aef\u538b\u7f29\u7684\uff0c\u5728\u4f20\u7edf\u8def\u5f84\uff0c\u4e00\u5bb6\u516c\u53f8\u4ece\u79cd\u5b50\u8f6e\u5230IPO\u53ef\u80fd\u9700\u89815~10\u5e74\uff0c\u666e\u901a\u4eba\u8981\u5230IPO\u540e\u624d\u6709\u673a\u4f1a\u8d2d\u4e70\u80a1\u7968\uff0c\u5f88\u96be\u4eab\u53d7\u5230\u65e9\u671f\u7684\u6210\u957f\u56de\u62a5\u3002\u800c\u5728Crypto\uff0c\u8fd9\u4e2a\u65f6\u95f4\u88ab\u538b\u7f29\u5230\u4e861~3\u5e74\uff0c\u5e76\u4e14\u7528\u6237\u6709\u673a\u4f1a\u901a\u8fc7\u65e9\u671f\u53c2\u4e0e\u9879\u76ee\uff0c\u83b7\u5f97\u5956\u52b1\u3002\n\n\u6b64\u5916\uff0cCrypto\u62e5\u6709Permissionless\u7684\u7279\u6027\uff0c\u4ee5\u53ca\u5bf9\u5168\u7403\u6d41\u52a8\u6027\u7684\u805a\u96c6\u6548\u5e94\uff0c\u4f7f\u5b83\u6210\u4e3a\u4e86\u6ca1\u6709\u4efb\u4f55\u4e00\u5bb6\u8d4c\u573a\u53ef\u4ee5\u6bd4\u62df\u7684\u6700\u4f73\u6295\u673a\u573a\u6240\uff0c\u800c\u5e01\u5708\u7279\u6709\u7684\u4fe1\u606f\u4f20\u64ad\u8def\u5f84\uff0c\u53c8\u8ba9\u6563\u6237\u6709\u4e86\u9760\u4fe1\u606f\u5dee\u83b7\u5229\u7684\u673a\u4f1a\u3002\u6700\u5178\u578b\u7684\u4f8b\u5b50\u5c31\u662f$Trump\uff0c\u73b0\u4efb\u7f8e\u56fd\u603b\u7edf\u4eb2\u81ea\u53d1\u884c\u7684Meme\u5e01\uff0c\u7ed9\u4e86\u6240\u6709\u4eba\u5728$0.2\u516c\u5e73\u8d2d\u4e70\u7684\u673a\u4f1a\uff0c\u5728\u4e24\u5929\u5185\u6da8\u5e45\u8d85\u8fc7300\u500d\uff0c\u5176\u4e2d\u4efb\u4f55\u4e00\u70b9\uff0c\u653e\u5728\u4f20\u7edf\u91d1\u878d\u90fd\u662f\u538b\u6839\u4e0d\u53ef\u80fd\u7684\u3002\n\n\u503c\u5f97\u6ce8\u610f\u7684\u662f\uff0c\u8fd9\u4e9b\u7279\u6027\u5f88\u591a\u65f6\u5019\u662f\u4e00\u628a\u53cc\u5203\u5251\uff0c\u8ba9\u5e01\u5708\u5145\u65a5\u7740\u9a97\u5c40\u3001\u7a7a\u6c14\u5e01\u548c\u6ca1\u6709\u4ef7\u503c\u7684\u9879\u76ee\u3002\u5929\u4e0b\u6ca1\u6709\u514d\u8d39\u7684\u5348\u9910\uff0c\u5e01\u5708\u5c31\u662f\u4e00\u4e2a\u7ed9\u666e\u901a\u4eba\u63d0\u4f9b\u6781\u5927\u65b9\u5dee\u7684\u573a\u6240\uff0c\u6709\u4eba\u5728\u8fd9\u91cc\u4e00\u591c\u66b4\u5bcc\uff0c\u4e5f\u6709\u4eba\u5728\u8fd9\u91cc\u503e\u5bb6\u8361\u4ea7\u3002\n\n\u56de\u8fc7\u5934\u6765\uff0c\u5f53\u521d\u653e\u5f03AI\u884c\u4e1a\uff0c\u5728\u5e01\u5708\u6478\u722c\u6eda\u6253\u4e864\u5e74\u7684\u6211\uff0c\u4f1a\u5982\u4f55\u9762\u5bf9\u8fd9\u6ce2AI\u6d6a\u6f6e\u5462\uff1f\u6211\u7684\u9009\u62e9\u662f\uff0c\u4e00\u65b9\u9762\u7ee7\u7eed\u4fdd\u6301\u5bf9\u5e01\u5708\u7684\u5173\u6ce8\uff0c\u56e0\u4e3a\u8fd9\u4f9d\u7136\u662f\u76ee\u524d\u6700\u53ef\u80fd\u51fa\u73b0\u5947\u8ff9\u7684\u884c\u4e1a\uff0c\u53e6\u4e00\u65b9\u9762\u5c06\u90e8\u5206\u7cbe\u529b\u4ece\u5e01\u5708\u62bd\u51fa\u6765\uff0c\u53bb\u63a2\u7d22AI\u3001\u7f8e\u80a1\u3001\u79d1\u6280\u76f8\u5173\u7684\u6295\u8d44\u673a\u4f1a\uff0c\u56e0\u4e3a\u76ee\u524d\u5e01\u5708\u6574\u4f53\u7684\u6d41\u52a8\u6027\u548c\u5173\u6ce8\u5ea6\u786e\u5b9e\u5904\u4e8e\u718a\u5e02\u5468\u671f\uff0c\u6ca1\u6709\u5fc5\u8981\u6295\u5165\u5927\u91cf\u65f6\u95f4\uff0c\u800c\u80a1\u5e02\uff0c\u4f9d\u7136\u662f\u6211\u8ba4\u4e3a\u4f5c\u4e3a\u666e\u901a\u4eba\u6700\u6709\u673a\u4f1a\u5403\u5230AI\u7ea2\u5229\u7684\u5730\u65b9\u3002",
-    "title": "\u6700\u8fd1\u770b\u5230\u5f88\u591a\u5bf9\u6bd4AI\u548cCrypto\u884c\u4e1a\u7684\u8ba8\u8bba\uff0c\u5927\u90e8\u5206\u662f\u62c9AI\u8e29Crypto\uff0c\u800c\u4e14\u5f80\u5f80\u6765\u81ea\u5e01\u5708\u4e1a\u5185\u4eba\u58eb\uff0c\u4f5c\u4e3a\u52c9\u5f3a\u7b97\u4e24\u4e2a\u9886\u57df\u90fd\u6d89\u8db3\u8fc7\u7684\u4eba\uff0c\u4e5f\u5206\u4eab\u4e00\u4e0b\u6211\u7684\u4e3b\u89c2\u770b\u6cd5\u5427\u3002",
+    "title": "AI vs Crypto Industry Analysis",
     "author": "0xsunnft",
     "created_at": "2026-03-22T17:59:57.591129+00:00",
     "bookmarked_at": "2026-03-22T17:59:57.591145+00:00",
@@ -95,7 +95,7 @@
     "source": "x",
     "url": "https://x.com/dr_cintas/status/2035387052460536293?s=46",
     "text": "China has released an AI employee that runs 100% locally.\n\nIt can do research, code, build websites, create slide decks, and generate videos.. all by itself. And it comes with its own computer.\n\n100% Open Source.",
-    "title": "China has released an AI employee that runs 100% locally.",
+    "title": "China Releases Local AI Employee",
     "author": "dr_cintas",
     "created_at": "2026-03-22T12:36:15.064980+00:00",
     "bookmarked_at": "2026-03-22T12:36:15.064996+00:00",
@@ -113,7 +113,7 @@
     "source": "x",
     "url": "https://x.com/Weixin_WeChat/status/2035537088314290236?s=20",
     "text": "Today, we are officially opening the capability to integrate #OpenClaw into #Weixin.\n\nWith the launch of the #WeixinClawBot, users can use Weixin as a dedicated messaging channel for OpenClaw.\n\nNow, you can send and receive messages with OpenClaw just like texting a friend.\n#AIAutomation #AI",
-    "title": "Weixin officially opens OpenClaw integration capability",
+    "title": "Weixin Opens OpenClaw Integration for Messaging",
     "author": "Weixin_WeChat",
     "created_at": "2026-03-22T11:51:56.990432+00:00",
     "bookmarked_at": "2026-03-22T11:51:56.990449+00:00",
@@ -131,7 +131,7 @@
     "source": "x",
     "url": "https://x.com/0xSero/status/2035680567274975634?s=20",
     "text": "In 72 hours I got over 100k of value\n\n1. Lambda gave me 5000$ credits in compute\n\n2. Nvidia offered me 8x H100s on the cloud (20$/h) idk for how long but assuming 2 weeks that'd be 5000$~\n\n3. TNG technology offered me 2 weeks of B200s which is something like 12000$ in compute \n\n4. A kind person offered me 100k in GCP credits (enough to train a 27B if you do it right)\n\n5. Framework offered to mail me a desktop computer\n\n6. We got 14,000$ in donations which will go to buying 2x RTX Pro 6000s (bringing me up to 384GB VRAM)\n\n7. I got over 6M impressions which based on my RPM would be 1500$ over my 500$~ usual per pay period\n\n8. I have gained 17,000~ followers, over doubling my follower count \n\n9. 17 subscribers on X + 700 on youtube.\n\nThe total value of all this approaches at minimum 50,000$~ and closer to 150,000$ if I leverage it all. \n\n---------------------\n\nWhat I'll be doing with all this: \n\nEric is an incredibly driven researcher I have been bouncing ideas off of over the last month. \n\nHim and I have been tackling the idea of getting massive models to fit on relatively cheap memory. \n\nThe idea is taking advantage of different forms of memory, in combination with expert saliency scoring, to offload specific expert groupings to different memory tiers. \n\nFor the MoEs I've tested over my entire AI session history about 37.5% of the model is responsible for 95% of token routing.\n\nSo we can offload 62.5% of an LLM onto SSD/NVMe/CPU/Cheap VRAM this should theoretically result in minimal latency added if we can select the right experts. \n\nWe can combine this with paged swapping to further accelerate the prompt processing, if done right we are looking at very very decent performance for massive unquantisation & unpruned LLMs. \n\nYou can get DeepSeek-v3.2-speciale at full intelligence with decent tokens/s as long as you have enough vram to host the core 20-40% of the model and enough ram or SSD to host the rest. \n\nAdd quantisation to the mix and you can basically have decent speeds and intelligence with just 5-10% of the model's size in vram (+ you need some for context)\n\nThe funds will be used to push this to it's limits. \n\n-----------------\n\nThere's also tons of research that you can quantise a model drastically, then distill from the original BF16 or make a LoRA to align it back to the original mostly. \n\nThis will be added to the pipeline too. \n\n------------------\n\nAll this will be built out here: \nhttps://\ngithub.com/0xSero/moe-com\npress\n\u2026 you will be able to take any MoE and shove it in here, and with only 24GB and enough RAM/NVMe to compress it down. it'll be slow as hell but it will work with little tinkering. \n\n------------------\n\nLastly I will be looking into either a full training run from scratch -> or just post-training on an open AMERICAN base model\n\n- a research model\n- an openclaw/nanoclaw/hermes model \n- a browser-use model \n\nTo prove that this can be done. \n\n--------------------\n\nI will be bad at all of it, and doubt I will get beyond the best small models from 6 months ago, but I want to prove it's no boogeyman impossible task to everyone who says otherwise. \n\n--------------------\n\nBy the end of the year:\n\n1. I will have 1 model I trained in some capacity be on the top 5 at either pinchbench, browseruse, or research. \n\n2. My github will have a master repo which combines all my work into reusable generalised scripts to help you do that same. \n\n3. The largest public comparative dataset for all MoE quantisations, prunes, benchmarks, costs, hardware requirements. \n\n--------------------------\n\nA lot of this will be lead by Eric, who I will tag in the next post. \n\nI want to say thank you to everyone who has supported me, I have gotten a lot of comments stating:\n\n1. I'm crazy, stupid, or both\n2. I'm wasting my time, no one cares about this\n3. This is not a real issue\n\nI believe the amount of interest and support I've received says it all.\n\n\nhttps://\ndonate.sybilsolutions.ai",
-    "title": "In 72 hours I got over 100k of value",
+    "title": "OpenClaw Vibe Marketing Generates 300K Annually",
     "author": "0xSero",
     "created_at": "2026-03-22T11:47:40.419690+00:00",
     "bookmarked_at": "2026-03-22T11:47:40.419707+00:00",
@@ -164,7 +164,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "We turned Openclaw into a self improving vibe marketer for our $300,000/yr app."
+    "title": "OpenClaw Marketing Agent Case Study"
   },
   {
     "id": "bookmark_saranormous_2035080458304987603",
@@ -185,7 +185,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "Caught up with"
+    "title": "Karpathy on AI Engineering Phase Shift"
   },
   {
     "id": "bookmark_zeneca_vibe_code",
@@ -205,7 +205,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "How to Vibe Code a Prediction Model."
+    "title": "How to Vibe Code a Prediction Model"
   },
   {
     "id": "bookmark_forbes_ai_jobs",
@@ -225,7 +225,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "AI will reshape 92 million jobs globally."
+    "title": "AI Will Reshape 92 Million Jobs"
   },
   {
     "id": "bookmark_atenov_obsidian",
@@ -245,7 +245,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "Turn Obsidian into a self-running second brain with AI agents."
+    "title": "Obsidian Second Brain with AI"
   },
   {
     "id": "bookmark_antpalkin_spx",
@@ -265,7 +265,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "Chinese quant SPX prediction system using multi-agent simulation."
+    "title": "Chinese Quant SPX Prediction System"
   },
   {
     "id": "bookmark_austiinxbt_polymarket",
@@ -285,7 +285,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "Farm Polymarket LP rewards with \u0000 or less."
+    "title": "Polymarket LP Rewards Strategy"
   },
   {
     "id": "bookmark_roundtable_github",
@@ -305,7 +305,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "5 fastest growing GitHub projects this week."
+    "title": "5 Fastest Growing GitHub Projects"
   },
   {
     "id": "bookmark_zodchiii_poker",
@@ -325,7 +325,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "What Poker, Startups and Prediction Markets Have in Common."
+    "title": "Poker, Startups and Prediction Markets"
   },
   {
     "id": "bookmark_saccc_mirofish",
@@ -345,7 +345,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "MiroFish - 20-year-old student's AI simulation engine."
+    "title": "MiroFish: Student AI Simulation Project"
   },
   {
     "id": "bookmark_pvergadia_alibaba",
@@ -365,7 +365,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "Alibaba SWE-CI benchmark: AI agents tested on 100 real codebases."
+    "title": "Alibaba AI Agent Benchmark Results"
   },
   {
     "id": "bookmark_citrini_crisis",
@@ -385,7 +385,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "THE 2028 GLOBAL INTELLIGENCE CRISIS."
+    "title": "The 2028 Global Intelligence Crisis"
   },
   {
     "id": "bookmark_steipete_soul",
@@ -405,7 +405,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "How to make your OpenClaw AI have personality."
+    "title": "Giving OpenClaw AI Personality"
   },
   {
     "id": "bookmark_theflowhorse_trading",
@@ -425,7 +425,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "You Can Make a Fortune Trading - Don't Let Anyone Tell You Otherwise."
+    "title": "You Can Make a Fortune Trading"
   },
   {
     "id": "bookmark_nvidia_fivelayer",
@@ -445,7 +445,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "AI is a Five-Layer Cake."
+    "title": "AI is a Five-Layer Cake"
   },
   {
     "id": "bookmark_trq212_claude_skills",
@@ -465,7 +465,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "Lessons from Building Claude Code: How We Use Skills."
+    "title": "Lessons from Building Claude Code"
   },
   {
     "id": "bookmark_ihtesham_superpowers",
@@ -485,7 +485,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "Superpowers - Full development methodology for AI coding agents. 40.9K stars."
+    "title": "Superpowers Development Methodology"
   },
   {
     "id": "bookmark_startupideaspod_agents",
@@ -505,7 +505,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "AI system for building digital employees."
+    "title": "AI System for Digital Employees"
   },
   {
     "id": "bookmark_heynavtoor_ai_engineer",
@@ -525,7 +525,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "How to Become an AI Engineer in 6 Months (Free Resources)."
+    "title": "Become AI Engineer in 6 Months"
   },
   {
     "id": "bookmark_sharbel_recaptcha",
@@ -545,7 +545,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "You've been training Google's AI for 15 years."
+    "title": "You Have Been Training Google AI"
   },
   {
     "id": "bookmark_googlecloud_adk_patterns",
@@ -565,7 +565,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "5 Agent Skill design patterns every ADK developer should know."
+    "title": "5 Agent Skill Design Patterns"
   },
   {
     "id": "bookmark_minimax_agent",
@@ -585,7 +585,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "MiniMax-M2.7 just landed in MiniMax Agent. The model helped build itself."
+    "title": "MiniMax M2.7 Agent Platform"
   },
   {
     "id": "bookmark_minimax_m27_official",
@@ -605,7 +605,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "MiniMax M2.7: First model deeply participating in its own evolution."
+    "title": "MiniMax M2.7 Model Launch"
   },
   {
     "id": "bookmark_alexfinn_openclaw_speed",
@@ -625,7 +625,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "Speed up OpenClaw by cleaning old session files."
+    "title": "Speed Up OpenClaw Session Cleanup"
   },
   {
     "id": "bookmark_gkisokay_self_improving",
@@ -645,7 +645,7 @@
       "note": "Auto-captured from URL-only message",
       "capture_mode": "url_only"
     },
-    "title": "Stop building workflows. Build agents that improve themselves."
+    "title": "Build Self-Improving Agents Not Workflows"
   },
   {
     "id": "bookmark_56c3fee3",
@@ -665,7 +665,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "I made a \"should I be trading?\" dashboard."
+    "title": "Should I Be Trading Dashboard"
   },
   {
     "id": "bookmark_61136115",
@@ -685,7 +685,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "Make OpenClaw more efficient with execution-focused mode."
+    "title": "Make OpenClaw More Efficient"
   },
   {
     "id": "bookmark_cad9e7c3",
@@ -706,7 +706,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "Paperclip: Build a company run entirely by AI agents."
+    "title": "Paperclip: Company Run by AI"
   },
   {
     "id": "bookmark_c1eed805",
@@ -726,7 +726,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "Ultimate Guide to OpenClaw: 1-hour masterclass."
+    "title": "OpenClaw 1-Hour Mastery Guide"
   },
   {
     "id": "bookmark_4c78f48b",
@@ -746,7 +746,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "How to articulate yourself intelligently by Dan Koe."
+    "title": "How to Articulate Yourself Intelligently"
   },
   {
     "id": "bookmark_c04e3c42",
@@ -767,7 +767,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "Karpathy autoresearch repo for improving AI skills."
+    "title": "Karpathy Autoresearch Repository"
   },
   {
     "id": "bookmark_6ea58733",
@@ -787,7 +787,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "Project Hail Mary movie review by Andrej Karpathy."
+    "title": "Project Hail Mary Movie Review"
   },
   {
     "id": "bookmark_bd9fdb00",
@@ -808,7 +808,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "The Karpathy Loop: Automated research and optimization."
+    "title": "The Karpathy Loop: Automated Research"
   },
   {
     "id": "bookmark_6a9e603c",
@@ -830,7 +830,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "Karpathy podcast: 10 most interesting things on AI."
+    "title": "Karpathy Podcast: 10 Interesting Things"
   },
   {
     "id": "bookmark_6c2ebc23",
@@ -851,7 +851,7 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "How to build an autonomous AI agent team that runs 24/7."
+    "title": "Building Autonomous AI Agent Teams"
   },
   {
     "id": "bookmark_255f5753",
@@ -873,14 +873,14 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     },
-    "title": "Open Source must win: A manifesto on AI centralization."
+    "title": "Open Source Must Win Manifesto"
   },
   {
     "id": "bookmark_f0776159",
     "source": "x",
     "url": "https://x.com/alexfinn/status/2035459248147374213",
     "text": "Maybe the sickest OpenClaw use case I have ever built\n\nI now have my own R&D department\n\nTwice a day 5 different AI models autonomously meet and discuss my business\n\nThey take a look at my products/content and debate each other and come up with next steps to grow revenue\n\nThey then send me a memo that describes all their discussions and next action steps I need to take\n\nIt has been WILDLY helpful. Especially in developing my new product\n\nThis is how you use super intelligence to autonomously earn you money\n\nHere is how to set it up:\n\n1. Go to OpenClaw\n2. Ask it to set up a dashboard for an R&D council (5 different AI models)\n3. Have them meet at 9am and 5pm every day\n4. Give them access to all your links, code, and anything you are working on\n5. Have one of them (rotating) come up with a new idea\n6. Have all 5 debate\n7. Build a report based on their discussions\n\nNow twice a day you will get a ping with a detailed memo describing how to grow your business\n\nNext steps is making all of these 5 models local so they can run for free and do this around the clock\n\nIf you implement workflows like this, I promise your life will change",
-    "title": "OpenClaw R&D department: 5 AI models meet twice daily to grow your business.",
+    "title": "OpenClaw R&D Department with 5 AI Models",
     "note": null,
     "author": "alexfinn",
     "created_at": "2026-03-22T01:07:20.492207+00:00",
@@ -902,7 +902,7 @@
     "source": "x",
     "url": "https://x.com/oliverhenry/status/2035458608872276140",
     "text": "LarryLoop - AI marketing agent that generates TikTok slideshows autonomously\n\nLarry is an AI agent that generated 1.6 million TikTok views and drove hundreds of paying subscribers for Oliver Henry. Runs entire content marketing operation with 60 seconds of human work per day.\n\nTwo products:\n1. LarryBrain - OpenClaw skills marketplace (10,000+ users). For OpenClaw users. Free marketing skill.\n2. LarryLoop - New standalone dashboard (no OpenClaw needed). Sign in with Google, describe product, connect TikTok, press one button.\n\nLarryLoop workflow: Generate content \u2192 Post \u2192 Track results \u2192 Learn from data \u2192 Generate better content. Feedback loop that gets smarter every cycle.\n\nWhat Larry does behind the scenes:\n- Niche research: Studies your product, competitors, what is currently performing\n- Hook tweaking formulas that get millions of views\n- Iteration engine that kills losers and doubles down on winners\n- Revenue tracking that connects every post to actual money\n\nBuilt for everyone to make money autonomously, not just OpenClaw users.",
-    "title": "LarryLoop: AI marketing agent that autonomously generates TikTok content and drives revenue.",
+    "title": "LarryLoop: Autonomous AI Marketing Agent",
     "note": null,
     "author": "oliverhenry",
     "created_at": "2026-03-22T01:11:17.555491+00:00",
@@ -924,7 +924,7 @@
     "source": "x",
     "url": "https://x.com/deedydas/status/2035551089265906051",
     "text": "Karpathy Autoresearch results - Deedy\n\nKarpathy Autoresearch pushed my vibecoded Rust chess engine AI from expert to a top 50 grandmaster, a #311 chess engine.\n\nIt ran over 70 experiments on its own and tried to hill climb to the top ELO score it could, landing at 2718!\n\nConcrete validation of autoresearch system - 70+ autonomous experiments, measurable ELO improvement.",
-    "title": "Karpathy Autoresearch: Chess engine improved from expert to top 50 grandmaster.",
+    "title": "Karpathy Autoresearch Chess Engine Results",
     "note": null,
     "author": "deedydas",
     "created_at": "2026-03-22T04:10:58.760459+00:00",
