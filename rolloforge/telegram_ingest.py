@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from typing import Optional
 
 from config.settings import Settings
-from rolloforge.analysis import analyze_bookmark, fallback_analysis
+from rolloforge.analysis import analyze_bookmark
 from rolloforge.models import AnalysisResult, Bookmark, ScoringInputs
 from rolloforge.storage import (
     load_analysis_results,
