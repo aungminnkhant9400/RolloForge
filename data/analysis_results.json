@@ -1369,7 +1369,7 @@
   },
   {
     "bookmark_id": "bookmark_aakashgupta_2034851259442749",
-    "summary": "Aakash Gupta's guide on applying Karpathy's autoresearch beyond ML. Pattern works on anything with a score: ad copy, cold emails, skill files, trading strategies. 12 cycles/hour, 100 overnight. $25 + single GPU.",
+    "summary": "Garfis Analysis: Karpathy's autoresearch pattern applied beyond ML.\n\nWHAT IT IS:\nAgent modifies code \u2192 5-min experiment \u2192 measures score \u2192 keeps if improved. 12 cycles/hour, 100 overnight. $25 + single GPU.\n\nWHY YOU SHOULD CARE:\n\u2022 OpenClaw skill files = perfect target (measurable improvement)\n\u2022 Trading strategies = score with P&L  \n\u2022 Polymarket predictions = binary outcomes\n\nPATTERN: Works on ANYTHING with a numerical score - not just ML loss functions.\n\nEXAMPLE: Tobi Lutke applied to Shopify Liquid templating \u2192 53% faster rendering from 93 automated commits.",
     "recommendation_reason": "Directly applicable to your OpenClaw skill files and trading strategies. Pattern: agent edits \u2192 5min experiment \u2192 score up=commit, down=reset. Apply to anything with numerical score.",
     "key_insights": [
       "Pattern works on anything with a score - not just ML code",
