@@ -1,5 +1,23 @@
 [
   {
+    "id": "bookmark_yacinemtb_2035779012908175",
+    "source": "x",
+    "url": "https://x.com/yacinemtb/status/2035779012908175740?s=46",
+    "text": "being a human in the singularity",
+    "title": "being a human in the singularity",
+    "author": "yacinemtb",
+    "created_at": "2026-03-23T04:41:56.558955+00:00",
+    "bookmarked_at": "2026-03-23T04:41:56.558971+00:00",
+    "tags": [
+      "general"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
+  },
+  {
     "id": "bookmark_0xsunnft_2035722514090062",
     "source": "x",
     "url": "https://x.com/0xsunnft/status/2035722514090062271?s=46",

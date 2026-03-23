@@ -1267,6 +1267,35 @@
     "recommendation_bucket": "archive",
     "analysis_source": "llm_auto_scored",
     "analyzed_at": "2026-03-22T18:00:03Z",
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
+  },
+  {
+    "bookmark_id": "bookmark_yacinemtb_2035779012908175",
+    "summary": "being a human in the singularity.",
+    "recommendation_reason": "Reference material for future projects.",
+    "key_insights": [
+      "Source: yacinemtb",
+      "Relevance: 4.0/10",
+      "Actionability: 4.0/10 (with lazy+popular bonus)"
+    ],
+    "scoring_inputs": {
+      "relevance": 4.0,
+      "practical_value": 4.0,
+      "actionability": 4.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 4.1,
+    "effort_score": 5.0,
+    "priority_score": 1.6,
+    "recommendation_bucket": "archive",
+    "analysis_source": "llm_auto_scored",
+    "analyzed_at": "2026-03-23T04:42:02Z",
     "confidence": null,
     "difficulty_reason": null,
     "next_action": null
