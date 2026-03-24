@@ -1210,9 +1210,9 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "garfis",
     "analyzed_at": "2026-03-23T10:19:26.554641+00:00",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_TimDenning_2036022953385873",
@@ -1241,9 +1241,9 @@
     "recommendation_bucket": "ignore",
     "analysis_source": "deepseek",
     "analyzed_at": "2026-03-23T11:44:03.241407+00:00",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_openclaw_2036043904949330",
@@ -1272,9 +1272,9 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "deepseek",
     "analyzed_at": "2026-03-23T11:58:15.378341+00:00",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_1113ab5a3462",
@@ -1302,6 +1302,37 @@
     "priority_score": 8.2,
     "recommendation_bucket": "test_this_week",
     "analysis_source": "garfis_manual",
-    "analyzed_at": "2026-03-23T16:56:25.997412+00:00"
+    "analyzed_at": "2026-03-23T16:56:25.997412+00:00",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
+  },
+  {
+    "bookmark_id": "bookmark_27b42cdf3981",
+    "summary": "OpenClaw 2026.3.23 release with DeepSeek provider plugin, Qwen pay-as-you-go, OpenRouter auto pricing, Chrome MCP improvements, and Web UI fixes.",
+    "recommendation_reason": "Critical update - DeepSeek plugin may fix tool parameter bugs you experienced. Includes new model providers and automation improvements.",
+    "key_insights": [
+      "DeepSeek provider plugin - direct access without workarounds",
+      "Qwen pay-as-you-go - cheap Alibaba models",
+      "OpenRouter auto pricing - better cost control",
+      "Chrome MCP tab waiting - browser automation fixes",
+      "Discord/Slack/Matrix + Web UI bug fixes"
+    ],
+    "scoring_inputs": {
+      "relevance": 10.0,
+      "practical_value": 9.0,
+      "actionability": 10.0,
+      "stage_fit": 9.0,
+      "novelty": 7.0,
+      "excitement": 8.0,
+      "difficulty": 2.0,
+      "time_cost": 1.0
+    },
+    "worth_score": 9.5,
+    "effort_score": 1.5,
+    "priority_score": 9.2,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis_manual",
+    "analyzed_at": "2026-03-24T06:37:36.876589+00:00"
   }
 ]
