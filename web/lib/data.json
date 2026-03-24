@@ -1,5 +1,25 @@
 [
   {
+    "id": "bookmark_4883692206fa",
+    "source": "x",
+    "url": "https://x.com/zostaff/status/2036084232519324147?s=46",
+    "text": "How to Quit a Job You Hate. How to Build Your Own Trading Bot.A Complete Guide.",
+    "title": "How to Build Your Own Trading Bot",
+    "note": "How to Quit a Job You Hate. How to Build Your Own Trading Bot.A Complete Guide.",
+    "author": "zostaff",
+    "created_at": "2026-03-24T12:33:38Z",
+    "bookmarked_at": "2026-03-24T12:33:38Z",
+    "tags": [
+      "general"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "telegram_message": "https://x.com/zostaff/status/2036084232519324147?s=46\n\nHow to Quit a Job You Hate. How to Build Your Own Trading Bot.A Complete Guide.",
+      "note": "How to Quit a Job You Hate. How to Build Your Own Trading Bot.A Complete Guide.",
+      "capture_mode": "url_plus_note"
+    }
+  },
+  {
     "id": "bookmark_56c9359b2448",
     "source": "x",
     "url": "https://x.com/digiii/status/2028789486734152029?s=20",
