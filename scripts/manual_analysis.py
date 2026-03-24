@@ -1,21 +1,23 @@
-"""Manual analysis workflow - AI reads and analyzes bookmarks directly.
+"""Hybrid analysis workflow - DeepSeek AI + Garfis review.
 
-This replaces the auto-scoring with real LLM analysis by Garfis.
+DeepSeek analyzes instantly, Garfis reviews later if needed.
 """
 import json
+import os
 from datetime import datetime, timezone
 from rolloforge.scrapers import fetch_x_content_sync
 from rolloforge.telegram_ingest import parse_frictionless_url, bookmark_from_parsed_message, _generate_title
-from rolloforge.storage import load_bookmarks, save_bookmarks, load_analysis_results, upsert_analysis_results
+from rolloforge.storage import load_bookmarks, save_bookmarks, load_analysis_results
+from rolloforge.deepseek_analysis import analyze_with_deepseek
 
 
-def save_and_analyze_bookmark(url: str, manual_analysis: dict = None) -> dict:
+def save_and_analyze_bookmark(url: str, garfis_review: dict = None) -> dict:
     """
-    Save bookmark with manual AI analysis from Garfis.
+    Save bookmark with DeepSeek AI analysis (instant) + optional Garfis review.
     
     Args:
         url: The URL to bookmark
-        manual_analysis: Dict with keys: summary, priority_score, bucket, key_insights, recommendation_reason
+        garfis_review: Optional manual override from Garfis
     
     Returns:
         dict with bookmark and analysis info
@@ -43,38 +45,60 @@ def save_and_analyze_bookmark(url: str, manual_analysis: dict = None) -> dict:
     bookmarks.insert(0, bookmark)
     save_bookmarks(bookmarks)
     
-    # Create analysis from manual input or auto-analysis
-    if manual_analysis:
+    # Get DeepSeek analysis (instant)
+    print(f"🤖 DeepSeek analyzing: {bookmark.title[:50]}...")
+    deepseek_result = analyze_with_deepseek(
+        text=bookmark.text,
+        title=bookmark.title,
+        url=bookmark.url
+    )
+    
+    if deepseek_result:
+        # Use DeepSeek analysis
         analysis = {
             "bookmark_id": bookmark.id,
-            "summary": manual_analysis.get('summary', 'Pending analysis'),
-            "recommendation_reason": manual_analysis.get('recommendation_reason', ''),
-            "key_insights": manual_analysis.get('key_insights', []),
+            "summary": deepseek_result.get('summary', 'Analysis pending'),
+            "recommendation_reason": deepseek_result.get('reasoning', ''),
+            "key_insights": deepseek_result.get('key_insights', []),
             "scoring_inputs": {
-                "relevance": manual_analysis.get('relevance', 5.0),
-                "practical_value": manual_analysis.get('practical_value', 5.0),
-                "actionability": manual_analysis.get('actionability', 5.0),
-                "stage_fit": manual_analysis.get('stage_fit', 5.0),
-                "novelty": manual_analysis.get('novelty', 5.0),
-                "excitement": manual_analysis.get('excitement', 5.0),
-                "difficulty": manual_analysis.get('difficulty', 5.0),
-                "time_cost": manual_analysis.get('time_cost', 5.0),
+                "relevance": deepseek_result.get('relevance', 5.0),
+                "practical_value": deepseek_result.get('practical_value', 5.0),
+                "actionability": deepseek_result.get('actionability', 5.0),
+                "stage_fit": 7.0,  # Default
+                "novelty": 6.0,    # Default
+                "excitement": 6.0, # Default
+                "difficulty": 5.0, # Default
+                "time_cost": 3.0,  # Default
             },
-            "worth_score": manual_analysis.get('worth_score', 5.0),
-            "effort_score": manual_analysis.get('effort_score', 5.0),
-            "priority_score": manual_analysis.get('priority_score', 5.0),
-            "recommendation_bucket": manual_analysis.get('bucket', 'archive'),
-            "analysis_source": "garfis_manual",
+            "worth_score": deepseek_result.get('priority_score', 5.0),
+            "effort_score": 3.0,  # Default
+            "priority_score": deepseek_result.get('priority_score', 5.0),
+            "recommendation_bucket": deepseek_result.get('bucket', 'archive'),
+            "analysis_source": "deepseek",
             "analyzed_at": datetime.now(timezone.utc).isoformat(),
         }
+        
+        # Override title with DeepSeek's polished version
+        if deepseek_result.get('title'):
+            bookmark.title = deepseek_result['title']
+            # Re-save bookmark with better title
+            for i, bm in enumerate(bookmarks):
+                if bm.id == bookmark.id:
+                    bookmarks[i] = bookmark
+                    break
+            save_bookmarks(bookmarks)
     else:
-        # Placeholder - waiting for Garfis analysis
+        # Fallback - waiting for Garfis
         analysis = {
             "bookmark_id": bookmark.id,
-            "summary": "[PENDING GARFIS ANALYSIS] " + bookmark.text[:100],
-            "recommendation_reason": "Awaiting manual analysis by Garfis",
-            "key_insights": ["Scraped successfully", f"Content: {len(bookmark.text)} chars"],
-            "scoring_inputs": {"relevance": 0, "practical_value": 0, "actionability": 0, "stage_fit": 0, "novelty": 0, "excitement": 0, "difficulty": 0, "time_cost": 0},
+            "summary": "[DeepSeek failed - awaiting Garfis review] " + bookmark.text[:100],
+            "recommendation_reason": "AI analysis failed, manual review needed",
+            "key_insights": ["Bookmark saved", f"Content: {len(bookmark.text)} chars"],
+            "scoring_inputs": {
+                "relevance": 0, "practical_value": 0, "actionability": 0,
+                "stage_fit": 0, "novelty": 0, "excitement": 0,
+                "difficulty": 0, "time_cost": 0
+            },
             "worth_score": 0.0,
             "effort_score": 0.0,
             "priority_score": 0.0,
@@ -82,6 +106,16 @@ def save_and_analyze_bookmark(url: str, manual_analysis: dict = None) -> dict:
             "analysis_source": "pending_garfis",
             "analyzed_at": datetime.now(timezone.utc).isoformat(),
         }
+    
+    # Apply Garfis review if provided
+    if garfis_review:
+        analysis['summary'] = garfis_review.get('summary', analysis['summary'])
+        analysis['recommendation_reason'] = garfis_review.get('recommendation_reason', analysis['recommendation_reason'])
+        analysis['key_insights'] = garfis_review.get('key_insights', analysis['key_insights'])
+        analysis['priority_score'] = garfis_review.get('priority_score', analysis['priority_score'])
+        analysis['recommendation_bucket'] = garfis_review.get('bucket', analysis['recommendation_bucket'])
+        analysis['analysis_source'] = 'deepseek_garfis_reviewed'
+        analysis['analyzed_at'] = datetime.now(timezone.utc).isoformat()
     
     # Save analysis
     existing = load_analysis_results()
@@ -95,7 +129,6 @@ def save_and_analyze_bookmark(url: str, manual_analysis: dict = None) -> dict:
         elif isinstance(a, dict):
             existing_dicts.append(a)
         else:
-            # Convert AnalysisResult object manually
             existing_dicts.append({
                 'bookmark_id': a.bookmark_id,
                 'summary': a.summary,
@@ -129,7 +162,8 @@ def save_and_analyze_bookmark(url: str, manual_analysis: dict = None) -> dict:
         "title": bookmark.title,
         "text_preview": bookmark.text[:200],
         "total_bookmarks": len(bookmarks),
-        "analysis": analysis
+        "analysis": analysis,
+        "source": analysis['analysis_source']
     }
 
 

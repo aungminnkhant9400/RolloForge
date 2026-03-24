@@ -1334,36 +1334,35 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "garfis_manual",
     "analyzed_at": "2026-03-24T06:37:36.876589+00:00",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_dfb2d77d033e",
-    "summary": "CodexBar 0.19.0 - macOS menu bar app for monitoring Claude Code/Codex API usage. Tracks token resets, subscription history, and provides usage alerts to avoid hitting limits.",
-    "recommendation_reason": "Quality-of-life utility if you frequently hit Claude Code token limits. Menu bar convenience with usage charts and reset time tracking. Not critical but prevents workflow interruptions.",
+    "summary": "CodexBar is a tool for managing AI coding assistant usage, such as tracking token resets and subscriptions. This user should care because it can help optimize LLM usage in OpenClaw multi-agent workflows, potentially reducing costs and improving efficiency in AI-driven trading or automation projects.",
+    "recommendation_reason": "This bookmark is assigned to 'build_later' because it has moderate relevance to LLM optimization and automation tools (medium priority topics), but it's not directly tied to the user's high-priority areas like OpenClaw setup, Polymarket, or AI trading strategies. The tool could be useful for managing AI coding assistants in development workflows, but it's not a quick win or essential for immediate projects. Scores reflect its indirect value: relevance is moderate as it touches on LLM usage, practical value and actionability are average since it requires integration effort, and priority is below the threshold for 'test_this_week'.",
     "key_insights": [
-      "Alibaba Coding Plan support added",
-      "Subscription history charts for usage patterns",
-      "Cursor IDE dashboard integration",
-      "Codex code-review reset time tracking",
-      "Prevents token limit surprises during work"
+      "Monitors token resets for AI coding assistants like Codex and Claude, aiding in cost management for development tasks",
+      "Includes subscription history charts and dashboard alignment, useful for tracking usage in multi-agent systems",
+      "Supports Alibaba Coding Plan, expanding tool compatibility for global development environments",
+      "Enhances stability and refactoring for Claude, which may improve reliability in automated trading or analysis scripts"
     ],
     "scoring_inputs": {
-      "relevance": 7.0,
-      "practical_value": 8.0,
-      "actionability": 9.0,
-      "stage_fit": 8.0,
+      "relevance": 6.0,
+      "practical_value": 5.0,
+      "actionability": 5.0,
+      "stage_fit": 7.0,
       "novelty": 6.0,
       "excitement": 6.0,
-      "difficulty": 2.0,
-      "time_cost": 1.0
+      "difficulty": 5.0,
+      "time_cost": 3.0
     },
-    "worth_score": 7.5,
-    "effort_score": 1.5,
-    "priority_score": 7.5,
+    "worth_score": 5.5,
+    "effort_score": 3.0,
+    "priority_score": 5.5,
     "recommendation_bucket": "build_later",
-    "analysis_source": "garfis_manual",
-    "analyzed_at": "2026-03-24T07:27:47.936489+00:00"
+    "analysis_source": "deepseek",
+    "analyzed_at": "2026-03-24T08:08:10.685567+00:00"
   }
 ]
