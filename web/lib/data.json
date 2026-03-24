@@ -1,5 +1,25 @@
 [
   {
+    "id": "bookmark_56c9359b2448",
+    "source": "x",
+    "url": "https://x.com/digiii/status/2028789486734152029?s=20",
+    "text": "HOW TO 1000x YOUR LIFE",
+    "title": "Life Optimization Strategies for AI Builders",
+    "note": "HOW TO 1000x YOUR LIFE",
+    "author": "digiii",
+    "created_at": "2026-03-24T09:16:36Z",
+    "bookmarked_at": "2026-03-24T09:16:36Z",
+    "tags": [
+      "general"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "telegram_message": "https://x.com/digiii/status/2028789486734152029?s=20\n\nHOW TO 1000x YOUR LIFE",
+      "note": "HOW TO 1000x YOUR LIFE",
+      "capture_mode": "url_plus_note"
+    }
+  },
+  {
     "id": "bookmark_ea9506e580da",
     "source": "x",
     "url": "https://x.com/gideonfip/status/2036107048778391721?s=20",

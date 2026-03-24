@@ -1364,9 +1364,9 @@
     "recommendation_bucket": "build_later",
     "analysis_source": "deepseek",
     "analyzed_at": "2026-03-24T08:08:10.685567+00:00",
-    "confidence": null,
-    "difficulty_reason": null,
-    "next_action": null
+    "confidence": "None",
+    "difficulty_reason": "None",
+    "next_action": "None"
   },
   {
     "bookmark_id": "bookmark_ea9506e580da",
@@ -1394,6 +1394,37 @@
     "priority_score": 7.5,
     "recommendation_bucket": "test_this_week",
     "analysis_source": "deepseek",
-    "analyzed_at": "2026-03-24T09:07:59.619091+00:00"
+    "analyzed_at": "2026-03-24T09:07:59.619091+00:00",
+    "confidence": null,
+    "difficulty_reason": null,
+    "next_action": null
+  },
+  {
+    "bookmark_id": "bookmark_56c9359b2448",
+    "summary": "This is a motivational post about personal and professional growth strategies that could help AI builders increase their productivity and impact. This user should care because optimizing personal effectiveness could accelerate their OpenClaw development and trading automation projects, though it's not directly technical.",
+    "recommendation_reason": "Assigned 'archive' because while the content might provide general motivation for productivity, it lacks direct technical value for OpenClaw setup, multi-agent workflows, or trading strategies. The user's profile emphasizes hands-on building and quick wins, but this content is too abstract and doesn't provide specific code, frameworks, or actionable trading insights. Scores are low because it doesn't address high-priority topics like OpenClaw customization, Polymarket integration, or AI trading strategies, and it's from an unverified source without Karpathy-level credibility.",
+    "key_insights": [
+      "Focus on high-leverage activities that multiply results",
+      "Build systems and habits that scale your impact",
+      "Prioritize learning that leads to practical implementation",
+      "Network with other builders to accelerate progress",
+      "Measure progress in terms of outcomes, not just effort"
+    ],
+    "scoring_inputs": {
+      "relevance": 4.0,
+      "practical_value": 3.0,
+      "actionability": 3.0,
+      "stage_fit": 7.0,
+      "novelty": 6.0,
+      "excitement": 6.0,
+      "difficulty": 5.0,
+      "time_cost": 3.0
+    },
+    "worth_score": 3.5,
+    "effort_score": 3.0,
+    "priority_score": 3.5,
+    "recommendation_bucket": "archive",
+    "analysis_source": "deepseek",
+    "analyzed_at": "2026-03-24T09:16:48.142420+00:00"
   }
 ]
