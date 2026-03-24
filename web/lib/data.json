@@ -1,5 +1,25 @@
 [
   {
+    "id": "bookmark_ea9506e580da",
+    "source": "x",
+    "url": "https://x.com/gideonfip/status/2036107048778391721?s=20",
+    "text": "How I use the Claude Code Extension with a $10/month model",
+    "title": "Using Claude Code Extension with a $10 Monthly Model",
+    "note": "How I use the Claude Code Extension with a $10/month model",
+    "author": "gideonfip",
+    "created_at": "2026-03-24T09:07:46Z",
+    "bookmarked_at": "2026-03-24T09:07:46Z",
+    "tags": [
+      "general"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "telegram_message": "https://x.com/gideonfip/status/2036107048778391721?s=20\n\nHow I use the Claude Code Extension with a $10/month model",
+      "note": "How I use the Claude Code Extension with a $10/month model",
+      "capture_mode": "url_plus_note"
+    }
+  },
+  {
     "id": "bookmark_dfb2d77d033e",
     "source": "x",
     "url": "https://x.com/steipete/status/2036245531522113910?s=20",
