@@ -1,4 +1,6 @@
 {
+  "buildCommand": "npm run data && npm run build",
+  "outputDirectory": "dist",
   "headers": [
     {
       "source": "/(.*)",
@@ -9,7 +11,5 @@
         }
       ]
     }
-  ],
-  "buildCommand": "npm run data && npm run build",
-  "outputDirectory": "out"
+  ]
 }
