@@ -1968,5 +1968,48 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_8d1f094fb012",
     "analyzed_at": "2026-03-25T14:39:30.229436Z"
+  },
+  {
+    "title": "Dan Koe on Creativity and Mental Productivity",
+    "summary": "This is a content piece by Dan Koe discussing how to enhance creativity by overcoming mental constraints like conditioning, productivity obsession, and information overload. As a builder focused on AI systems and trading, you should care because creative thinking is essential for designing innovative multi-agent workflows and developing novel trading strategies that outperform conventional approaches.",
+    "recommendation_reason": "While not directly about OpenClaw or trading, this addresses the mental frameworks needed for breakthrough thinking in your domain. Creative problem-solving can help you design more effective AI agents, discover unique market inefficiencies, and build systems that others haven't considered.",
+    "key_insights": [
+      "Conditioning limits wonder - approach problems with fresh eyes like children do",
+      "Prioritizing productivity over creative wandering leads to diminishing returns",
+      "Information overload without processing time overwhelms mental metabolism",
+      "True boredom (not overstimulation) creates space for novel ideas",
+      "A 7-day protocol can transition from brain-fried to creative states"
+    ],
+    "tags": [
+      "ai-tools",
+      "automation",
+      "content-specific"
+    ],
+    "recommendation_bucket": "archive",
+    "priority_score": 3.0,
+    "worth_score": 5.0,
+    "effort_score": 2.0,
+    "relevance": 3.0,
+    "practical_value": 4.0,
+    "actionability": 3.0,
+    "stage_fit": 4.0,
+    "novelty": 6.0,
+    "excitement": 4.0,
+    "difficulty": 2.0,
+    "time_cost": 2.0,
+    "scoring_inputs": {
+      "relevance": 3.0,
+      "practical_value": 4.0,
+      "actionability": 3.0,
+      "stage_fit": 4.0,
+      "novelty": 6.0,
+      "excitement": 4.0,
+      "difficulty": 2.0,
+      "time_cost": 2.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_0366cc7bf610",
+    "analyzed_at": "2026-03-25T15:50:24.504088Z"
   }
 ]

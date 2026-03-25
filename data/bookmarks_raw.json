@@ -1406,5 +1406,26 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_0366cc7bf610",
+    "source": "x",
+    "url": "https://x.com/thedankoe/status/2036824811712942576?s=46",
+    "text": "Dan Koe: How to become so creative it feels illegal. Three Narrowers of the Mind: 1) Conditioning is enemy of wonder - kids see fresh eyes, adults internalize society's rules, 2) Productivity as priority is losing game - creativity requires useless wandering not scheduled hours, 3) Infinite input zero processing - mental metabolism overwhelmed by podcasts/info without digestion time. True boredom (not overstimulation) provides gateway to novelty. 7-day protocol to go from brain-fried to creative state.",
+    "title": "How to Become So Creative It Feels Illegal - Dan Koe",
+    "note": "None",
+    "author": "thedankoe",
+    "created_at": "2026-03-25T15:50:24.504088Z",
+    "bookmarked_at": "2026-03-25T15:50:24.504088Z",
+    "tags": [
+      "ai-tools",
+      "automation",
+      "content-specific"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
