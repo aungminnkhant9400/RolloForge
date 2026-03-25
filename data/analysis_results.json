@@ -2143,5 +2143,49 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_6b812dc99a86",
     "analyzed_at": "2026-03-25T16:14:17.358046Z"
+  },
+  {
+    "title": "Claude MakeUGC Amazon Income Generation System",
+    "summary": "This bookmark describes a system combining Claude AI, MakeUGC automation tools, and Amazon to generate monthly income with minimal daily time investment. The key takeaway is that AI agents can be configured to create user-generated content and manage e-commerce operations autonomously. This matters for the user because it demonstrates practical multi-agent workflows for automated income generation, directly applicable to their interest in AI-driven trading and automation systems.",
+    "recommendation_reason": "It showcases a real-world multi-agent automation system that aligns with the user's hands-on building approach and interest in AI-driven strategies.",
+    "key_insights": [
+      "Claude AI can be integrated with MakeUGC for automated content creation workflows",
+      "Amazon e-commerce operations can be automated with minimal daily oversight",
+      "The system demonstrates income generation through multi-agent coordination",
+      "45 minutes daily maintenance suggests high automation potential",
+      "The $6,188/month figure indicates scalable AI-driven business models"
+    ],
+    "tags": [
+      "claude",
+      "automation",
+      "ai-tools",
+      "multi-agent"
+    ],
+    "recommendation_bucket": "test_this_week",
+    "priority_score": 6.5,
+    "worth_score": 8.0,
+    "effort_score": 3.0,
+    "relevance": 7.0,
+    "practical_value": 8.0,
+    "actionability": 8.0,
+    "stage_fit": 9.0,
+    "novelty": 6.0,
+    "excitement": 7.0,
+    "difficulty": 4.0,
+    "time_cost": 3.0,
+    "scoring_inputs": {
+      "relevance": 7.0,
+      "practical_value": 8.0,
+      "actionability": 8.0,
+      "stage_fit": 9.0,
+      "novelty": 6.0,
+      "excitement": 7.0,
+      "difficulty": 4.0,
+      "time_cost": 3.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_272d9d7b4a1f",
+    "analyzed_at": "2026-03-25T18:45:22.261636Z"
   }
 ]
