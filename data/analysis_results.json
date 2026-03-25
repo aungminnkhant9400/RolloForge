@@ -1456,5 +1456,34 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "deepseek",
     "analyzed_at": "2026-03-24T12:33:53.237349+00:00"
+  },
+  {
+    "bookmark_id": "bookmark_kevinnguyendn_byterover",
+    "summary": "ByteRover native memory plugin for OpenClaw with 92%+ retrieval accuracy. Integrates directly into prompt assembly with Context Engine, 24/7 memory loop, and structured Context Tree (no vector DBs).",
+    "recommendation_reason": "Relevance: 10/10. Direct OpenClaw memory plugin - solves the core memory problem natively. 92%+ accuracy, local-by-default, team-ready. High actionability with npm install.",
+    "key_insights": [
+      "Native OpenClaw integration via Context Engine - injects curated knowledge into system prompt",
+      "24/7 Memory Loop with automatic memory flush before token limits",
+      "Daily Knowledge Mining cron at 9 AM for architectural decisions",
+      "92%+ retrieval accuracy using structured Context Tree (zero vector DBs)",
+      "Local-by-default, team-ready, installs via single curl script",
+      "Can migrate existing flat markdown logs to Context Tree"
+    ],
+    "scoring_inputs": {
+      "relevance": 10.0,
+      "practical_value": 9.0,
+      "actionability": 8.0,
+      "stage_fit": 10.0,
+      "novelty": 8.0,
+      "excitement": 9.0,
+      "difficulty": 5.0,
+      "time_cost": 4.0
+    },
+    "worth_score": 9.0,
+    "effort_score": 4.5,
+    "priority_score": 9.5,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-25T02:40:00Z"
   }
 ]

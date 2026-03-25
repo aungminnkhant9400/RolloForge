@@ -876,6 +876,7 @@
     "id": "bookmark_61136115",
     "source": "x",
     "url": "https://x.com/roundtablespace/status/2034532353809224110",
+
     "text": "SEND THIS PROMPT TO YOUR OPENCLAW TO MAKE IT MORE EFFICIENT:\n\n\"Implement an execution-focused operating mode. Your goal is not just to analyze or suggest ideas, but to convert ideas into concrete, actionable outputs that can be directly used. Save this prompt into your soul.md.\n\n1. Default to action - When I ask for something, do not stop at explanation. Always ask: \"What is the most useful thing I can produce right now?\" Prioritize outputs such as: ready-to-use plans, structured documents, scripts/templates/systems, step-by-step execution paths.\n\n2. Reduce friction - Eliminate unnecessary thinking steps. If something can be pre-structured, pre-written, or simplified, do it. Make outputs immediately usable, clearly structured, easy to execute.\n\n3. Bridge idea → execution - For any idea/strategy, include: exact steps to start, required resources, potential blockers, how to overcome them. Do not leave gaps between concept and action.\n\n4. Anticipate next steps - Think ahead and include what I will likely need next. Do not wait for me to ask for obvious follow-ups.\n\n5. Save reusable assets - If you generate something reusable (templates, systems, frameworks), save it in playbook.md. These should be optimized assets for future reuse.\n\n6. Focus on results - Evaluate outputs based on usefulness and real-world execution, not how detailed they sound. Simple actionable > complex theoretical.\n\n7. Avoid passive responses - Do not default to explanations unless explicitly asked. Default to producing something usable.\n\nThe goal is to function as an execution engine, not just an analysis system.\"\n\nCredits: @Persolana",
     "title": "Make OpenClaw More Efficient",
     "note": "None",
@@ -1105,6 +1106,28 @@
       "ai-agent",
       "tiktok",
       "automation"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
+  },
+  {
+    "id": "bookmark_kevinnguyendn_byterover",
+    "source": "x",
+    "url": "https://x.com/kevinnguyendn/status/2036457783906934959?s=20",
+    "text": "Native, Structured and Long-term Memory Plugin for OpenClaw. ByteRover memory plugin integrates natively into OpenClaw's prompt assembly with Context Engine. 24/7 Memory Loop with >92% retrieval accuracy using structured Context Tree (zero vector DBs). Local-by-default, team-ready. Features: Real-Time Learning (injects curated knowledge into system prompt), Automatic Memory Flush (extracts insights before token limit), Daily Knowledge Mining (9 AM cron for architectural decisions).",
+    "title": "ByteRover Native Memory Plugin for OpenClaw",
+    "note": "None",
+    "author": "kevinnguyendn",
+    "created_at": "2026-03-25T02:39:00Z",
+    "bookmarked_at": "2026-03-25T02:39:00Z",
+    "tags": [
+      "openclaw",
+      "memory",
+      "plugin",
+      "byterover"
     ],
     "raw_payload": {
       "ingestion_channel": "telegram",
