@@ -1564,6 +1564,7 @@
     "analysis_source": "deepseek",
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_kirillk_web3_2034215658016104956",
-    "analyzed_at": "2026-03-25T07:14:29.861289Z"
+    "analyzed_at": "2026-03-25T07:14:29.861289Z",
+    "recommendation_bucket": "test_this_week"
   }
 ]
