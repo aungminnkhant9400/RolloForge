@@ -1565,6 +1565,19 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_kirillk_web3_2034215658016104956",
     "analyzed_at": "2026-03-25T07:14:29.861289Z",
-    "recommendation_bucket": "test_this_week"
+    "recommendation_bucket": "test_this_week",
+    "recommendation_reason": "This bookmark directly addresses multiple high-priority topics (OpenClaw setup, multi-agent workflows, Polymarket, AI trading strategies) with a hands-on, code-focused approach that matches the user's 'building by learning' stage. The guide promises specific implementation details for automated systems, offers quick wins potential, and comes from a source discussing verified results. The scores are high because it aligns perfectly with user interests, but not perfect due to potential exaggeration in claims and the need for implementation effort.",
+    "scoring_inputs": {
+      "relevance": 9.8,
+      "practical_value": 9.2,
+      "actionability": 9.0,
+      "stage_fit": 5.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 12.0,
+    "effort_score": 5.0
   }
 ]
