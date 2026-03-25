@@ -1,14 +1,15 @@
 # RolloForge - Bookmark Intelligence for AI Agents
 
-A personal bookmark pipeline that captures URLs from Telegram, auto-scores them based on your priorities, generates actionable reports, and deploys a live dashboard.
+A personal bookmark pipeline that captures URLs from Telegram, auto-scores them using AI, and deploys a live dashboard. Built for OpenClaw users who want to stop drowning in saved links.
 
 **What it does:**
-- Paste any URL in Telegram → automatically scraped, scored, and categorized
-- Say "bmreport" → get a beautiful HTML report with your top bookmarks
-- **NEW**: Live web dashboard at [rolloforge.vercel.app](https://rolloforge.vercel.app)
-- Auto-prioritizes based on YOUR criteria (OpenClaw, autoresearch, etc.)
+- Paste any URL in Telegram → automatically scraped, analyzed, categorized, and pushed to GitHub
+- Live web dashboard at [rollo-forge.vercel.app](https://rollo-forge.vercel.app)
+- AI-powered scoring based on YOUR priorities (not generic tags)
+- Auto-extracts meaningful tags (never "general")
+- One-command deploy to Vercel
 
-**Works with:** OpenClaw, Claude Code, or any AI agent that can run Python scripts
+**Current Stats:** 62 bookmarks | 20 test_this_week | 21 build_later | 14 archive
 
 ---
 
@@ -25,57 +26,14 @@ python3 -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
-pip install playwright
+pip install -r requirements.txt
 playwright install chromium
+
+# Add your DeepSeek API key
+echo "DEEPSEEK_API_KEY=your_key_here" > .env
 ```
 
-### 2. Configure Your Scoring Profile
-
-Edit `rolloforge/scoring.py` to match YOUR priorities:
-
-```python
-# What content matters to you?
-OPENCLAW_KEYWORDS = ["openclaw", "claude code", "agent team"]
-AUTORESEARCH_KEYWORDS = ["autoresearch", "optimization"]
-TRADING_KEYWORDS = ["trading", "crypto"]
-
-# Who do you trust?
-TIER_1_SOURCES = {"karpathy", "gregisenberg"}  # +1.5 credibility
-TIER_2_SOURCES = {"aakashgupta", "deedydas"}   # +0.5 credibility
-
-# Adjust scoring weights
-WORTH_WEIGHTS = {
-    'relevance': 0.30,      # Most important
-    'practical_value': 0.25,
-    'actionability': 0.20,
-    'stage_fit': 0.15,
-    'novelty': 0.10,
-}
-```
-
-### 3. Test It
-
-```bash
-# Generate a sample report
-python scripts/generate_report.py
-
-# Check output
-open reports/latest_report.html
-```
-
----
-
-## Web Dashboard
-
-RolloForge now includes a **live web dashboard** deployed on Vercel.
-
-### Features
-- **Overview**: Stats cards showing total bookmarks by bucket
-- **Bookmarks**: Full filtering by bucket, tags, and search
-- **Dark mode**: Toggle between light/dark themes
-- **Responsive**: Works on desktop and mobile
-
-### Deploy Your Own
+### 2. Deploy Dashboard
 
 1. **Fork this repo** on GitHub
 2. **Connect to Vercel**:
@@ -85,123 +43,96 @@ RolloForge now includes a **live web dashboard** deployed on Vercel.
    - Set **Build Command**: `npm run data && npm run build`
 3. **Deploy** → Your dashboard is live!
 
-### Update Dashboard
-
-The dashboard updates when you push new bookmarks:
-
-```bash
-# After adding bookmarks
-git add data/bookmarks_raw.json data/analysis_results.json
-git commit -m "Add new bookmarks"
-git push origin main
-```
-
-Vercel auto-deploys on every push.
-
----
-
-## Integration with OpenClaw
-
-### Telegram Integration (Recommended)
-
-When you send a URL to your OpenClaw agent, it automatically:
-
-1. **Detects the source** (X, GitHub, article)
-2. **Scrapes content** (Playwright for X, direct fetch for articles)
-3. **Saves bookmark** to `data/bookmarks_raw.json`
-4. **Runs AI analysis** → priority score + bucket
-5. **Commits & pushes** to GitHub
-6. **Triggers deploy** → dashboard updates
-
-**Commands:**
-- Paste URL → auto-saved
-- "bmreport" → generate HTML report
-- "to rolloforge" or "bookmark this" → full workflow (save + analyze + deploy)
-
-### Direct Python Usage
-
-```python
-from rolloforge.telegram_ingest import ingest_telegram_bookmark_message
-from config.settings import get_settings
-
-settings = get_settings()
-message = """
-https://x.com/karpathy/status/123
-
-Check out this new agent pattern...
-"""
-
-bookmark, analysis, confirmation = ingest_telegram_bookmark_message(message, settings)
-print(f"Saved: {bookmark.title}")
-print(f"Bucket: {analysis.recommendation_bucket}")
-print(f"Priority: {analysis.priority_score}")
-```
-
 ---
 
 ## How It Works
 
-### 1. Bookmark Ingestion
+### The Complete Workflow
 
-**For X/Twitter URLs:**
-- Uses Playwright headless browser
-- Navigates to tweet, extracts text + author
-- Falls back to placeholder if X blocks (rare)
+When you paste a URL in Telegram:
 
-**For Articles/GitHub:**
-- Direct HTTP fetch
-- Extracts title, content, author
-- Works with most public sites
-
-**Saved to:** `data/bookmarks_raw.json`
-
-### 2. AI Analysis
-
-Analyzes each bookmark:
-
-| Factor | How it's calculated |
-|--------|---------------------|
-| **Relevance** | Keyword matching against your priority lists |
-| **Practical Value** | Code repos=10, tutorials=8, theory=4 |
-| **Actionability** | Specific commands=10, vague ideas=4 |
-| **Source Credibility** | Tier 1 authors +1.5, Tier 2 +0.5 |
-| **Novelty** | First occurrence=8, familiar=4 |
-| **Effort** | GPU work -2 (you have resources) |
-
-**Priority Score:**
 ```
-Priority = Worth - 0.5 × Effort
-Worth = 0.30×Relevance + 0.25×Practical + 0.20×Actionable + 0.15×Stage + 0.10×Novelty
+URL → Scrape → DeepSeek Analysis → Save → Git Push → Vercel Deploy
+ (2s)    (3s)         (5s)          (1s)      (2s)       (30s)
 ```
 
-**Bucket Assignment:**
-| Bucket | Criteria |
-|--------|----------|
-| **test_this_week** | Priority ≥6, OpenClaw/autoresearch related |
-| **build_later** | Priority ≥3, good but not urgent |
-| **archive** | Worth ≥3, reference material |
-| **ignore** | Low value |
+1. **Scrape** - Playwright extracts content from X/Twitter/articles
+2. **Check Duplicate** - Skips if URL already saved
+3. **DeepSeek Analysis** - AI scores based on your profile:
+   - Relevance to your priorities (OpenClaw, trading, etc.)
+   - Practical value (code to copy vs theory to read)
+   - Actionability (specific steps vs vague ideas)
+   - Extracts 2-4 meaningful tags (never "general")
+4. **Auto-Save** - Bookmark + analysis to JSON
+5. **Git Push** - Auto-commits and pushes to GitHub
+6. **Vercel Deploy** - Dashboard updates automatically
 
-**Saved to:** `data/analysis_results.json`
+### Scoring System
 
-### 3. Report Generation
+| Factor | Weight | How it works |
+|--------|--------|--------------|
+| **Relevance** | 30% | Matches your high-priority topics |
+| **Practical Value** | 25% | Code repos = high, theory = low |
+| **Actionability** | 20% | Specific commands = high |
+| **Stage Fit** | 15% | Matches your skill level |
+| **Novelty** | 10% | New vs familiar content |
 
-```bash
-python scripts/generate_report.py
+**Formula:**
+```
+Priority = Worth - (0.5 × Effort)
+Worth = weighted sum of factors above
 ```
 
-Generates `reports/latest_report.html` with:
-- Top 10 priority bookmarks
-- Bucket breakdown
-- Worth/effort/priority scores
-- Direct links to content
+### Bucket Assignment
 
-### 4. Web Dashboard
+| Bucket | Priority | When to use |
+|--------|----------|-------------|
+| **test_this_week** | ≥6.0 | Actionable now, high value |
+| **build_later** | 4.0-6.0 | Good idea, save for later |
+| **archive** | 2.0-4.0 | Reference material |
+| **ignore** | <2.0 | Low value, skip it |
 
-- Reads from `data/bookmarks_raw.json` + `data/analysis_results.json`
-- React + Next.js frontend
-- Static export for fast loading
-- Deployed to Vercel
+---
+
+## Customization
+
+### Your Priority Profile
+
+Edit `rolloforge/deepseek_analysis.py` to change what matters:
+
+```python
+HIGH_PRIORITY_TOPICS = [
+    "openclaw",
+    "multi-agent", 
+    "polymarket",
+    "trading",
+    "stock-analysis"
+]
+
+MEDIUM_PRIORITY_TOPICS = [
+    "agent-frameworks",
+    "llm-optimization",
+    "automation"
+]
+
+LOW_PRIORITY_TOPICS = [
+    "pure-theory",
+    "crypto"  # unless trading-related
+]
+
+TIER_1_SOURCES = {"karpathy", "gregisenberg"}  # +1.5 credibility
+TIER_2_SOURCES = {"aakashgupta", "deedydas"}   # +0.5 credibility
+```
+
+### Bucket Thresholds
+
+Change when bookmarks get flagged:
+
+```python
+# In rolloforge/deepseek_analysis.py prompt:
+"recommendation_bucket": "test_this_week"  # if priority >= 7.0 (stricter)
+"recommendation_bucket": "test_this_week"  # if priority >= 5.0 (looser)
+```
 
 ---
 
@@ -209,193 +140,90 @@ Generates `reports/latest_report.html` with:
 
 ```
 RolloForge/
-├── ARCHITECTURE.md          # Critical components documentation
-├── config/
-│   └── settings.py          # Environment config
 ├── data/
-│   ├── bookmarks_raw.json   # All bookmarks (39 total)
-│   ├── analysis_results.json # Scoring results
-│   └── seen_bookmarks.json  # Track processed
-├── reports/
-│   ├── latest_report.html   # Current report
-│   └── history/             # Old reports
+│   ├── bookmarks_raw.json      # All bookmarks (62 total)
+│   ├── analysis_results.json   # DeepSeek analyses
+│   └── seen_bookmarks.json     # Deduplication
 ├── rolloforge/
-│   ├── models.py            # Data structures
-│   ├── scoring.py           # YOUR scoring logic
-│   ├── analysis.py          # Analysis pipeline
-│   ├── storage.py           # JSON read/write
-│   ├── telegram_ingest.py   # Telegram integration
+│   ├── deepseek_analysis.py    # AI analysis with DeepSeek
+│   ├── git_auto.py             # Auto-commit & push
+│   ├── bookmark_workflow.py    # Complete scrape→analyze→save→push
 │   └── scrapers/
-│       └── x_scraper.py     # X/Twitter scraper (ESSENTIAL)
-├── web/                     # Next.js dashboard
-│   ├── app/                 # Pages
-│   ├── components/          # React components
-│   ├── lib/                 # Data loading
-│   └── out/                 # Static export
-├── scripts/
-│   ├── generate_report.py   # Generate HTML report
-│   ├── analyze_bookmarks.py # Run AI analysis
-│   └── run_pipeline.py      # Full pipeline
-├── templates/
-│   └── report.html.j2       # Report template
-└── README.md                # This file
+│       └── x_scraper.py        # X/Twitter scraper (ESSENTIAL)
+├── web/                         # Next.js dashboard
+│   ├── app/                     # Pages
+│   ├── components/              # React components
+│   └── lib/                     # Data loading
+└── scripts/
+    ├── generate_report.py       # HTML report
+    └── analyze_bookmarks.py     # Batch analysis
 ```
 
 ---
 
-## Critical Components
+## Daily Workflow
 
-### X/Twitter Scraper (`rolloforge/scrapers/x_scraper.py`)
+### Morning
+Check dashboard for yesterday's bookmarks: https://rollo-forge.vercel.app
 
-**ESSENTIAL** - Do not remove. See `ARCHITECTURE.md` for details.
+### Throughout Day
+Paste URLs in Telegram as you find them:
+- Auto-scraped, analyzed, tagged
+- Auto-pushed to GitHub
+- Dashboard updates in ~30 seconds
 
-Without this, X bookmarks get placeholder text → low priority scores.
-
-**How it works:**
-- Playwright headless browser navigates to tweet
-- Extracts tweet text, author, metadata
-- Multiple fallback selectors for X's changing HTML
-- Blocks images for faster loading
-
-**Test it:**
-```bash
-python -c "
-from rolloforge.scrapers import fetch_x_content_sync
-result = fetch_x_content_sync('https://x.com/karpathy/status/123')
-print(result['text'][:100])
-"
-```
-
----
-
-## Customization
-
-### Change Scoring Priorities
-
-Edit `rolloforge/scoring.py`:
-
-```python
-# Your focus areas
-OPENCLAW_KEYWORDS = ["your_keyword", "another_keyword"]
-
-# Trusted sources
-TIER_1_SOURCES = {"your_trusted_author"}
-
-# Adjust weights
-WORTH_WEIGHTS = {
-    'relevance': 0.35,  # Make this more important
-    'practical_value': 0.20,
-    # ...
-}
-```
-
-### Change Bucket Thresholds
-
-```python
-def recommendation_bucket(inputs, worth, priority):
-    if priority >= 7:  # Stricter
-        return "test_this_week"
-    # ...
-```
-
-### Custom Dashboard Theme
-
-Edit `web/app/globals.css`:
-
-```css
-:root {
-  --background: #your-color;
-  --accent: #your-accent;
-}
-```
-
----
-
-## Usage Examples
-
-### Daily Workflow
-
-1. **Morning**: Check Telegram for bookmarks shared overnight
-2. **During day**: Paste interesting URLs → auto-saved & scored
-3. **Evening**: Say "bmreport" → review top 10
-4. **Check dashboard**: See all bookmarks with filters
-5. **Weekend**: Pick from `test_this_week` bucket to implement
-
-### Full Workflow Command
-
-```
-You: https://x.com/karpathy/status/123456
-
-Agent: ✓ Bookmarked: X post by @karpathy
-       ✓ Analyzed: Priority 6.8, Bucket: test_this_week
-       ✓ Committed to Git
-       ✓ Deployed to rolloforge.vercel.app
-```
-
-### Manual Analysis
-
-```bash
-# Analyze new bookmarks
-python scripts/analyze_bookmarks.py
-
-# Force re-analyze all
-python scripts/analyze_bookmarks.py --force-all
-```
+### Evening
+Review `test_this_week` bucket - pick one to implement tomorrow.
 
 ---
 
 ## Troubleshooting
 
-### X scraper not working
+### DeepSeek Analysis Failing
+```bash
+# Check API key
+echo $DEEPSEEK_API_KEY
 
+# Test DeepSeek
+python -c "
+from rolloforge.deepseek_analysis import get_deepseek_client
+print('✓' if get_deepseek_client() else '✗ API key missing')
+"
+```
+
+### Dashboard Not Updating
+- GitHub has latest? `git log --oneline -3`
+- Vercel build status: Check [vercel.com/dashboard](https://vercel.com/dashboard)
+- Hard refresh: Ctrl+F5
+
+### X Scraper Not Working
 ```bash
 # Reinstall Playwright
 pip install playwright
 playwright install chromium
-
-# Test
-python -c "from rolloforge.scrapers import fetch_x_content_sync; print(fetch_x_content_sync('https://x.com/karpathy/status/1884329367873197363'))"
-```
-
-### Dashboard shows 404
-
-- Check Vercel settings: Root Directory = `web`
-- Check Build Command: `npm run data && npm run build`
-- Check Output Directory: (leave blank for auto)
-
-### Empty report
-
-```bash
-# Check bookmarks exist
-wc -l data/bookmarks_raw.json
-
-# Check analysis exists
-wc -l data/analysis_results.json
-
-# Regenerate analysis
-python scripts/analyze_bookmarks.py --force-all
 ```
 
 ---
 
-## Architecture Notes
+## Key Features
 
-See `ARCHITECTURE.md` for:
-- Critical components that must not be removed
-- Scaling considerations
-- Fallback behaviors
-- Integration patterns
-
-**Key principle:** Every component has a fallback. If X scraping fails, user can paste text. If AI analysis fails, uses heuristic scoring.
+- ✓ **Auto-scraping** - X/Twitter, articles, GitHub
+- ✓ **Duplicate detection** - Won't save same URL twice
+- ✓ **DeepSeek AI analysis** - Personalized scoring, not generic
+- ✓ **Smart tagging** - Extracts meaning, never "general"
+- ✓ **Auto-git-push** - Commits and pushes after every bookmark
+- ✓ **Vercel deploy** - Dashboard auto-updates
+- ✓ **Dark mode** - Toggle in dashboard
+- ✓ **Editable** - Move bookmarks between buckets in edit mode
 
 ---
 
 ## Credits
 
-Built for OpenClaw users who want automated bookmark prioritization.
+Built for OpenClaw power users.
 
-- **Inspiration**: Karpathy's autoresearch, agent workflow community
-- **Stack**: Python, Playwright, Next.js, Vercel
-- **License**: MIT
+- **Stack:** Python, DeepSeek, Playwright, Next.js, Vercel
+- **License:** MIT
+- **Author:** [@rollinrollo94](https://x.com/rollinrollo94)
 
-**Questions?** Open an issue or DM on X: [@rollinrollo94](https://x.com/rollinrollo94)
+**Questions?** Open an issue.
