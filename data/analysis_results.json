@@ -1514,5 +1514,35 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "garfis",
     "analyzed_at": "2026-03-25T04:15:00Z"
+  },
+  {
+    "bookmark_id": "bookmark_itsolelehmann_2033919415771713715",
+    "title": "Auto-Improve Claude Skills with Karpathy's Autoresearch Method",
+    "summary": "Ole Lehmann applied Karpathy's autoresearch method to Claude skills. Created a skill that auto-improves other skills through iterative testing. Landing page copy skill: 56% \u2192 92% pass rate with zero manual work. Provides downloadable skill for Claude Code/Cowork, live dashboard, and works on anything measurable (skills, website speed, outreach, etc).",
+    "recommendation_reason": "Relevance: 9/10. Direct application of autoresearch to Claude skills - exactly what you need for OpenClaw optimization. High actionability: downloadable skill, runs in Claude Code, immediate results. Proven: 56% \u2192 92% improvement on real skill.",
+    "key_insights": [
+      "Autoresearch loop for skills: make small change \u2192 test \u2192 keep if score improves \u2192 repeat",
+      "56% \u2192 92% pass rate on landing page skill in 4 rounds (3 changes kept, 1 undone)",
+      "User only provides scoring checklist (3-6 yes/no questions), agent handles everything else",
+      "Live dashboard shows score chart, pass/fail breakdown, change log - auto-refreshes every 10s",
+      "Works on anything measurable: website speed, cold outreach, newsletter intros, any repeated prompt",
+      "Skill available for download (Claude Code + Cowork compatible)"
+    ],
+    "scoring_inputs": {
+      "relevance": 9.0,
+      "practical_value": 9.0,
+      "actionability": 9.5,
+      "stage_fit": 10.0,
+      "novelty": 7.0,
+      "excitement": 8.0,
+      "difficulty": 4.0,
+      "time_cost": 3.0
+    },
+    "worth_score": 9.0,
+    "effort_score": 3.5,
+    "priority_score": 8.5,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-25T04:36:44.698650Z"
   }
 ]

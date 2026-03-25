@@ -1154,5 +1154,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_itsolelehmann_2033919415771713715",
+    "source": "x",
+    "url": "https://x.com/itsolelehmann/status/2033919415771713715?s=20",
+    "text": "Ole Lehmann: How to 10x your Claude Skills using Karpathy's autoresearch method. Built a method that auto-improves any skill on autopilot. Landing page copy skill went from 56% passing to 92% with zero manual work. Agent tests and refines skill over and over. Based on Karpathy's autoresearch: AI agent makes small change, checks if result improved, keeps or discards, repeats. Works on anything measurable: skills, website speed, cold outreach, newsletter intros. Skill available for Claude Code and Cowork.",
+    "title": "Auto-Improve Claude Skills with Karpathy's Autoresearch Method",
+    "note": "None",
+    "author": "itsolelehmann",
+    "created_at": "2026-03-25T04:36:09.498154Z",
+    "bookmarked_at": "2026-03-25T04:36:09.498171Z",
+    "tags": [
+      "claude",
+      "autoresearch",
+      "skills",
+      "optimization"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
