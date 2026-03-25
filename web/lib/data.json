@@ -10,7 +10,9 @@
     "created_at": "2026-03-24T12:33:38Z",
     "bookmarked_at": "2026-03-24T12:33:38Z",
     "tags": [
-      "general"
+      "trading",
+      "bot",
+      "guide"
     ],
     "raw_payload": {
       "ingestion_channel": "telegram",
@@ -30,7 +32,8 @@
     "created_at": "2026-03-24T09:16:36Z",
     "bookmarked_at": "2026-03-24T09:16:36Z",
     "tags": [
-      "general"
+      "productivity",
+      "ai-builders"
     ],
     "raw_payload": {
       "ingestion_channel": "telegram",
@@ -50,7 +53,9 @@
     "created_at": "2026-03-24T09:07:46Z",
     "bookmarked_at": "2026-03-24T09:07:46Z",
     "tags": [
-      "general"
+      "claude",
+      "claude-code",
+      "cost-optimization"
     ],
     "raw_payload": {
       "ingestion_channel": "telegram",
@@ -70,7 +75,9 @@
     "created_at": "2026-03-24T08:07:57Z",
     "bookmarked_at": "2026-03-24T08:07:57Z",
     "tags": [
-      "general"
+      "codex",
+      "token-management",
+      "cursor"
     ],
     "raw_payload": {
       "ingestion_channel": "telegram",
@@ -110,7 +117,8 @@
     "created_at": "2026-03-24T06:26:31Z",
     "bookmarked_at": "2026-03-24T06:26:31Z",
     "tags": [
-      "general"
+      "openclaw",
+      "release-notes"
     ],
     "raw_payload": {
       "ingestion_channel": "telegram",
@@ -170,7 +178,9 @@
     "created_at": "2026-03-23T11:58:15.376441+00:00",
     "bookmarked_at": "2026-03-23T11:58:15.376456+00:00",
     "tags": [
-      "general"
+      "openclaw",
+      "plugins",
+      "release"
     ],
     "raw_payload": {
       "ingestion_channel": "telegram",
