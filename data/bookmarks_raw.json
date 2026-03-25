@@ -1362,5 +1362,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_a59675058601",
+    "source": "x",
+    "url": "https://x.com/manthanguptaa/status/2036785420349174073?s=20",
+    "text": "Manthan Gupta: What Happened When I Applied Karpathy's Autoresearch Idea to LLM Inference. Built Auto-Inference-Optimiser - AI coding agent hill-climbs on inference speed on Apple Silicon. Key findings: 1) Argmax sampling biggest win (+10.8% throughput), 2) Simplicity matters - removing 42 lines kept same speed, 3) KV cache quantization hurt more than helped on Apple Silicon, 4) Most tuning knobs were noise, 5) Reducing MAX_TOKENS was fake win (less work). Quality gates essential: perplexity threshold + sanity_check for task correctness. Repo: github.com/manthanguptaa/Auto-Inference-Optimiser",
+    "title": "Karpathy's Autoresearch Applied to LLM Inference Optimization",
+    "note": "None",
+    "author": "manthanguptaa",
+    "created_at": "2026-03-25T14:36:34.804459Z",
+    "bookmarked_at": "2026-03-25T14:36:34.804459Z",
+    "tags": [
+      "autoresearch",
+      "agents",
+      "llm",
+      "automation"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
