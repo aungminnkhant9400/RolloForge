@@ -1340,5 +1340,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_605eafa7b4e9",
+    "source": "x",
+    "url": "https://x.com/ZeMariaMacedo/status/2036779960598163864?s=20",
+    "text": "Jos\u00e9 Maria Macedo: What I Learned from Two Weeks Inside China's AI Ecosystem. Bullish on hardware (Shenzhen ecosystem, 70%+ inputs from Greater Bay Area), bearish on software (closed models behind Western ones, CapEx constraints). Chinese founders: exceptional executors but less independent thinking/zero-to-one vision. VCs reinforce pedigree over spikiness. Hardware: DJI playbook (consumer niche \u2192 scale \u2192 expand). Bambu 3D printing $500M profit doubling yearly. Software: ex-Bytedance PMs building Western-facing agentic products. Valuation bubble: Minimax $40B on $100M ARR, Zhipu $25B on $50M ARR.",
+    "title": "Inside China's AI Ecosystem: Hardware Bullish, Software Bearish",
+    "note": "None",
+    "author": "ZeMariaMacedo",
+    "created_at": "2026-03-25T13:42:42.716588Z",
+    "bookmarked_at": "2026-03-25T13:42:42.716588Z",
+    "tags": [
+      "ai-tools",
+      "trading",
+      "multi-agent",
+      "market-analysis"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
