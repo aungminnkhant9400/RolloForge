@@ -1318,5 +1318,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_ca7869d2f818",
+    "source": "x",
+    "url": "https://x.com/deronin_/status/2036757912161231092?s=46",
+    "text": "DeRonin_: How to get a job as an AI Engineer. Non-traditional path: 1) Build personal brand on X - follow founders, reply, post valuable content, 2) Build presence on LinkedIn/GitHub - own product with traction beats work experience, 3) Share knowledge in Discord (OpenAI, OpenClaw, LangChain). Cheat codes: build in public, focus on features/exposure, do free audits before calls, specialize narrowly (automation, AI agents, infra), show measurable results (money saved/made). Main insight: traditional work experience doesn't matter - real skill, understanding, practical experience matter. Build in public, grow brand, become visible.",
+    "title": "How to Get a Job as an AI Engineer - Non-Traditional Path Guide",
+    "note": "None",
+    "author": "DeRonin_",
+    "created_at": "2026-03-25T11:07:49.971329Z",
+    "bookmarked_at": "2026-03-25T11:07:49.971329Z",
+    "tags": [
+      "openclaw",
+      "agents",
+      "automation",
+      "ai-tools"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]

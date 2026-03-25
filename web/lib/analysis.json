@@ -1792,5 +1792,49 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_71dfa1168ce6",
     "analyzed_at": "2026-03-25T10:39:13.653165Z"
+  },
+  {
+    "title": "AI Engineer Career Guide via Non-Traditional Path",
+    "summary": "This is a guide for becoming an AI engineer through non-traditional methods like building in public and specializing in practical domains. The user should care because it emphasizes practical experience over theory, aligns with their 'building by learning' stage, and specifically mentions OpenClaw and AI agents as specialization areas.",
+    "recommendation_reason": "You're building OpenClaw multi-agent systems and focused on practical applications like AI trading and Polymarket. This guide validates your hands-on approach, suggests specializing in automation and AI agents (your high priority), and recommends sharing knowledge in OpenClaw communities to build visibility while learning.",
+    "key_insights": [
+      "Build in public and focus on features/exposure to demonstrate real skill over traditional experience",
+      "Specialize narrowly in areas like automation and AI agents to stand out",
+      "Show measurable results (money saved/made) to prove practical value",
+      "Share knowledge in relevant Discord communities (OpenClaw mentioned specifically)",
+      "Build personal brand through valuable content and own products with traction"
+    ],
+    "tags": [
+      "openclaw",
+      "agents",
+      "automation",
+      "ai-tools"
+    ],
+    "recommendation_bucket": "build_later",
+    "priority_score": 5.5,
+    "worth_score": 7.0,
+    "effort_score": 3.0,
+    "relevance": 7.0,
+    "practical_value": 6.5,
+    "actionability": 6.0,
+    "stage_fit": 8.0,
+    "novelty": 4.0,
+    "excitement": 5.0,
+    "difficulty": 3.0,
+    "time_cost": 3.0,
+    "scoring_inputs": {
+      "relevance": 7.0,
+      "practical_value": 6.5,
+      "actionability": 6.0,
+      "stage_fit": 8.0,
+      "novelty": 4.0,
+      "excitement": 5.0,
+      "difficulty": 3.0,
+      "time_cost": 3.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_ca7869d2f818",
+    "analyzed_at": "2026-03-25T11:07:49.971329Z"
   }
 ]
