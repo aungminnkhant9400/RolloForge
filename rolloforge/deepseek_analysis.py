@@ -86,6 +86,7 @@ Analyze this bookmark and respond in valid JSON:
   "summary": "What it is + why this specific user should care (2-3 sentences)",
   "recommendation_reason": "Why YOU should care - personalized to user profile",
   "key_insights": ["3-5 bullet points of key takeaways"],
+  "tags": ["2-4 specific tags from: openclaw, claude, agents, autoresearch, trading, polymarket, coding, automation, ai-tools, llm, security, crypto, or content-specific keywords"],
   "recommendation_bucket": "test_this_week|build_later|archive|ignore",
   "priority_score": 0.0-10.0,
   "worth_score": 0.0-10.0,
@@ -103,6 +104,7 @@ Analyze this bookmark and respond in valid JSON:
 Rules:
 - Title: Clean, professional, no hashtags, no trailing dots
 - Summary: Explain what it is AND why this specific user should care
+- Tags: NEVER use "general". Pick specific meaningful tags. Examples: ["openclaw", "multi-agent"] or ["trading", "automation"] or ["claude", "optimization"]
 - recommendation_bucket: test_this_week (priority >=6, actionable now), build_later (priority 4-6), archive (reference), ignore (low value)
 - priority_score = worth_score - (0.5 * effort_score), so worth around 8-9 and effort around 3-4 gives priority 6-7
 - Scores: Be honest, not everything is 10/10
