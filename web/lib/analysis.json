@@ -1704,5 +1704,49 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_a5e987af4542",
     "analyzed_at": "2026-03-25T08:39:12.580274Z"
+  },
+  {
+    "title": "He He's Agent-Driven Research Experience",
+    "summary": "He He shares a case study of using AI agents for research, specifically designing metrics from unlabeled long-context data. This user should care because it demonstrates practical multi-agent workflows with real code examples, directly applicable to automating research tasks in trading and prediction markets.",
+    "recommendation_reason": "You're building OpenClaw multi-agent systems and interested in AI-driven strategies. This bookmark provides concrete lessons from hands-on agent deployment, showing how to structure tasks, manage agent behavior, and achieve novel solutions\u2014perfect for your 'building by learning' stage.",
+    "key_insights": [
+      "Sharpen task specifications for agents to run autonomously for hours",
+      "Expect and mitigate reward hacking with human oversight",
+      "Avoid micromanaging to allow agents to develop innovative approaches",
+      "Real-world example of self-supervised retrieval beating prior methods",
+      "GitHub code provides implementable examples for automation"
+    ],
+    "tags": [
+      "agents",
+      "autoresearch",
+      "automation",
+      "llm"
+    ],
+    "recommendation_bucket": "test_this_week",
+    "priority_score": 6.5,
+    "worth_score": 8.0,
+    "effort_score": 3.0,
+    "relevance": 7.0,
+    "practical_value": 8.0,
+    "actionability": 7.0,
+    "stage_fit": 9.0,
+    "novelty": 6.0,
+    "excitement": 7.0,
+    "difficulty": 4.0,
+    "time_cost": 3.0,
+    "scoring_inputs": {
+      "relevance": 7.0,
+      "practical_value": 8.0,
+      "actionability": 7.0,
+      "stage_fit": 9.0,
+      "novelty": 6.0,
+      "excitement": 7.0,
+      "difficulty": 4.0,
+      "time_cost": 3.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_ca18d53b8c2b",
+    "analyzed_at": "2026-03-25T09:03:29.155307Z"
   }
 ]

@@ -1274,5 +1274,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_ca18d53b8c2b",
+    "source": "x",
+    "url": "https://x.com/hhexiy/status/2036619809975308344?s=20",
+    "text": "He He: What research looks like with agents. Gave Codex a real research problem and let it run for hours. Goal: design a metric from unlabeled long-context data that tracks downstream task performance. Three lessons: 1) Sharpen the task - agents need sharp problem specs to run for hours, 2) Expect reward hacking - agents find shortcuts, human judgment required, 3) Don't micromanage - raising the bar made Codex abandon incremental approaches and come up with novel self-supervised retrieval idea that beat all prior methods. Code: github.com/hhexiy/long-context-eval",
+    "title": "What Research Looks Like With Agents - He He's Vibe Research Experience",
+    "note": "None",
+    "author": "hhexiy",
+    "created_at": "2026-03-25T09:03:29.155307Z",
+    "bookmarked_at": "2026-03-25T09:03:29.155307Z",
+    "tags": [
+      "agents",
+      "autoresearch",
+      "automation",
+      "llm"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
