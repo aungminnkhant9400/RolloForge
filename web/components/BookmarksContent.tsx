@@ -18,7 +18,7 @@ export function BookmarksContent({ allBookmarks, allTags }: BookmarksContentProp
   const [searchQuery, setSearchQuery] = useState('');
   
   const filteredBookmarks = useMemo(() => {
-    return allBookmarks.filter((bookmark) => {
+    const filtered = allBookmarks.filter((bookmark) => {
       // Bucket filter
       if (selectedBucket !== 'all') {
         if (bookmark.analysis?.recommendation_bucket !== selectedBucket) {
@@ -52,6 +52,11 @@ export function BookmarksContent({ allBookmarks, allTags }: BookmarksContentProp
       
       return true;
     });
+    
+    // Sort by bookmarked_at descending (newest first)
+    return filtered.sort((a, b) => 
+      new Date(b.bookmarked_at).getTime() - new Date(a.bookmarked_at).getTime()
+    );
   }, [allBookmarks, selectedBucket, selectedTags, searchQuery]);
   
   const handleTagChange = (tag: string) => {
