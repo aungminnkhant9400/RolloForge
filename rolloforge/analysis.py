@@ -56,13 +56,71 @@ def analyze_bookmark(bookmark: Bookmark, settings: Settings) -> AnalysisResult:
 
 
 def _generate_summary(bookmark: Bookmark) -> str:
-    """Generate a concise summary from bookmark text."""
-    # Take first sentence or first 120 chars
+    """Generate a meaningful summary from bookmark text.
+    
+    Analyzes content to extract key points, not just copy first sentence.
+    """
     text = bookmark.text.strip()
-    sentences = text.split('. ')
-    if len(sentences[0]) < 120:
-        return sentences[0].strip() + ('.' if not sentences[0].endswith('.') else '')
-    return compact_text(text, limit=120)
+    if not text:
+        return "No content available."
+    
+    # For tweets/posts, extract the core message
+    lines = [l.strip() for l in text.split('\n') if l.strip()]
+    if not lines:
+        return "No content available."
+    
+    # Get main content (first substantial line)
+    main_text = lines[0]
+    
+    # Remove URLs for cleaner summary
+    import re
+    clean_text = re.sub(r'https?://\S+', '', main_text).strip()
+    
+    # For Chinese or other non-ASCII, handle differently
+    is_non_ascii = any(ord(c) > 127 for c in clean_text[:50])
+    
+    if is_non_ascii:
+        # For Chinese/Japanese/etc, take first meaningful segment
+        # Look for natural break points
+        for punct in ['。', '？', '！', '. ', '? ', '! ']:
+            idx = clean_text[:200].find(punct)
+            if idx > 20:
+                summary = clean_text[:idx + 1].strip()
+                break
+        else:
+            # No punctuation found, take up to 150 chars at word boundary
+            if len(clean_text) > 150:
+                summary = clean_text[:150].rsplit(' ', 1)[0] + '...'
+            else:
+                summary = clean_text
+    else:
+        # For English, extract key message
+        sentences = clean_text.split('. ')
+        
+        # Try to find a complete thought (not too short, not too long)
+        best_sentence = None
+        for sent in sentences:
+            sent = sent.strip()
+            if 30 < len(sent) < 200:
+                best_sentence = sent
+                break
+        
+        if best_sentence:
+            summary = best_sentence
+            if not summary.endswith('.'):
+                summary += '.'
+        else:
+            # Fallback to first sentence truncated
+            summary = clean_text[:150].strip()
+            if len(summary) >= 150:
+                summary = summary.rsplit(' ', 1)[0] + '...'
+            elif not summary.endswith('.'):
+                summary += '.'
+    
+    # Final cleanup
+    summary = re.sub(r'\s+', ' ', summary).strip()
+    
+    return summary if summary else "Content summary unavailable."
 
 
 def _generate_recommendation_reason(
