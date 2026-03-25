@@ -1471,5 +1471,27 @@
       "capture_mode": "url_only",
       "scraped_via": null
     }
+  },
+  {
+    "id": "bookmark_6b812dc99a86",
+    "source": "x",
+    "url": "https://x.com/Obesepotato_hl/status/2036830305731121660?s=20",
+    "text": "obese.potato.hl: OnchainMonk story - from debt to life-changing money. Started stock trading 2011, lost money. Joined Telegram trading group 2019, got into crypto. 3x'd account to 80k on FTX leverage trading, lost it all. Started again with 25k from friends/loan, turned to 75k but didn't take profits due to greed for 100k target, lost it all in 2022 crash. In debt, thought it was over. Got Arbitrum airdrop $1500 in 2023. Started farming airdrops 2023-2024 - nights grinding while working government job 2k/month. Excel sheet tracking projects, grinding Hyperliquid volume weekly. Hyperliquid airdrop was life-changing. Also early on Lighter. Strategy: farm all projects, won't miss life-changing airdrop. Left job few months ago, now focusing on family/life. Financial freedom in 5 years.",
+    "title": "OnchainMonk: From Debt to Financial Freedom Through Airdrop Farming",
+    "note": "None",
+    "author": "Obesepotato_hl",
+    "created_at": "2026-03-25T16:14:17.358046Z",
+    "bookmarked_at": "2026-03-25T16:14:17.358046Z",
+    "tags": [
+      "trading",
+      "crypto",
+      "automation",
+      "ai-tools"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]

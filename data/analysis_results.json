@@ -2099,5 +2099,49 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_bb75ca02ae41",
     "analyzed_at": "2026-03-25T16:13:17.018488Z"
+  },
+  {
+    "title": "OnchainMonk Journey from Debt to Financial Freedom via Airdrop Farming",
+    "summary": "This is a personal story of OnchainMonk who achieved financial freedom through systematic airdrop farming after multiple trading failures. The user should care because it demonstrates real-world crypto strategies that could inform AI trading agent development, though it's more inspirational than directly technical.",
+    "recommendation_reason": "While your focus is on OpenClaw multi-agent systems and AI-driven trading, this story offers insights into human trading psychology (greed, risk management) and alternative crypto strategies (airdrop farming) that could inspire agent behavior modeling or diversification approaches in prediction markets.",
+    "key_insights": [
+      "Airdrop farming can be a viable alternative strategy to traditional trading, requiring systematic tracking and consistent execution",
+      "Human trading failures often stem from psychological factors (greed, not taking profits) that AI agents could potentially avoid",
+      "Grinding volume on platforms like Hyperliquid was key to qualifying for life-changing airdrops",
+      "Excel sheet tracking of projects demonstrates the importance of organization in crypto strategy execution",
+      "From debt to financial freedom in 5 years shows the potential timeline for crypto strategy success"
+    ],
+    "tags": [
+      "trading",
+      "crypto",
+      "automation",
+      "ai-tools"
+    ],
+    "recommendation_bucket": "archive",
+    "priority_score": 3.0,
+    "worth_score": 5.0,
+    "effort_score": 4.0,
+    "relevance": 4.0,
+    "practical_value": 3.0,
+    "actionability": 2.0,
+    "stage_fit": 3.0,
+    "novelty": 6.0,
+    "excitement": 7.0,
+    "difficulty": 3.0,
+    "time_cost": 2.0,
+    "scoring_inputs": {
+      "relevance": 4.0,
+      "practical_value": 3.0,
+      "actionability": 2.0,
+      "stage_fit": 3.0,
+      "novelty": 6.0,
+      "excitement": 7.0,
+      "difficulty": 3.0,
+      "time_cost": 2.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_6b812dc99a86",
+    "analyzed_at": "2026-03-25T16:14:17.358046Z"
   }
 ]
