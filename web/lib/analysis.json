@@ -1456,5 +1456,114 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "deepseek",
     "analyzed_at": "2026-03-24T12:33:53.237349+00:00"
+  },
+  {
+    "bookmark_id": "bookmark_kevinnguyendn_byterover",
+    "summary": "ByteRover native memory plugin for OpenClaw with 92%+ retrieval accuracy. Integrates directly into prompt assembly with Context Engine, 24/7 memory loop, and structured Context Tree (no vector DBs).",
+    "recommendation_reason": "Relevance: 10/10. Direct OpenClaw memory plugin - solves the core memory problem natively. 92%+ accuracy, local-by-default, team-ready. High actionability with npm install.",
+    "key_insights": [
+      "Native OpenClaw integration via Context Engine - injects curated knowledge into system prompt",
+      "24/7 Memory Loop with automatic memory flush before token limits",
+      "Daily Knowledge Mining cron at 9 AM for architectural decisions",
+      "92%+ retrieval accuracy using structured Context Tree (zero vector DBs)",
+      "Local-by-default, team-ready, installs via single curl script",
+      "Can migrate existing flat markdown logs to Context Tree"
+    ],
+    "scoring_inputs": {
+      "relevance": 10.0,
+      "practical_value": 9.0,
+      "actionability": 8.0,
+      "stage_fit": 10.0,
+      "novelty": 8.0,
+      "excitement": 9.0,
+      "difficulty": 5.0,
+      "time_cost": 4.0
+    },
+    "worth_score": 9.0,
+    "effort_score": 4.5,
+    "priority_score": 9.5,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-25T02:40:00Z"
+  },
+  {
+    "bookmark_id": "bookmark_karpathy_2036487306585268612",
+    "title": "Karpathy on LiteLLM PyPI Supply Chain Attack",
+    "summary": "Critical security warning from Karpathy about LiteLLM PyPI compromise. Poisoned package (1.82.8) exfiltrated SSH keys, cloud creds, API keys, crypto wallets. 97M monthly downloads + transitive dependency contagion (dspy, etc). Attack lasted ~1 hour. Karpathy advocates for minimizing dependencies and using LLMs to yoink simple functionality instead.",
+    "recommendation_reason": "Relevance: 9/10. Critical security alert from Tier 1 source (Karpathy). Supply chain attacks threaten any OpenClaw setup with Python dependencies. Immediate actionable impact: audit your deps, especially litellm/dspy. Long-term: reconsider dependency-heavy architecture.",
+    "key_insights": [
+      "LiteLLM 1.82.8 compromised - exfiltrated SSH keys, AWS/GCP/Azure creds, K8s configs, API keys, crypto wallets",
+      "97M monthly downloads + transitive dependencies (dspy, etc) spread the attack",
+      "Attack active for ~1 hour only discovered due to attacker bug (RAM crash)",
+      "Supply chain attacks are undetectable and compromise entire dependency trees",
+      "Karpathy advocates minimizing deps, using LLMs to yoink functionality instead"
+    ],
+    "scoring_inputs": {
+      "relevance": 9.0,
+      "practical_value": 9.5,
+      "actionability": 8.0,
+      "stage_fit": 9.0,
+      "novelty": 7.0,
+      "excitement": 8.0,
+      "difficulty": 3.0,
+      "time_cost": 2.0
+    },
+    "worth_score": 9.1,
+    "effort_score": 2.5,
+    "priority_score": 8.5,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-25T04:15:00Z"
+  },
+  {
+    "bookmark_id": "bookmark_itsolelehmann_2033919415771713715",
+    "title": "Auto-Improve Claude Skills with Karpathy's Autoresearch Method",
+    "summary": "Ole Lehmann applied Karpathy's autoresearch method to Claude skills. Created a skill that auto-improves other skills through iterative testing. Landing page copy skill: 56% \u2192 92% pass rate with zero manual work. Provides downloadable skill for Claude Code/Cowork, live dashboard, and works on anything measurable (skills, website speed, outreach, etc).",
+    "recommendation_reason": "Relevance: 9/10. Direct application of autoresearch to Claude skills - exactly what you need for OpenClaw optimization. High actionability: downloadable skill, runs in Claude Code, immediate results. Proven: 56% \u2192 92% improvement on real skill.",
+    "key_insights": [
+      "Autoresearch loop for skills: make small change \u2192 test \u2192 keep if score improves \u2192 repeat",
+      "56% \u2192 92% pass rate on landing page skill in 4 rounds (3 changes kept, 1 undone)",
+      "User only provides scoring checklist (3-6 yes/no questions), agent handles everything else",
+      "Live dashboard shows score chart, pass/fail breakdown, change log - auto-refreshes every 10s",
+      "Works on anything measurable: website speed, cold outreach, newsletter intros, any repeated prompt",
+      "Skill available for download (Claude Code + Cowork compatible)"
+    ],
+    "scoring_inputs": {
+      "relevance": 9.0,
+      "practical_value": 9.0,
+      "actionability": 9.5,
+      "stage_fit": 10.0,
+      "novelty": 7.0,
+      "excitement": 8.0,
+      "difficulty": 4.0,
+      "time_cost": 3.0
+    },
+    "worth_score": 9.0,
+    "effort_score": 3.5,
+    "priority_score": 8.5,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-25T04:36:44.698650Z"
+  },
+  {
+    "title": "Claude Bot Polymarket Strategy Guide",
+    "summary": "A detailed guide on building an automated OpenClaw system for Polymarket trading that reportedly turned $1,000 into $1.5M. This user should care because it provides hands-on implementation of multi-agent workflows for prediction markets, directly aligning with their high-priority interests in OpenClaw customization and AI-driven trading strategies.",
+    "key_insights": [
+      "Complete A-Z breakdown of automated OpenClaw systems for Polymarket trading",
+      "Strategy for compounding small probabilistic edges into daily income",
+      "How to build a Polymarket Clawdbot with $1,000 per day potential",
+      "Practical implementation of multi-agent workflows for prediction markets",
+      "Specific setup that reportedly achieved significant returns ($1K to $1.5M)"
+    ],
+    "bucket": "test_this_week",
+    "priority_score": 9.5,
+    "relevance": 9.8,
+    "practical_value": 9.2,
+    "actionability": 9.0,
+    "reasoning": "This bookmark directly addresses multiple high-priority topics (OpenClaw setup, multi-agent workflows, Polymarket, AI trading strategies) with a hands-on, code-focused approach that matches the user's 'building by learning' stage. The guide promises specific implementation details for automated systems, offers quick wins potential, and comes from a source discussing verified results. The scores are high because it aligns perfectly with user interests, but not perfect due to potential exaggeration in claims and the need for implementation effort.",
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_kirillk_web3_2034215658016104956",
+    "analyzed_at": "2026-03-25T07:14:29.861289Z"
   }
 ]
