@@ -84,19 +84,27 @@ Analyze this bookmark and respond in valid JSON:
 {{
   "title": "Polished title (concise, professional, no trailing dots)",
   "summary": "What it is + why this specific user should care (2-3 sentences)",
+  "recommendation_reason": "Why YOU should care - personalized to user profile",
   "key_insights": ["3-5 bullet points of key takeaways"],
-  "bucket": "test_this_week|build_later|archive|ignore",
+  "recommendation_bucket": "test_this_week|build_later|archive|ignore",
   "priority_score": 0.0-10.0,
+  "worth_score": 0.0-10.0,
+  "effort_score": 1.0-10.0,
   "relevance": 0.0-10.0,
   "practical_value": 0.0-10.0,
   "actionability": 0.0-10.0,
-  "reasoning": "Brief explanation of why you assigned this bucket and score"
+  "stage_fit": 0.0-10.0,
+  "novelty": 0.0-10.0,
+  "excitement": 0.0-10.0,
+  "difficulty": 1.0-10.0,
+  "time_cost": 1.0-10.0
 }}
 
 Rules:
 - Title: Clean, professional, no hashtags, no trailing dots
 - Summary: Explain what it is AND why this specific user should care
-- Bucket: test_this_week (priority >=6, actionable now), build_later (priority 4-6, save for later), archive (reference), ignore (low value)
+- recommendation_bucket: test_this_week (priority >=6, actionable now), build_later (priority 4-6), archive (reference), ignore (low value)
+- priority_score = worth_score - (0.5 * effort_score), so worth around 8-9 and effort around 3-4 gives priority 6-7
 - Scores: Be honest, not everything is 10/10
 - Key insights: Actionable, not generic"""
 
@@ -108,12 +116,30 @@ Rules:
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
-            max_tokens=1000,
+            max_tokens=1200,
             response_format={"type": "json_object"}
         )
         
         content = response.choices[0].message.content
         analysis = json.loads(content)
+        
+        # Transform to match expected format
+        # Handle both old 'bucket' and new 'recommendation_bucket'
+        if "bucket" in analysis and "recommendation_bucket" not in analysis:
+            analysis["recommendation_bucket"] = analysis["bucket"]
+        
+        # Build scoring_inputs if not present
+        if "scoring_inputs" not in analysis:
+            analysis["scoring_inputs"] = {
+                "relevance": analysis.get("relevance", 5.0),
+                "practical_value": analysis.get("practical_value", 5.0),
+                "actionability": analysis.get("actionability", 5.0),
+                "stage_fit": analysis.get("stage_fit", 5.0),
+                "novelty": analysis.get("novelty", 5.0),
+                "excitement": analysis.get("excitement", 5.0),
+                "difficulty": analysis.get("difficulty", 5.0),
+                "time_cost": analysis.get("time_cost", 5.0)
+            }
         
         # Add metadata
         analysis["analysis_source"] = "deepseek"
@@ -144,13 +170,30 @@ def deepseek_analyze_bookmark(text: str, title: str = "", url: str = "") -> dict
     return {
         "title": title or "Untitled",
         "summary": "[DeepSeek failed - basic analysis] " + text[:100],
+        "recommendation_reason": "DeepSeek API failed, fallback analysis",
         "key_insights": ["Analysis failed - review manually"],
-        "bucket": "archive",
+        "recommendation_bucket": "archive",
         "priority_score": 3.0,
+        "worth_score": 5.0,
+        "effort_score": 4.0,
         "relevance": 3.0,
         "practical_value": 3.0,
         "actionability": 3.0,
-        "reasoning": "DeepSeek API failed, fallback to basic analysis",
+        "stage_fit": 3.0,
+        "novelty": 3.0,
+        "excitement": 3.0,
+        "difficulty": 5.0,
+        "time_cost": 5.0,
+        "scoring_inputs": {
+            "relevance": 3.0,
+            "practical_value": 3.0,
+            "actionability": 3.0,
+            "stage_fit": 3.0,
+            "novelty": 3.0,
+            "excitement": 3.0,
+            "difficulty": 5.0,
+            "time_cost": 5.0
+        },
         "analysis_source": "deepseek_fallback"
     }
 
