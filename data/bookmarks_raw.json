@@ -1384,5 +1384,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_8d1f094fb012",
+    "source": "x",
+    "url": "https://x.com/alexwg/status/2036811544214794725?s=20",
+    "text": "Dr. Alex Wissner-Gross AI news roundup March 25, 2026: OpenAI finished pretraining 'Spud' model, shutting down Sora, pivoting to business/coding for IPO Q4. Disney ended $1B partnership. Google TurboQuant: 3-bit KV cache quantization, 8x performance on H100. LeWM: first JEPA training stably end-to-end from raw pixels, 48x faster planning. OpenAI Foundation: $1B/year for Alzheimer's cure. MIT: LLM agents autonomously execute high energy physics analysis with Claude Code. OpenAI visual shopping in ChatGPT. Anthropic auto mode in Claude Code. Arm 'AGI CPU': 2x efficiency of x86, Meta lead partner, $25B revenue projection by 2031. Microsoft 700MW Texas data center. Amazon acquired Fauna Robotics humanoid. Agile Robots + Google DeepMind: Gemini Robotics in 20k solutions. SpaceX IPO prospectus this week, $75B raise. NASA: monthly lunar landings 2027, MoonFall drones, crewed missions every 6 months. OpenAI raising additional $10B, total $120B round.",
+    "title": "AI News Roundup: OpenAI Spud, TurboQuant, LeWM, AGI CPU, SpaceX IPO",
+    "note": "None",
+    "author": "alexwg",
+    "created_at": "2026-03-25T14:39:30.229436Z",
+    "bookmarked_at": "2026-03-25T14:39:30.229436Z",
+    "tags": [
+      "agents",
+      "ai-tools",
+      "llm",
+      "automation"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
