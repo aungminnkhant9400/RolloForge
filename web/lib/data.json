@@ -1427,5 +1427,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_e32f6baa21c4",
+    "source": "x",
+    "url": "https://x.com/BentoBoiNFT/status/2036827922565042415?s=20",
+    "text": "BentoBoi: How to Make Your OpenClaw 10x More Powerful. 4 specialized agents on Mac mini: Alex (main/Claude Opus, coordinates), Lin Xu (coding), Scout (research), Casey (content). Memory system: MEMORY.md (permanent), daily logs (journal), project files, SOUL.md (personality). Automation via cron: morning brief 8AM, tweet drafts 7AM, prediction market scanner 9AM, GitHub backup midnight. Skills: custom workflows with style guide, voice reference, example outputs. Self-improvement loop: correction tracking, pattern graduation (3+ times \u2192 permanent rule), style memory. Roadmap: Week 1 setup 2 agents, Week 2 memory system, Week 3 one automation, Week 4 first custom skill.",
+    "title": "How to Make Your OpenClaw 10x More Powerful - Multi-Agent Setup",
+    "note": "None",
+    "author": "BentoBoiNFT",
+    "created_at": "2026-03-25T16:11:25.812938Z",
+    "bookmarked_at": "2026-03-25T16:11:25.812938Z",
+    "tags": [
+      "openclaw",
+      "multi-agent",
+      "automation",
+      "polymarket"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
