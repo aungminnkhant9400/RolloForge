@@ -7,6 +7,10 @@ import json
 import logging
 from typing import Optional
 from openai import OpenAI
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 LOGGER = logging.getLogger(__name__)
 
