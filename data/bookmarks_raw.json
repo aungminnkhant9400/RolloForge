@@ -1296,5 +1296,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_71dfa1168ce6",
+    "source": "x",
+    "url": "https://x.com/0xjeff/status/2036729034357494080?s=46",
+    "text": "0xJeff: Bittensor Subnets vs Virtuals Agents comparison. 5 key differences: 1) Bootstrapping - Bittensor uses TAO emissions, Virtuals uses trading volume/pumpfun model, 2) Barrier to entry - Bittensor requires 871 TAO (~$300k), Virtuals is free to launch, 3) Distribution - Bittensor isolated/hard to access, Virtuals on Base/easy retail access, 4) LP flywheel - both TAO and VIRTUAL benefit from token demand, 5) Focus - Bittensor on infrastructure/CAPEX, Virtuals on application/consumer agents. Both can work together for Crypto AI thesis.",
+    "title": "Bittensor Subnets vs Virtuals Agents: 5 Key Differences",
+    "note": "None",
+    "author": "0xJeff",
+    "created_at": "2026-03-25T10:39:13.653165Z",
+    "bookmarked_at": "2026-03-25T10:39:13.653165Z",
+    "tags": [
+      "agents",
+      "crypto",
+      "ai-tools",
+      "trading"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
