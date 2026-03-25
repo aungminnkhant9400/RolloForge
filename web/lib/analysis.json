@@ -1617,5 +1617,48 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_0xSero_2036606811118203036",
     "analyzed_at": "2026-03-25T08:09:39.093885Z"
+  },
+  {
+    "title": "Antti Ilmanen's Expected Returns: 6 Lessons from Billion-Dollar Quant Funds",
+    "summary": "This is a summary of key insights from Antti Ilmanen's book 'Expected Returns', which distills lessons from his experience at major quantitative funds like AQR Capital. You should care because these principles directly inform how to structure AI-driven trading strategies and manage risk in automated systems, which aligns with your work on OpenClaw multi-agent trading.",
+    "recommendation_reason": "As someone building OpenClaw multi-agent systems for AI trading and prediction markets, understanding the foundational principles that guide billion-dollar quant funds will help you design more robust agents and workflows. These lessons on risk, diversification, and performance paths are directly applicable to creating automated trading strategies.",
+    "key_insights": [
+      "Most returns come from taking calculated risks, not from market timing or stock picking",
+      "Diversification across multiple uncorrelated strategies is more valuable than finding a single 'perfect' trade",
+      "Identify and manage tail risks that can define strategy success or failure",
+      "Four paths to better performance: skill, cost efficiency, risk management, and innovation"
+    ],
+    "tags": [
+      "trading",
+      "automation",
+      "ai-tools",
+      "multi-agent"
+    ],
+    "recommendation_bucket": "build_later",
+    "priority_score": 5.5,
+    "worth_score": 7.5,
+    "effort_score": 4.0,
+    "relevance": 8.0,
+    "practical_value": 7.0,
+    "actionability": 6.5,
+    "stage_fit": 7.0,
+    "novelty": 5.0,
+    "excitement": 6.0,
+    "difficulty": 3.0,
+    "time_cost": 2.0,
+    "scoring_inputs": {
+      "relevance": 8.0,
+      "practical_value": 7.0,
+      "actionability": 6.5,
+      "stage_fit": 7.0,
+      "novelty": 5.0,
+      "excitement": 6.0,
+      "difficulty": 3.0,
+      "time_cost": 2.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_c7b65dd97337",
+    "analyzed_at": "2026-03-25T08:37:01.560985Z"
   }
 ]

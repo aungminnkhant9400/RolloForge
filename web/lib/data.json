@@ -1230,5 +1230,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_c7b65dd97337",
+    "source": "x",
+    "url": "https://x.com/GoshawkTrades/status/2036495569334509774?s=20",
+    "text": "Goshawk Trades: This Man Wrote the Playbook for How Billion-Dollar Funds Make Returns. Antti Ilmanen - Salomon Brothers, Brevan Howard, AQR Capital ($187B quant fund). Wrote \"Expected Returns\" (979 pages). 6 lessons: 1) Most returns come from risk, 2) Diversification is the real holy grail, 3) 10 sources of returns, 4) Tail risks define strategies, 5) Four paths to better performance.",
+    "title": "Antti Ilmanen's Expected Returns: 6 Lessons from Billion-Dollar Quant Funds",
+    "note": "None",
+    "author": "GoshawkTrades",
+    "created_at": "2026-03-25T08:37:01.560985Z",
+    "bookmarked_at": "2026-03-25T08:37:01.560985Z",
+    "tags": [
+      "trading",
+      "automation",
+      "ai-tools",
+      "multi-agent"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
