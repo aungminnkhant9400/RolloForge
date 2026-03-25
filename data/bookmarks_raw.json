@@ -1252,5 +1252,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_a5e987af4542",
+    "source": "x",
+    "url": "https://x.com/GoogleResearch/status/2036533564158910740?s=20",
+    "text": "Google Research: Introducing TurboQuant - new compression algorithm that reduces LLM key-value cache memory by at least 6x and delivers up to 8x speedup, all with zero accuracy loss. Redefining AI efficiency.",
+    "title": "Google TurboQuant: 6x LLM Memory Reduction, 8x Speedup, Zero Accuracy Loss",
+    "note": "None",
+    "author": "GoogleResearch",
+    "created_at": "2026-03-25T08:39:12.580274Z",
+    "bookmarked_at": "2026-03-25T08:39:12.580274Z",
+    "tags": [
+      "llm",
+      "optimization",
+      "multi-agent",
+      "ai-tools"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
