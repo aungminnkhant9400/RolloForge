@@ -1,7 +1,6 @@
-/** @type {import('import').NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  distDir: 'dist',
+  // Removed output: 'export' - now using SSR
   images: {
     unoptimized: true
   },
