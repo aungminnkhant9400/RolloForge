@@ -1485,5 +1485,34 @@
     "recommendation_bucket": "test_this_week",
     "analysis_source": "garfis",
     "analyzed_at": "2026-03-25T02:40:00Z"
+  },
+  {
+    "bookmark_id": "bookmark_karpathy_2036487306585268612",
+    "title": "Karpathy on LiteLLM PyPI Supply Chain Attack",
+    "summary": "Critical security warning from Karpathy about LiteLLM PyPI compromise. Poisoned package (1.82.8) exfiltrated SSH keys, cloud creds, API keys, crypto wallets. 97M monthly downloads + transitive dependency contagion (dspy, etc). Attack lasted ~1 hour. Karpathy advocates for minimizing dependencies and using LLMs to yoink simple functionality instead.",
+    "recommendation_reason": "Relevance: 9/10. Critical security alert from Tier 1 source (Karpathy). Supply chain attacks threaten any OpenClaw setup with Python dependencies. Immediate actionable impact: audit your deps, especially litellm/dspy. Long-term: reconsider dependency-heavy architecture.",
+    "key_insights": [
+      "LiteLLM 1.82.8 compromised - exfiltrated SSH keys, AWS/GCP/Azure creds, K8s configs, API keys, crypto wallets",
+      "97M monthly downloads + transitive dependencies (dspy, etc) spread the attack",
+      "Attack active for ~1 hour only discovered due to attacker bug (RAM crash)",
+      "Supply chain attacks are undetectable and compromise entire dependency trees",
+      "Karpathy advocates minimizing deps, using LLMs to yoink functionality instead"
+    ],
+    "scoring_inputs": {
+      "relevance": 9.0,
+      "practical_value": 9.5,
+      "actionability": 8.0,
+      "stage_fit": 9.0,
+      "novelty": 7.0,
+      "excitement": 8.0,
+      "difficulty": 3.0,
+      "time_cost": 2.0
+    },
+    "worth_score": 9.1,
+    "effort_score": 2.5,
+    "priority_score": 8.5,
+    "recommendation_bucket": "test_this_week",
+    "analysis_source": "garfis",
+    "analyzed_at": "2026-03-25T04:15:00Z"
   }
 ]
