@@ -1449,5 +1449,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_bb75ca02ae41",
+    "source": "x",
+    "url": "https://x.com/cuti_info/status/2036127415349682438?s=20",
+    "text": "Twitter/X post from @cuti_info. View on X for full content.",
+    "title": "Twitter/X post from @cuti_info",
+    "note": "X blocked scraping - view directly for content",
+    "author": "cuti_info",
+    "created_at": "2026-03-25T16:13:17.018488Z",
+    "bookmarked_at": "2026-03-25T16:13:17.018488Z",
+    "tags": [
+      "trading",
+      "ai-tools",
+      "automation",
+      "multi-agent"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": null
+    }
   }
 ]

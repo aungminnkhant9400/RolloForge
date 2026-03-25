@@ -2055,5 +2055,49 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_e32f6baa21c4",
     "analyzed_at": "2026-03-25T16:11:25.812938Z"
+  },
+  {
+    "title": "Twitter Post on AI Trading Strategies",
+    "summary": "This is a Twitter/X post from @cuti_info discussing AI-driven trading approaches. As someone building OpenClaw multi-agent systems for trading and prediction markets, you should care because it may contain practical insights or code snippets from an AI builder that could inform your hands-on development work.",
+    "recommendation_reason": "You're focused on 'building by learning' with quick wins and medium projects in AI trading and automation. This content comes from a source discussing AI trading strategies, which aligns directly with your high-priority interest in AI-driven trading strategies and could provide actionable ideas for your OpenClaw multi-agent workflows.",
+    "key_insights": [
+      "Twitter post from an AI trading-focused account",
+      "Potential practical trading strategy discussion",
+      "May include code or implementation examples",
+      "Could reference prediction market applications",
+      "Source credibility unknown - not from trusted builders"
+    ],
+    "tags": [
+      "trading",
+      "ai-tools",
+      "automation",
+      "multi-agent"
+    ],
+    "recommendation_bucket": "test_this_week",
+    "priority_score": 5.5,
+    "worth_score": 7.0,
+    "effort_score": 3.0,
+    "relevance": 8.0,
+    "practical_value": 6.0,
+    "actionability": 7.0,
+    "stage_fit": 9.0,
+    "novelty": 5.0,
+    "excitement": 6.0,
+    "difficulty": 2.0,
+    "time_cost": 2.0,
+    "scoring_inputs": {
+      "relevance": 8.0,
+      "practical_value": 6.0,
+      "actionability": 7.0,
+      "stage_fit": 9.0,
+      "novelty": 5.0,
+      "excitement": 6.0,
+      "difficulty": 2.0,
+      "time_cost": 2.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_bb75ca02ae41",
+    "analyzed_at": "2026-03-25T16:13:17.018488Z"
   }
 ]
