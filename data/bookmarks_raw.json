@@ -1176,5 +1176,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_kirillk_web3_2034215658016104956",
+    "source": "x",
+    "url": "https://x.com/kirillk_web3/status/2034215658016104956?s=46",
+    "text": "Kirill: Claude Bot on Polymarket \u2014 Full Guide. Same setup turned $1,000 into $1.5M. Complete A-Z breakdown of automated OpenClaw systems compounding small probabilistic edges into daily income. How to Build Your Own Polymarket Clawdbot \u2014 $1,000 Per Day Strategy.",
+    "title": "Claude Bot on Polymarket: $1K to $1.5M Strategy Guide",
+    "note": "None",
+    "author": "kirillk_web3",
+    "created_at": "2026-03-25T07:14:29.861272Z",
+    "bookmarked_at": "2026-03-25T07:14:29.861289Z",
+    "tags": [
+      "polymarket",
+      "trading",
+      "claude",
+      "automation"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
