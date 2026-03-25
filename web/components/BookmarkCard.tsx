@@ -46,7 +46,13 @@ export function BookmarkCard({ bookmark }: BookmarkCardProps) {
       </h3>
       
       {analysis?.summary && (
-        <p className="card-summary">{analysis.summary}</p>
+        <p className="card-summary">
+          {analysis.summary
+            .replace(/\.{3,}$/, '')
+            .replace(/\.$/, '')
+            .trim()}
+          .
+        </p>
       )}
       
       <div className="card-meta">
