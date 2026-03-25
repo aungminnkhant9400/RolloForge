@@ -83,9 +83,9 @@ Content: {text}
 Analyze this bookmark and respond in valid JSON:
 {{
   "title": "Polished title (concise, professional, no trailing dots)",
-  "summary": "What it is + why this specific user should care (2-3 sentences)",
-  "recommendation_reason": "Why YOU should care - personalized to user profile",
-  "key_insights": ["3-5 bullet points of key takeaways"],
+  "summary": "3-4 sentences explaining: 1) What this is, 2) Key takeaway, 3) Why it matters for this user. Write naturally - do NOT end with 'you should care because' or similar phrases.",
+  "recommendation_reason": "One sentence on why this is relevant to their specific goals",
+  "key_insights": ["3-5 bullet points of actionable takeaways"],
   "tags": ["2-4 specific tags from: openclaw, claude, agents, autoresearch, trading, polymarket, coding, automation, ai-tools, llm, security, crypto, or content-specific keywords"],
   "recommendation_bucket": "test_this_week|build_later|archive|ignore",
   "priority_score": 0.0-10.0,
@@ -103,7 +103,8 @@ Analyze this bookmark and respond in valid JSON:
 
 Rules:
 - Title: Clean, professional, no hashtags, no trailing dots
-- Summary: Explain what it is AND why this specific user should care
+- Summary: Natural flowing text. Explain what it is and why it matters. NEVER end with phrases like "you should care because..." or "this user should care..." - just state the facts and value directly.
+- Tags: NEVER use "general". Pick specific meaningful tags.
 - Tags: NEVER use "general". Pick specific meaningful tags. Examples: ["openclaw", "multi-agent"] or ["trading", "automation"] or ["claude", "optimization"]
 - recommendation_bucket: test_this_week (priority >=6, actionable now), build_later (priority 4-6), archive (reference), ignore (low value)
 - priority_score = worth_score - (0.5 * effort_score), so worth around 8-9 and effort around 3-4 gives priority 6-7
