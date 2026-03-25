@@ -5,7 +5,7 @@ import { getStats, getRecentBookmarks } from '@/lib/data';
 
 export default function OverviewPage() {
   const stats = getStats();
-  const recentBookmarks = getRecentBookmarks(5);
+  const recentBookmarks = getRecentBookmarks(10);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
