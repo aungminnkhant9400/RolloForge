@@ -34,7 +34,7 @@ export function BookmarksContent({ allBookmarks, allTags }: BookmarksContentProp
         if (!hasSelectedTag) return false;
       }
       
-      // Search filter
+      // Search filter - full text search
       if (searchQuery.trim()) {
         const query = searchQuery.toLowerCase();
         const searchableText = `
@@ -42,6 +42,8 @@ export function BookmarksContent({ allBookmarks, allTags }: BookmarksContentProp
           ${bookmark.text} 
           ${bookmark.author || ''} 
           ${bookmark.analysis?.summary || ''}
+          ${bookmark.analysis?.recommendation_reason || ''}
+          ${bookmark.analysis?.key_insights?.join(' ') || ''}
           ${bookmark.tags?.join(' ') || ''}
         `.toLowerCase();
         
@@ -74,8 +76,13 @@ export function BookmarksContent({ allBookmarks, allTags }: BookmarksContentProp
       />
       
       <div>
-        <SearchBar value={searchQuery} onChange={setSearchQuery} />
+        <SearchBar 
+          value={searchQuery} 
+          onChange={setSearchQuery}
+          placeholder="Search titles, content, summaries, tags..."
+        />
         <NotesSync />
+        
         <BookmarkList bookmarks={filteredBookmarks} />
       </div>
     </div>

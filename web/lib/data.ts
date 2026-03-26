@@ -91,4 +91,73 @@ export function getAllTags(): string[] {
   const tagSet = new Set<string>();
   bookmarks.forEach(b => b.tags?.forEach(tag => tagSet.add(tag)));
   return Array.from(tagSet).sort();
-}// Trigger redeploy Wed Mar 25 03:38:55 PM CST 2026
+}
+
+// Full-text search across all bookmark fields
+export function searchBookmarks(query: string): BookmarkWithAnalysis[] {
+  if (!query.trim()) {
+    return getBookmarksWithAnalysis();
+  }
+  
+  const searchTerm = query.toLowerCase();
+  const allBookmarks = getBookmarksWithAnalysis();
+  
+  return allBookmarks.filter(bookmark => {
+    const searchableFields = [
+      bookmark.title,
+      bookmark.text,
+      bookmark.author,
+      bookmark.tags?.join(' '),
+      bookmark.analysis?.summary,
+      bookmark.analysis?.recommendation_reason,
+      bookmark.analysis?.key_insights?.join(' '),
+    ].filter(Boolean).join(' ').toLowerCase();
+    
+    return searchableFields.includes(searchTerm);
+  });
+}
+
+// Advanced search with filters
+export function advancedSearch({
+  query,
+  bucket,
+  tags,
+}: {
+  query?: string;
+  bucket?: string;
+  tags?: string[];
+}): BookmarkWithAnalysis[] {
+  let results = getBookmarksWithAnalysis();
+  
+  // Text search
+  if (query?.trim()) {
+    const searchTerm = query.toLowerCase();
+    results = results.filter(bookmark => {
+      const searchableFields = [
+        bookmark.title,
+        bookmark.text,
+        bookmark.author,
+        bookmark.tags?.join(' '),
+        bookmark.analysis?.summary,
+        bookmark.analysis?.recommendation_reason,
+        bookmark.analysis?.key_insights?.join(' '),
+      ].filter(Boolean).join(' ').toLowerCase();
+      
+      return searchableFields.includes(searchTerm);
+    });
+  }
+  
+  // Bucket filter
+  if (bucket && bucket !== 'all') {
+    results = results.filter(b => b.analysis?.recommendation_bucket === bucket);
+  }
+  
+  // Tags filter
+  if (tags && tags.length > 0) {
+    results = results.filter(b => 
+      tags.some(tag => b.tags?.includes(tag))
+    );
+  }
+  
+  return results;
+}
