@@ -2490,5 +2490,47 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_3f71e4ad5fad",
     "analyzed_at": "2026-03-26T17:25:45.667917Z"
+  },
+  {
+    "title": "Docker History and Evolution in Cloud Infrastructure",
+    "summary": "This is a historical overview of Docker's development from its origins to its current role in modern cloud infrastructure. The key takeaway is understanding how containerization technology evolved and its foundational importance in today's deployment workflows. For a user building OpenClaw multi-agent systems, this provides context on containerization fundamentals that could inform deployment strategies for AI agents and trading systems.",
+    "recommendation_reason": "While not directly about AI trading or OpenClaw, understanding Docker's evolution provides foundational knowledge for deploying multi-agent systems in cloud environments.",
+    "key_insights": [
+      "Historical context on containerization technology evolution",
+      "Understanding Docker's role in modern deployment workflows",
+      "Foundation for container-based agent deployment strategies",
+      "Background for infrastructure decisions in multi-agent systems"
+    ],
+    "tags": [
+      "automation",
+      "coding",
+      "ai-tools"
+    ],
+    "recommendation_bucket": "archive",
+    "priority_score": 2.5,
+    "worth_score": 5.0,
+    "effort_score": 5.0,
+    "relevance": 3.0,
+    "practical_value": 4.0,
+    "actionability": 2.0,
+    "stage_fit": 4.0,
+    "novelty": 2.0,
+    "excitement": 2.0,
+    "difficulty": 3.0,
+    "time_cost": 4.0,
+    "scoring_inputs": {
+      "relevance": 3.0,
+      "practical_value": 4.0,
+      "actionability": 2.0,
+      "stage_fit": 4.0,
+      "novelty": 2.0,
+      "excitement": 2.0,
+      "difficulty": 3.0,
+      "time_cost": 4.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_7085087fbd3f",
+    "analyzed_at": "2026-03-26T17:54:19.903806Z"
   }
 ]
