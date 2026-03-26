@@ -2230,5 +2230,48 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_61f251bed814",
     "analyzed_at": "2026-03-25T19:10:11.502385Z"
+  },
+  {
+    "title": "World-Class Agentic Engineering Guide",
+    "summary": "This is a guide on becoming a world-class agentic engineer, focusing on practical skills for building effective AI agent systems. The key takeaway is a structured approach to developing agentic engineering expertise through hands-on implementation and system design. This matters for the user as it directly addresses their interest in multi-agent workflows and OpenClaw development, providing actionable guidance for their building-by-learning stage.",
+    "recommendation_reason": "It offers practical agent engineering insights directly applicable to OpenClaw multi-agent system development.",
+    "key_insights": [
+      "Structured approach to agentic engineering skill development",
+      "Practical implementation strategies for multi-agent systems",
+      "System design considerations for reliable agent workflows",
+      "Hands-on techniques for building effective AI agents"
+    ],
+    "tags": [
+      "agents",
+      "multi-agent",
+      "automation",
+      "ai-tools"
+    ],
+    "recommendation_bucket": "test_this_week",
+    "priority_score": 6.5,
+    "worth_score": 8.0,
+    "effort_score": 3.0,
+    "relevance": 8.0,
+    "practical_value": 7.5,
+    "actionability": 8.0,
+    "stage_fit": 9.0,
+    "novelty": 6.0,
+    "excitement": 7.0,
+    "difficulty": 4.0,
+    "time_cost": 3.0,
+    "scoring_inputs": {
+      "relevance": 8.0,
+      "practical_value": 7.5,
+      "actionability": 8.0,
+      "stage_fit": 9.0,
+      "novelty": 6.0,
+      "excitement": 7.0,
+      "difficulty": 4.0,
+      "time_cost": 3.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_d2a55514e663",
+    "analyzed_at": "2026-03-26T04:13:52.980979Z"
   }
 ]

@@ -1537,5 +1537,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_d2a55514e663",
+    "source": "x",
+    "url": "https://x.com/systematicls/status/2028814227004395561?s=46",
+    "text": "How To Be A World-Class Agentic Engineer",
+    "title": "How To Be A World-Class Agentic Engineer",
+    "note": "None",
+    "author": "systematicls",
+    "created_at": "2026-03-26T04:13:52.980979Z",
+    "bookmarked_at": "2026-03-26T04:13:52.980979Z",
+    "tags": [
+      "agents",
+      "multi-agent",
+      "automation",
+      "ai-tools"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
