@@ -24,15 +24,9 @@ export function BookmarkCard({ bookmark }: BookmarkCardProps) {
   const analysis = bookmark.analysis;
   const bucket = analysis?.recommendation_bucket || 'archive';
   
-  // Better reading time: combine text + summary + title for estimate
-  const contentForReadingTime = [
-    bookmark.text,
-    analysis?.summary,
-    bookmark.title,
-    analysis?.key_insights?.join(' ')
-  ].filter(Boolean).join(' ');
-  
-  const readingTime = getReadingTime(contentForReadingTime);
+  // Only show reading time for X/Twitter posts (fully scraped)
+  const isXPost = bookmark.source === 'x' || bookmark.url.includes('x.com') || bookmark.url.includes('twitter.com');
+  const readingTime = isXPost ? getReadingTime(bookmark.text || '') : null;
   
   return (
     <article className="bookmark-card">
@@ -76,10 +70,13 @@ export function BookmarkCard({ bookmark }: BookmarkCardProps) {
           <Calendar size={14} />
           {new Date(bookmark.bookmarked_at).toLocaleDateString()}
         </span>
-        <span>
-          <Clock size={14} />
-          {readingTime} min read
-        </span>
+        
+        {readingTime && (
+          <span>
+            <Clock size={14} />
+            {readingTime} min read
+          </span>
+        )}
         
         {analysis && (
           <span style={{ fontSize: '0.75rem' }}>
