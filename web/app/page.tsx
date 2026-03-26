@@ -6,19 +6,49 @@ import { StatCard } from '@/components/StatCard';
 import { BookmarkCard } from '@/components/BookmarkCard';
 
 export default function OverviewPage() {
-  const [data, setData] = useState(null);
+  const [bookmarks, setBookmarks] = useState([]);
+  const [stats, setStats] = useState({ total: 0, test_this_week: 0, build_later: 0, archive: 0, ignore: 0 });
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/api/data');
-        if (!response.ok) throw new Error('Failed to fetch');
-        const json = await response.json();
-        setData(json);
+        // Fetch directly from static files with cache-busting
+        const [bookmarksRes, analysisRes] = await Promise.all([
+          fetch(`/data.json?t=${Date.now()}`),
+          fetch(`/analysis.json?t=${Date.now()}`)
+        ]);
+        
+        if (!bookmarksRes.ok || !analysisRes.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        
+        const bookmarksData = await bookmarksRes.json();
+        const analysisData = await analysisRes.json();
+        
+        // Merge data
+        const analysisMap = new Map(analysisData.map(a => [a.bookmark_id, a]));
+        const merged = bookmarksData.map(b => ({
+          ...b,
+          analysis: analysisMap.get(b.id) || null,
+        }));
+        
+        // Sort by bookmarked_at desc
+        merged.sort((a, b) => new Date(b.bookmarked_at) - new Date(a.bookmarked_at));
+        
+        setBookmarks(merged.slice(0, 10));
+        
+        // Calculate stats
+        const withAnalysis = merged.filter(b => b.analysis);
+        setStats({
+          total: merged.length,
+          test_this_week: withAnalysis.filter(b => b.analysis?.recommendation_bucket === 'test_this_week').length,
+          build_later: withAnalysis.filter(b => b.analysis?.recommendation_bucket === 'build_later').length,
+          archive: withAnalysis.filter(b => b.analysis?.recommendation_bucket === 'archive').length,
+          ignore: withAnalysis.filter(b => b.analysis?.recommendation_bucket === 'ignore').length,
+        });
       } catch (err) {
-        setError(err.message);
+        console.error('Error fetching data:', err);
       } finally {
         setLoading(false);
       }
@@ -31,11 +61,6 @@ export default function OverviewPage() {
   }, []);
 
   if (loading) return <div style={{ padding: '2rem' }}>Loading...</div>;
-  if (error) return <div style={{ padding: '2rem', color: 'red' }}>Error: {error}</div>;
-  if (!data) return null;
-
-  const { stats, bookmarks } = data;
-  const recentBookmarks = bookmarks.slice(0, 10);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
@@ -60,8 +85,8 @@ export default function OverviewPage() {
         </div>
         
         <div className="bookmark-list">
-          {recentBookmarks.length > 0 ? (
-            recentBookmarks.map((bookmark) => (
+          {bookmarks.length > 0 ? (
+            bookmarks.map((bookmark) => (
               <BookmarkCard key={bookmark.id} bookmark={bookmark} />
             ))
           ) : (
