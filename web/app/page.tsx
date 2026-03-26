@@ -7,9 +7,6 @@ import { BookmarkCard } from '@/components/BookmarkCard';
 import { SearchBar } from '@/components/SearchBar';
 import { getStats, getBookmarksWithAnalysis } from '@/lib/data';
 
-// ISR: Rebuild every 60 seconds  
-export const revalidate = 60;
-
 export default function OverviewPage() {
   const stats = getStats();
   const allBookmarks = getBookmarksWithAnalysis();
