@@ -161,3 +161,11 @@ export function advancedSearch({
   
   return results;
 }
+
+// Calculate reading time (average 200 words per minute)
+export function getReadingTime(text: string): number {
+  if (!text) return 1;
+  const wordCount = text.split(/\s+/).length;
+  const minutes = Math.ceil(wordCount / 200);
+  return Math.max(1, minutes); // Minimum 1 minute
+}

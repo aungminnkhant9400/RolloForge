@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { ExternalLink, Calendar, User } from 'lucide-react';
-import { BookmarkWithAnalysis } from '@/lib/data';
+import { ExternalLink, Calendar, User, Clock } from 'lucide-react';
+import { BookmarkWithAnalysis, getReadingTime } from '@/lib/data';
 
 interface BookmarkCardProps {
   bookmark: BookmarkWithAnalysis;
@@ -23,6 +23,7 @@ const bucketLabels = {
 export function BookmarkCard({ bookmark }: BookmarkCardProps) {
   const analysis = bookmark.analysis;
   const bucket = analysis?.recommendation_bucket || 'archive';
+  const readingTime = getReadingTime(bookmark.text || bookmark.analysis?.summary || '');
   
   return (
     <article className="bookmark-card">
@@ -65,6 +66,10 @@ export function BookmarkCard({ bookmark }: BookmarkCardProps) {
         <span>
           <Calendar size={14} />
           {new Date(bookmark.bookmarked_at).toLocaleDateString()}
+        </span>
+        <span>
+          <Clock size={14} />
+          {readingTime} min read
         </span>
         
         {analysis && (
