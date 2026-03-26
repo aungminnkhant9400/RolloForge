@@ -1564,8 +1564,8 @@
     "id": "bookmark_f83b99fccf6c",
     "source": "article",
     "url": "https://decrypt.co/362410/nvidia-class-action-lawsuit-alleged-crypto-mining-revenue-gaps",
-    "text": "Content from https://decrypt.co/362410/nvidia-class-action-lawsuit-alleged-crypto-mining-revenue-gaps",
-    "title": "Bookmark from decrypt.co",
+    "text": "Nvidia now faces a certified class action over crypto-linked revenue disclosures. The case centers on claims Nvidia hid more than $1 billion in crypto-related GPU sales. A federal judge has certified a class of investors alleging that Nvidia and CEO Jensen Huang concealed the extent to which gaming GPU revenues depended on crypto mining sales between 2017 and 2018. In 2022, the SEC fined Nvidia $5.5 million for failing to disclose the impact of crypto mining. Plaintiffs allege significant crypto-driven revenue flowed through GeForce gaming GPUs, exposing the company to crypto market volatility. The stock fell 28.5% after disclosures in November 2018. The certified class covers investors who bought Nvidia stock between August 10, 2017, and November 15, 2018.",
+    "title": "Nvidia to Face Class Action Lawsuit Over Alleged Crypto Mining Revenue Gaps",
     "note": "None",
     "author": null,
     "created_at": "2026-03-26T05:37:48.647358Z",
@@ -1579,7 +1579,7 @@
     "raw_payload": {
       "ingestion_channel": "telegram",
       "capture_mode": "url_only",
-      "scraped_via": null
+      "scraped_via": "web_fetch"
     }
   }
 ]
