@@ -23,7 +23,16 @@ const bucketLabels = {
 export function BookmarkCard({ bookmark }: BookmarkCardProps) {
   const analysis = bookmark.analysis;
   const bucket = analysis?.recommendation_bucket || 'archive';
-  const readingTime = getReadingTime(bookmark.text || bookmark.analysis?.summary || '');
+  
+  // Better reading time: combine text + summary + title for estimate
+  const contentForReadingTime = [
+    bookmark.text,
+    analysis?.summary,
+    bookmark.title,
+    analysis?.key_insights?.join(' ')
+  ].filter(Boolean).join(' ');
+  
+  const readingTime = getReadingTime(contentForReadingTime);
   
   return (
     <article className="bookmark-card">
