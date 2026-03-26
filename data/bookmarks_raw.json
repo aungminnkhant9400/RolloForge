@@ -1559,5 +1559,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_f83b99fccf6c",
+    "source": "article",
+    "url": "https://decrypt.co/362410/nvidia-class-action-lawsuit-alleged-crypto-mining-revenue-gaps",
+    "text": "Content from https://decrypt.co/362410/nvidia-class-action-lawsuit-alleged-crypto-mining-revenue-gaps",
+    "title": "Bookmark from decrypt.co",
+    "note": "None",
+    "author": null,
+    "created_at": "2026-03-26T05:37:48.647358Z",
+    "bookmarked_at": "2026-03-26T05:37:48.647358Z",
+    "tags": [
+      "trading",
+      "stock-analysis",
+      "crypto",
+      "ai-tools"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": null
+    }
   }
 ]

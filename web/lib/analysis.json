@@ -2273,5 +2273,48 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_d2a55514e663",
     "analyzed_at": "2026-03-26T04:13:52.980979Z"
+  },
+  {
+    "title": "Nvidia Class Action Lawsuit Over Crypto Mining Revenue Disclosure",
+    "summary": "This article reports on a class action lawsuit against Nvidia alleging the company misled investors about revenue from crypto mining during the 2017-2018 cryptocurrency boom. The key takeaway is that Nvidia may have concealed the extent of its crypto-related revenue, which could impact investor confidence and stock analysis models. For someone building AI trading systems, this highlights the importance of accurate revenue attribution in stock analysis and the potential risks when companies have undisclosed exposure to volatile sectors like cryptocurrency mining.",
+    "recommendation_reason": "This provides real-world context about how crypto-related revenue can impact stock analysis and trading decisions, which is relevant for developing AI-driven trading strategies.",
+    "key_insights": [
+      "Companies may have hidden exposure to crypto markets that affects stock performance",
+      "Revenue attribution accuracy is critical for reliable stock analysis models",
+      "Legal and regulatory risks can impact companies with crypto-related business",
+      "Historical crypto market events continue to affect current corporate disclosures"
+    ],
+    "tags": [
+      "trading",
+      "stock-analysis",
+      "crypto",
+      "ai-tools"
+    ],
+    "recommendation_bucket": "archive",
+    "priority_score": 3.0,
+    "worth_score": 4.0,
+    "effort_score": 2.0,
+    "relevance": 4.0,
+    "practical_value": 3.0,
+    "actionability": 2.0,
+    "stage_fit": 3.0,
+    "novelty": 2.0,
+    "excitement": 2.0,
+    "difficulty": 1.0,
+    "time_cost": 1.0,
+    "scoring_inputs": {
+      "relevance": 4.0,
+      "practical_value": 3.0,
+      "actionability": 2.0,
+      "stage_fit": 3.0,
+      "novelty": 2.0,
+      "excitement": 2.0,
+      "difficulty": 1.0,
+      "time_cost": 1.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_f83b99fccf6c",
+    "analyzed_at": "2026-03-26T05:37:48.647358Z"
   }
 ]
