@@ -14,9 +14,11 @@ export default function OverviewPage() {
     async function fetchData() {
       try {
         // Fetch directly from static files with cache-busting
+        // Aggressive cache busting
+        const cacheBuster = `${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
         const [bookmarksRes, analysisRes] = await Promise.all([
-          fetch(`/data.json?t=${Date.now()}`),
-          fetch(`/analysis.json?t=${Date.now()}`)
+          fetch(`/data.json?cb=${cacheBuster}`, { cache: 'no-store' }),
+          fetch(`/analysis.json?cb=${cacheBuster}`, { cache: 'no-store' })
         ]);
         
         if (!bookmarksRes.ok || !analysisRes.ok) {
