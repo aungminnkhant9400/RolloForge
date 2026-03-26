@@ -1603,5 +1603,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_0168e2d91862",
+    "source": "x",
+    "url": "https://x.com/palis/status/2036883260513673610?s=46",
+    "text": "Nobody wants to hear this because everyone hates PMs, but AI basically made PMs the most powerful role in tech \n\nDesign and coding becoming commoditized. Sure, so is \u201cunderstanding\u201d problems, but much less so because so much software is hyper specific to existing processes or workflows. AI can help but not fully replace humans yet \n\nThe top tier of engineers are still equally as valuable as the top PMs because they also specialize in *how* to solve problems, architecture, novel technical solutions. Same with the ultra top tier of designers. But in the middle of the bell curve of these 3 roles, PMs are by nature of their role trained in ideation, critical thinking and problem solving, whereas middle of the bell curve engineers and designers are trained primarily in execution not critical thinking",
+    "title": "Nobody wants to hear this because everyone hates PMs, but AI basically made PMs...",
+    "note": "None",
+    "author": "palis",
+    "created_at": "2026-03-26T10:01:28.150431Z",
+    "bookmarked_at": "2026-03-26T10:01:28.150431Z",
+    "tags": [
+      "agents",
+      "ai-tools",
+      "automation",
+      "multi-agent"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
