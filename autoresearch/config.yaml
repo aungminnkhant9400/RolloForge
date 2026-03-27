@@ -1,0 +1,61 @@
+# Hyperparameter configuration for nnU-Net autoresearch
+# This defines the search space for optimization
+
+# Base nnU-Net command
+base_command: "nnUNetv2_train 3d_fullres nnUNetTrainerV2 1 -p nnUNetPlansv2.1"
+
+# Number of epochs for quick experiments
+max_epochs: 5
+
+# Hyperparameter search space
+hyperparameters:
+  learning_rate:
+    type: float
+    min: 0.0001
+    max: 0.01
+    log_scale: true  # Sample logarithmically
+  
+  batch_size:
+    type: choice
+    options: [1, 2, 4]
+  
+  num_pool_per_axis:
+    type: choice
+    options: [[4, 5, 5], [5, 5, 5], [4, 4, 4]]
+  
+  patch_size:
+    type: choice
+    options: [[128, 128, 128], [160, 160, 160], [192, 192, 192]]
+  
+  optimizer:
+    type: choice
+    options: ['sgd', 'adam']
+  
+  momentum:
+    type: float
+    min: 0.8
+    max: 0.99
+    condition: "optimizer == 'sgd'"
+  
+  weight_decay:
+    type: float
+    min: 0.000001
+    max: 0.001
+    log_scale: true
+
+# Optimization settings
+optimization:
+  metric: "dice"  # What to optimize for
+  direction: "maximize"  # maximize or minimize
+  early_stopping:
+    enabled: true
+    patience: 3  # Stop if no improvement for 3 iterations
+  
+# Resource settings
+gpu:
+  device: "cuda:0"
+  memory_fraction: 0.9
+
+# Logging
+output_dir: "/workspace/autoresearch/results"
+log_file: "/workspace/autoresearch/experiments.json"
