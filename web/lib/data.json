@@ -1670,5 +1670,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_8dc1b3ab5b9e",
+    "source": "x",
+    "url": "https://x.com/stacy_muur/status/2037138679945150549?s=46",
+    "text": "The Story of Pendle: From a Research Problem to $13B Peak TVL, on $3.7M Raised",
+    "title": "The Story of Pendle: From a Research Problem to $13B Peak TVL, on $3.7M Raised",
+    "note": "None",
+    "author": "stacy_muur",
+    "created_at": "2026-03-27T09:06:01.439864Z",
+    "bookmarked_at": "2026-03-27T09:06:01.439864Z",
+    "tags": [
+      "trading",
+      "crypto",
+      "ai-tools",
+      "automation"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
