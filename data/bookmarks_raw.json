@@ -1714,5 +1714,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_1fb744e146ab",
+    "source": "x",
+    "url": "https://x.com/citrini/status/2037323560574656834?s=46",
+    "text": "There\u2019s no rate cuts priced into the next 12 months, markets now price a 35% chance of a hike by Mar 27. \n\nA month ago 2-3 cuts were priced in. Big, quick moves mean opportunities in STIR. \n\nIf you want to learn how to take advantage of them\u2026",
+    "title": "There\u2019s no rate cuts priced into the next 12 months, markets now price a 35%...",
+    "note": "None",
+    "author": "citrini",
+    "created_at": "2026-03-27T11:38:06.971843Z",
+    "bookmarked_at": "2026-03-27T11:38:06.971843Z",
+    "tags": [
+      "trading",
+      "polymarket",
+      "automation",
+      "ai-tools"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
