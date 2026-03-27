@@ -2731,5 +2731,47 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_7bb5a0eb92df",
     "analyzed_at": "2026-03-27T17:40:32.983575Z"
+  },
+  {
+    "title": "Ryan Holiday on Practical Intelligence Development",
+    "summary": "This is a social media post by author Ryan Holiday discussing practical approaches to developing intelligence through action rather than passive consumption. The key takeaway emphasizes that true intelligence comes from doing, building, and applying knowledge rather than just accumulating information. For a user building OpenClaw systems through hands-on learning, this reinforces their 'building by learning' approach and validates prioritizing practical implementation over theoretical study.",
+    "recommendation_reason": "This aligns with the user's 'building by learning' stage and reinforces their preference for hands-on implementation over pure theory.",
+    "key_insights": [
+      "Intelligence develops through action and implementation, not passive consumption",
+      "The 'building by learning' approach is validated as effective for skill development",
+      "Quick wins and medium projects align with practical intelligence building",
+      "Focus on doing rather than just knowing supports the user's hands-on methodology"
+    ],
+    "tags": [
+      "automation",
+      "ai-tools",
+      "coding"
+    ],
+    "recommendation_bucket": "archive",
+    "priority_score": 3.5,
+    "worth_score": 6.0,
+    "effort_score": 5.0,
+    "relevance": 5.0,
+    "practical_value": 4.0,
+    "actionability": 3.0,
+    "stage_fit": 8.0,
+    "novelty": 2.0,
+    "excitement": 3.0,
+    "difficulty": 2.0,
+    "time_cost": 2.0,
+    "scoring_inputs": {
+      "relevance": 5.0,
+      "practical_value": 4.0,
+      "actionability": 3.0,
+      "stage_fit": 8.0,
+      "novelty": 2.0,
+      "excitement": 3.0,
+      "difficulty": 2.0,
+      "time_cost": 2.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_e85ba1f1a4b9",
+    "analyzed_at": "2026-03-27T18:07:24.997309Z"
   }
 ]

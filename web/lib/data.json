@@ -1758,5 +1758,26 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_e85ba1f1a4b9",
+    "source": "x",
+    "url": "https://x.com/ryanholiday/status/2037560338242040094?s=46",
+    "text": "If You Want to Be Smart, You Must Do This",
+    "title": "If You Want to Be Smart, You Must Do This",
+    "note": "None",
+    "author": "ryanholiday",
+    "created_at": "2026-03-27T18:07:24.997309Z",
+    "bookmarked_at": "2026-03-27T18:07:24.997309Z",
+    "tags": [
+      "automation",
+      "ai-tools",
+      "coding"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
