@@ -1736,5 +1736,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_7bb5a0eb92df",
+    "source": "x",
+    "url": "https://x.com/sharbel/status/2037505418272841833?s=20",
+    "text": "the fastest growing GitHub repos this week:\n\n1. affaan-m/everything-claude-code (+22.8K stars)\nagent harness optimization. skills, memory, security for Claude Code, Codex, Cursor and beyond.\n\n2. obra/superpowers (+17.0K stars)\nagentic skills framework that works. just crossed 116K stars.\n\n3. bytedance/deer-flow (+16.1K stars)\nopen-source long-horizon SuperAgent. researches, codes, creates. sandboxes + subagents built in.\n\n4. Crosstalk-Solutions/project-nomad (+14.6K stars)\noffline survival computer packed with AI. works anywhere, no internet needed.\n\n5. FujiwaraChoki/MoneyPrinterV2 (+10.4K stars)\nautomate making money online. the sequel nobody asked for but everyone starred.\n\n6. TauricResearch/TradingAgents (+9.2K stars)\nmulti-agent LLM financial trading framework. because one agent trading isn't scary enough.\n\n7. jarrodwatts/claude-hud (+5.5K stars)\nClaude Code plugin showing context, tools, agents, and todos in real time.\n\n8. mvanhorn/last30days-skill (+4.8K stars)\nAI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web.\n\n9. NousResearch/hermes-agent (+4.6K stars)\nthe agent that grows with you.\n\n10. langchain-ai/open-swe (+1.8K stars)\nopen-source async coding agent. async by design, not by accident.\n\nthe theme this week: AI agents took over GitHub again.\n\nbookmark this. next week's list will look completely different.",
+    "title": "the fastest growing GitHub repos this week:",
+    "note": "None",
+    "author": "sharbel",
+    "created_at": "2026-03-27T17:40:32.983575Z",
+    "bookmarked_at": "2026-03-27T17:40:32.983575Z",
+    "tags": [
+      "agents",
+      "trading",
+      "polymarket",
+      "multi-agent"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
