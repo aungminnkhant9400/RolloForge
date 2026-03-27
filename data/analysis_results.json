@@ -2619,5 +2619,30 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_2ab921d56742",
     "analyzed_at": "2026-03-27T10:57:48.970712Z"
+  },
+  {
+    "bookmark_id": "bookmark_a94a3ec7699f",
+    "title": "Twitter/X post from @alexfinn. View on X for full content.",
+    "summary": "Analysis pending for Twitter/X post from @alexfinn. View on X for full ...",
+    "recommendation_reason": "Bookmark saved but analysis not run",
+    "key_insights": [
+      "DeepSeek analysis needed"
+    ],
+    "scoring_inputs": {
+      "relevance": 5.0,
+      "practical_value": 5.0,
+      "actionability": 5.0,
+      "stage_fit": 5.0,
+      "novelty": 5.0,
+      "excitement": 5.0,
+      "difficulty": 5.0,
+      "time_cost": 5.0
+    },
+    "worth_score": 5.0,
+    "effort_score": 5.0,
+    "priority_score": 5.0,
+    "recommendation_bucket": "archive",
+    "analysis_source": "pending",
+    "analyzed_at": "2026-03-27T11:17:38.245087Z"
   }
 ]
