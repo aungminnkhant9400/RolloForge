@@ -2576,5 +2576,48 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_8dc1b3ab5b9e",
     "analyzed_at": "2026-03-27T09:06:01.439864Z"
+  },
+  {
+    "title": "OpenClaw Proactive Workflow Setup Guide",
+    "summary": "This is a practical guide for configuring OpenClaw to autonomously build applications and ship code overnight. The key takeaway is that OpenClaw can work proactively when given clear expectations and specific instructions about business goals and constraints. This matters for the user because it directly addresses their interest in multi-agent workflows and automation, enabling hands-on implementation of autonomous AI systems that could accelerate their trading and analysis projects.",
+    "recommendation_reason": "This provides actionable steps for configuring OpenClaw's proactive behavior, which aligns with the user's high-priority interest in multi-agent workflows and automation.",
+    "key_insights": [
+      "Use a specific prompt template that frames OpenClaw as a proactive employee working to improve business and generate revenue",
+      "Brain dump all business context into OpenClaw before implementing the proactive workflow",
+      "Set explicit constraints: create PRs for review rather than committing code directly, and avoid deleting files",
+      "Configure OpenClaw to use Codex CLI instead of Claude Code to reduce token costs on Claude Max accounts"
+    ],
+    "tags": [
+      "openclaw",
+      "multi-agent",
+      "automation",
+      "coding"
+    ],
+    "recommendation_bucket": "test_this_week",
+    "priority_score": 7.0,
+    "worth_score": 9.0,
+    "effort_score": 4.0,
+    "relevance": 9.0,
+    "practical_value": 9.0,
+    "actionability": 9.0,
+    "stage_fit": 8.0,
+    "novelty": 7.0,
+    "excitement": 8.0,
+    "difficulty": 4.0,
+    "time_cost": 3.0,
+    "scoring_inputs": {
+      "relevance": 9.0,
+      "practical_value": 9.0,
+      "actionability": 9.0,
+      "stage_fit": 8.0,
+      "novelty": 7.0,
+      "excitement": 8.0,
+      "difficulty": 4.0,
+      "time_cost": 3.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_2ab921d56742",
+    "analyzed_at": "2026-03-27T10:57:48.970712Z"
   }
 ]

@@ -1692,5 +1692,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_2ab921d56742",
+    "source": "x",
+    "url": "https://x.com/AlexFinn/status/2037285512713822528?s=20",
+    "text": "Every night OpenClaw builds me out new apps and ships more code without me asking\n\nPeople keep saying there's no way it's doing it proactively\n\nIt does, because I set the expectations it should\n\nFeed this prompt to your OpenClaw to get it to work more proactively:\n\n\"I am a 1 man business. I work from the moment I wake up to the moment I go to sleep. I need an employee taking as much off my plate and being as proactive as possible. Please take everything you know about me and just do work you think would make my life easier or improve my business and make me money. I want to wake up every morning and be like \"wow, you got a lot done while I was sleeping.\" Don't be afraid to monitor my business and build things that would help improve our workflow. Just create PRs for me to review, don't push anything live. I'll test and commit. Every night when I go to bed, build something cool out I can test.\"\n\nFew keys here:\n\u2022 Before doing this prompt, brain dump EVERYTHING about you and your business into OpenClaw\n\n\u2022 Make sure it's aware to NOT commit code (if you have it connected to github)\n\n\u2022 Make sure it's aware to NOT delete files\n\n\u2022 Login to Codex CLI on your computer and ask OpenClaw to use Codex to write code instead of Claude Code so you save tokens on your Claude Max account\n\nOpenClaw is the most proactive AI ever made, but only if you set those expectations",
+    "title": "Every night OpenClaw builds me out new apps and ships more code without me...",
+    "note": "None",
+    "author": "AlexFinn",
+    "created_at": "2026-03-27T10:57:48.970712Z",
+    "bookmarked_at": "2026-03-27T10:57:48.970712Z",
+    "tags": [
+      "openclaw",
+      "multi-agent",
+      "automation",
+      "coding"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
