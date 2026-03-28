@@ -1779,5 +1779,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_60bea4495b4d",
+    "source": "x",
+    "url": "https://x.com/kevinnguyendn/status/2037730451255959840?s=46",
+    "text": "Memory for OpenClaw is now Native!\n\nOur first OpenClaw Memory Skill was a massive success: 30k+ downloads in a week and 500k+ organic impressions overnight for launch post.\n\nBut we knew memory needed to be native.\n\nOn March 21, OpenClaw merged PR #50848, allowing us to go beyond the skill layer and integrate directly into the agent\u2019s context assembly flow.\n\nWe try to make OpenClaw a truly 24/7 employee capable of complex workflows. The technical setup isn\u2019t the hardest part but the real challenge is giving it a \"brain\" that remembers exact project details, past decisions, and team changes over time.\n\nThe Native Memory Plugin is now live on NPM & ClawHub. Here is what it brings to your OpenClaw agents:\n\n Native Integration: Automatically manages a Three-Layer Memory architecture (Context Tree, Workspace Memory, Daily Memory).\n\n Git-like Stateful Memory: Organizes memory into a semantic hierarchy of human-readable, diffable Markdown files. You always get updated knowledge and can actually see and fix what your agent learns.\n\n Top Market Accuracy: Achieves an industry-leading 92.2% retrieval accuracy (LoCoMo & LongMemEval benchmarks), maintaining 90% accuracy even with cheap, lightweight models.\n\n Local-first & Portable: Local-by-default, fully portable for multi-agent teams.\n\n Super Easy Setup",
+    "title": "Memory for OpenClaw is now Native!",
+    "note": "None",
+    "author": "kevinnguyendn",
+    "created_at": "2026-03-28T04:58:53.183050Z",
+    "bookmarked_at": "2026-03-28T04:58:53.183050Z",
+    "tags": [
+      "openclaw",
+      "multi-agent",
+      "automation",
+      "ai-tools"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
