@@ -3208,5 +3208,48 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_0a04b8322862",
     "analyzed_at": "2026-03-28T16:54:00.647259Z"
+  },
+  {
+    "title": "Training Agentic Models with RL in Kimi Cursor and Chroma",
+    "summary": "This content explains how three AI platforms\u2014Kimi, Cursor, and Chroma\u2014implement reinforcement learning to train agentic models. The key takeaway is practical RL techniques for developing autonomous agents that can learn from interactions. For a user building OpenClaw multi-agent systems, these methods could enhance agent decision-making in trading and prediction market scenarios.",
+    "recommendation_reason": "It provides hands-on RL approaches directly applicable to improving AI agents in trading and prediction market workflows.",
+    "key_insights": [
+      "RL techniques used by production AI platforms for agent training",
+      "Practical implementation details for autonomous agent learning",
+      "Methods to enhance agent decision-making through interaction feedback",
+      "Approaches applicable to multi-agent coordination in trading systems"
+    ],
+    "tags": [
+      "agents",
+      "ai-tools",
+      "automation",
+      "llm"
+    ],
+    "recommendation_bucket": "build_later",
+    "priority_score": 6.0,
+    "worth_score": 7.5,
+    "effort_score": 3.0,
+    "relevance": 7.0,
+    "practical_value": 6.5,
+    "actionability": 6.0,
+    "stage_fit": 7.0,
+    "novelty": 6.0,
+    "excitement": 6.5,
+    "difficulty": 5.0,
+    "time_cost": 4.0,
+    "scoring_inputs": {
+      "relevance": 7.0,
+      "practical_value": 6.5,
+      "actionability": 6.0,
+      "stage_fit": 7.0,
+      "novelty": 6.0,
+      "excitement": 6.5,
+      "difficulty": 5.0,
+      "time_cost": 4.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_c3877e7e2f10",
+    "analyzed_at": "2026-03-28T17:12:39.862752Z"
   }
 ]

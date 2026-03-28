@@ -1999,5 +1999,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_c3877e7e2f10",
+    "source": "x",
+    "url": "https://x.com/_philschmid/status/2037924497563505058?s=46",
+    "text": "How Kimi, Cursor, and Chroma Train Agentic Models with RL",
+    "title": "How Kimi, Cursor, and Chroma Train Agentic Models with RL",
+    "note": "None",
+    "author": "_philschmid",
+    "created_at": "2026-03-28T17:12:39.862752Z",
+    "bookmarked_at": "2026-03-28T17:12:39.862752Z",
+    "tags": [
+      "agents",
+      "ai-tools",
+      "automation",
+      "llm"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
