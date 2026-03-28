@@ -3121,5 +3121,49 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_44add0090b1b",
     "analyzed_at": "2026-03-28T16:17:09.928145Z"
+  },
+  {
+    "title": "AI-powered Polymarket arbitrage with automated edge calculation",
+    "summary": "This describes PolyPredict_AI, an automated system that scans Polymarket contracts in real-time to identify arbitrage opportunities using Bayesian probability and Kelly sizing. The key takeaway is that manual edge calculation formulas can be automated to scale across hundreds of contracts simultaneously, generating significant annualized yields. For someone building OpenClaw multi-agent systems focused on AI trading, this demonstrates a practical implementation of automated prediction market analysis that aligns with hands-on learning and quick-win projects.",
+    "recommendation_reason": "It directly addresses AI-driven trading strategies for Polymarket with concrete examples of automation that could inspire OpenClaw agent workflows.",
+    "key_insights": [
+      "The core formula: reliability \u00d7 (true_prob - current_price) = edge, which can be automated across all active contracts",
+      "Bayesian updating (P(H|E) = P(E|H) \u00d7 P(H) / P(E)) enables continuous probability adjustment as new evidence emerges",
+      "Kelly sizing (f* = (p\u00d7b - q) / b) provides position sizing directly from the probability gap",
+      "Real examples show 427%-8151% annualized yields from automated arbitrage on specific Polymarket contracts",
+      "The bottleneck shifts from manual calculation speed to system architecture that can process 300+ contracts simultaneously"
+    ],
+    "tags": [
+      "polymarket",
+      "trading",
+      "automation",
+      "ai-tools"
+    ],
+    "recommendation_bucket": "test_this_week",
+    "priority_score": 7.5,
+    "worth_score": 9.0,
+    "effort_score": 3.0,
+    "relevance": 9.5,
+    "practical_value": 8.5,
+    "actionability": 8.0,
+    "stage_fit": 8.0,
+    "novelty": 7.0,
+    "excitement": 8.5,
+    "difficulty": 6.0,
+    "time_cost": 4.0,
+    "scoring_inputs": {
+      "relevance": 9.5,
+      "practical_value": 8.5,
+      "actionability": 8.0,
+      "stage_fit": 8.0,
+      "novelty": 7.0,
+      "excitement": 8.5,
+      "difficulty": 6.0,
+      "time_cost": 4.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_d954f05e1e7e",
+    "analyzed_at": "2026-03-28T16:17:52.586938Z"
   }
 ]

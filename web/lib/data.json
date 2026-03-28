@@ -1955,5 +1955,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_d954f05e1e7e",
+    "source": "x",
+    "url": "https://x.com/solst1ne/status/2037920669309313161?s=46",
+    "text": "I wrote about the formula most Polymarket traders never run\n\nreliability * (true_prob - current_price) = your edge\n\nsomeone DMed me after. said \n@PolyPredict_AI\n runs that calculation\non every active contract. automatically. in real time\n\n6c arbitrage. 427% annualized yield. one position\n\nhere's what happens when you remove the human bottleneck from the math I described\n\nThe article I wrote describes a manual process\n\nYou find a source. You assign a reliability tier\nYou estimate true probability. You subtract the market price\nYou get an edge number\n\n95% of traders never write it down\nThe ones who do run it in minutes, not seconds\n\n\n@PolyPredict_AI\n removes the manual part entirely\n\nThe AI scans every active Polymarket contract\n\nReal-time odds. Breaking news. Proprietary quant models\n\nIt outputs a Fair Value - the true_prob in my formula\n\nThen flags the Value Space: contracts where market price has deviated from logical probability far enough to act on\n\nThat deviation is the trade. Not a gut call. A calculated number\n\nBayesian core:\nP(H|E) = P(E|H) * P(H) / P(E)\n\nNew evidence shifts P(H) continuously\nThe market reprices when enough people notice\nThat gap is the edge I wrote about. Running automatically\n\nKelly sizing:\nf* = (p*b - q) / b\n\n> Fair Value says 0.82. Market says 0.41\n> Kelly tells you exactly how much to load\n> No spreadsheet. No sticky note. A number derived from the gap itself\n\n3 live arbitrage examples from the platform right now:\n\n\"Mojtaba Khamenei leaves Iran?\"\nFair Value: 43c. Market: 41c.\nBuy No for all months. Annualized yield: 427.5%\n\n\"Will ships transit the Strait of Hormuz on any day?\"\nFair Value: 8.5c. Market: 6c.\nBuy No on 20+ option. Annualized yield: 846%\n\n\"What will Trump say in March?\" Sudan option.\nFair Value: 90c+. Market: 82c.\nAnnualized yield: 8151%\n\nEach position comes with a step-by-step execution plan\nNot just a signal. A playbook\n\n91% of wallets trade the same headlines as everyone else\nThe edge I wrote about scales to zero contracts per hour when done manually\nIt scales to every active market simultaneously when the AI does it\n\nThe edge isn't the formula\nThe edge is running the formula on 300 contracts while you read this sentence",
+    "title": "I wrote about the formula most Polymarket traders never run",
+    "note": "None",
+    "author": "solst1ne",
+    "created_at": "2026-03-28T16:17:52.586938Z",
+    "bookmarked_at": "2026-03-28T16:17:52.586938Z",
+    "tags": [
+      "polymarket",
+      "trading",
+      "automation",
+      "ai-tools"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
