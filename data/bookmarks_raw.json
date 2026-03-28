@@ -1845,5 +1845,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_c6eee1caaf8f",
+    "source": "x",
+    "url": "https://x.com/roman_khaves/status/2037610375177224672?s=46",
+    "text": "how to make $100k/mo with AI slideshows...",
+    "title": "how to make $100k/mo with AI slideshows...",
+    "note": "None",
+    "author": "roman_khaves",
+    "created_at": "2026-03-28T13:41:35.679971Z",
+    "bookmarked_at": "2026-03-28T13:41:35.679971Z",
+    "tags": [
+      "ai-tools",
+      "automation",
+      "content-creation",
+      "revenue-models"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]

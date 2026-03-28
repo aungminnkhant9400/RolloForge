@@ -2904,5 +2904,48 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_95b594ca588b",
     "analyzed_at": "2026-03-28T08:15:19.538835Z"
+  },
+  {
+    "title": "AI Slideshow Revenue Generation Analysis",
+    "summary": "This content explores methods for generating significant monthly revenue through AI-powered slideshow creation. The key takeaway involves leveraging AI tools to automate content production for commercial purposes. While not directly related to trading or prediction markets, it demonstrates practical AI automation applications that could inspire workflow optimizations. The user might find value in understanding how others are monetizing AI automation, though the specific application differs from their core interests.",
+    "recommendation_reason": "This demonstrates AI automation principles that could inform multi-agent workflow design, though it's not directly aligned with the user's high-priority topics.",
+    "key_insights": [
+      "AI can automate content creation workflows for revenue generation",
+      "Slideshow automation represents a specific application of AI tools",
+      "Revenue models for AI services often involve scaling automated processes",
+      "The approach shows how to structure AI-driven business processes"
+    ],
+    "tags": [
+      "ai-tools",
+      "automation",
+      "content-creation",
+      "revenue-models"
+    ],
+    "recommendation_bucket": "archive",
+    "priority_score": 2.5,
+    "worth_score": 4.0,
+    "effort_score": 3.0,
+    "relevance": 3.0,
+    "practical_value": 3.0,
+    "actionability": 2.0,
+    "stage_fit": 4.0,
+    "novelty": 5.0,
+    "excitement": 3.0,
+    "difficulty": 4.0,
+    "time_cost": 3.0,
+    "scoring_inputs": {
+      "relevance": 3.0,
+      "practical_value": 3.0,
+      "actionability": 2.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 3.0,
+      "difficulty": 4.0,
+      "time_cost": 3.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_c6eee1caaf8f",
+    "analyzed_at": "2026-03-28T13:41:35.679971Z"
   }
 ]
