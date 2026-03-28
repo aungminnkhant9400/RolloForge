@@ -2817,5 +2817,49 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_60bea4495b4d",
     "analyzed_at": "2026-03-28T04:58:53.183050Z"
+  },
+  {
+    "title": "AutoPredict Framework for Prediction Market Trading Agent Evaluation",
+    "summary": "AutoPredict is a research framework adapted from Karpathy's Autoresearch concept specifically designed for evaluating, backtesting, and iteratively improving prediction market trading agents. It assesses agents on forecast quality, calibration, execution metrics, and risk-adjusted returns while supporting domain specialists across finance, weather, and politics. This framework directly addresses the user's interest in AI-driven trading strategies and Polymarket prediction markets by providing a structured approach to agent improvement through evaluation, mutation, and selection loops.",
+    "recommendation_reason": "This framework aligns perfectly with building multi-agent systems for trading and prediction markets while coming from a trusted source (Karpathy-inspired).",
+    "key_insights": [
+      "Framework focuses on agent evaluation and improvement rather than initial agent building",
+      "Provides concrete metrics for trading agents: forecast quality, calibration, execution, and risk-adjusted returns",
+      "Supports domain specialists that could be adapted for Polymarket or stock analysis",
+      "Uses an evaluation + mutation + selection loop for iterative agent improvement",
+      "Built on established Autoresearch concepts from a trusted AI builder"
+    ],
+    "tags": [
+      "agents",
+      "trading",
+      "autoresearch",
+      "polymarket"
+    ],
+    "recommendation_bucket": "test_this_week",
+    "priority_score": 7.0,
+    "worth_score": 9.0,
+    "effort_score": 4.0,
+    "relevance": 9.5,
+    "practical_value": 8.5,
+    "actionability": 8.0,
+    "stage_fit": 8.0,
+    "novelty": 7.5,
+    "excitement": 8.0,
+    "difficulty": 5.0,
+    "time_cost": 4.0,
+    "scoring_inputs": {
+      "relevance": 9.5,
+      "practical_value": 8.5,
+      "actionability": 8.0,
+      "stage_fit": 8.0,
+      "novelty": 7.5,
+      "excitement": 8.0,
+      "difficulty": 5.0,
+      "time_cost": 4.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_754fd095f4c3",
+    "analyzed_at": "2026-03-28T07:18:58.384860Z"
   }
 ]

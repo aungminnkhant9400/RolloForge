@@ -1801,5 +1801,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_754fd095f4c3",
+    "source": "x",
+    "url": "https://x.com/howdymerry/status/2037683950085378240?s=20",
+    "text": "I took Karpathy's Autoresearch concept and adapted it into AutoPredict: a research framework for evaluating, backtesting, and iteratively improving prediction market trading agents\n\nAutoPredict evaluates agents on\n- forecast quality\n- calibration\n- execution (slippage, liquidity, and fills)\n- drawdown and risk adjusted returns\n\nIt also supports domain specialists for weather, finance, and politics under a shared evaluation harness\n\nThis framework is NOT for building agents but for agent improvement via a evaluation + mutation + selection loop",
+    "title": "I took Karpathy's Autoresearch concept and adapted it into AutoPredict: a...",
+    "note": "None",
+    "author": "howdymerry",
+    "created_at": "2026-03-28T07:18:58.384860Z",
+    "bookmarked_at": "2026-03-28T07:18:58.384860Z",
+    "tags": [
+      "agents",
+      "trading",
+      "autoresearch",
+      "polymarket"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
