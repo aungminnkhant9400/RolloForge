@@ -1933,5 +1933,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_44add0090b1b",
+    "source": "x",
+    "url": "https://x.com/karpathy/status/2037921699824607591?s=46",
+    "text": "- Drafted a blog post\n- Used an LLM to meticulously improve the argument over 4 hours.\n- Wow, feeling great, it\u2019s so convincing!\n- Fun idea let\u2019s ask it to argue the opposite. \n- LLM demolishes the entire argument and convinces me that the opposite is in fact true.\n- lol\n\nThe LLMs may elicit an opinion when asked but are extremely competent in arguing almost any direction. This is actually super useful as a tool for forming your own opinions, just make sure to ask different directions and be careful with the sycophancy.",
+    "title": "- Drafted a blog post",
+    "note": "None",
+    "author": "karpathy",
+    "created_at": "2026-03-28T16:17:09.928145Z",
+    "bookmarked_at": "2026-03-28T16:17:09.928145Z",
+    "tags": [
+      "llm",
+      "multi-agent",
+      "trading",
+      "ai-tools"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
