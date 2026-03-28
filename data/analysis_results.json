@@ -3035,5 +3035,48 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_82c15a55f916",
     "analyzed_at": "2026-03-28T14:49:00.501498Z"
+  },
+  {
+    "title": "The Big 2030 Prediction: What Determines Your Worth in the AI Era",
+    "summary": "This is a forward-looking analysis discussing how value attribution will shift in an AI-dominated future. The key takeaway suggests that traditional metrics of worth may become obsolete as AI capabilities expand. For someone building OpenClaw multi-agent systems, this provides strategic context about the evolving landscape where AI agents will operate and create value. Understanding these shifts can inform how to design agents that remain relevant and effective in prediction markets and trading environments.",
+    "recommendation_reason": "It offers strategic foresight relevant to designing AI agents for trading and prediction markets in an evolving landscape.",
+    "key_insights": [
+      "Future value may shift from traditional skills to how effectively one leverages AI systems",
+      "AI agents in trading and prediction markets will need to adapt to new value paradigms",
+      "Strategic positioning in multi-agent workflows requires understanding emerging worth metrics",
+      "Building systems today should consider how AI will redefine success by 2030"
+    ],
+    "tags": [
+      "agents",
+      "ai-tools",
+      "trading",
+      "automation"
+    ],
+    "recommendation_bucket": "build_later",
+    "priority_score": 4.5,
+    "worth_score": 6.0,
+    "effort_score": 3.0,
+    "relevance": 5.0,
+    "practical_value": 4.0,
+    "actionability": 3.0,
+    "stage_fit": 4.0,
+    "novelty": 7.0,
+    "excitement": 6.0,
+    "difficulty": 2.0,
+    "time_cost": 2.0,
+    "scoring_inputs": {
+      "relevance": 5.0,
+      "practical_value": 4.0,
+      "actionability": 3.0,
+      "stage_fit": 4.0,
+      "novelty": 7.0,
+      "excitement": 6.0,
+      "difficulty": 2.0,
+      "time_cost": 2.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_b8c5dfe2d782",
+    "analyzed_at": "2026-03-28T15:53:11.254111Z"
   }
 ]

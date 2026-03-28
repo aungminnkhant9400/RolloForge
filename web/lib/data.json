@@ -1911,5 +1911,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_b8c5dfe2d782",
+    "source": "x",
+    "url": "https://x.com/voxyz_ai/status/2037911228157186531?s=46",
+    "text": "The Big 2030 Prediction: In the AI Era, What Really Determines Your Worth Isn't What You Think",
+    "title": "The Big 2030 Prediction: In the AI Era, What Really Determines Your Worth Isn't...",
+    "note": "None",
+    "author": "voxyz_ai",
+    "created_at": "2026-03-28T15:53:11.254111Z",
+    "bookmarked_at": "2026-03-28T15:53:11.254111Z",
+    "tags": [
+      "agents",
+      "ai-tools",
+      "trading",
+      "automation"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
