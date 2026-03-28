@@ -1889,5 +1889,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_82c15a55f916",
+    "source": "x",
+    "url": "https://x.com/lotte_verheyden/status/2037665098983190904?s=20",
+    "text": "We Used Autoresearch on Our AI Skill, It Taught Us to Write Better Tests",
+    "title": "We Used Autoresearch on Our AI Skill, It Taught Us to Write Better Tests",
+    "note": "None",
+    "author": "lotte_verheyden",
+    "created_at": "2026-03-28T14:49:00.501498Z",
+    "bookmarked_at": "2026-03-28T14:49:00.501498Z",
+    "tags": [
+      "autoresearch",
+      "agents",
+      "automation",
+      "ai-tools"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
