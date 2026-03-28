@@ -1823,5 +1823,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_95b594ca588b",
+    "source": "x",
+    "url": "https://x.com/saranormous/status/2018801883222253737?s=20",
+    "text": "Software Abundance",
+    "title": "Software Abundance",
+    "note": "None",
+    "author": "saranormous",
+    "created_at": "2026-03-28T08:15:19.538835Z",
+    "bookmarked_at": "2026-03-28T08:15:19.538835Z",
+    "tags": [
+      "ai-tools",
+      "automation",
+      "coding",
+      "agents"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
