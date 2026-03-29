@@ -3251,5 +3251,49 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_c3877e7e2f10",
     "analyzed_at": "2026-03-28T17:12:39.862752Z"
+  },
+  {
+    "title": "Four Types of Profitable Trading Strategies Explained",
+    "summary": "This X post outlines four fundamental categories that all profitable trading strategies fall into, providing examples for each type. The key takeaway is a framework for classifying and understanding different trading approaches, which helps in strategy development and evaluation. For a user building AI trading systems, this provides a structured way to think about strategy design and implementation in automated systems. The categorization can inform how to structure multi-agent workflows for different strategy types.",
+    "recommendation_reason": "This directly supports AI-driven trading strategy development by providing a classification framework that can inform OpenClaw agent design.",
+    "key_insights": [
+      "Four core strategy types that encompass all profitable approaches",
+      "Examples illustrating how each strategy type works in practice",
+      "Framework for categorizing and evaluating trading strategies",
+      "Potential application to multi-agent system design with different agents handling different strategy types",
+      "Structure for developing and testing AI trading strategies systematically"
+    ],
+    "tags": [
+      "trading",
+      "automation",
+      "ai-tools",
+      "multi-agent"
+    ],
+    "recommendation_bucket": "test_this_week",
+    "priority_score": 6.5,
+    "worth_score": 8.0,
+    "effort_score": 3.0,
+    "relevance": 8.5,
+    "practical_value": 7.5,
+    "actionability": 8.0,
+    "stage_fit": 8.0,
+    "novelty": 6.0,
+    "excitement": 7.0,
+    "difficulty": 3.0,
+    "time_cost": 2.0,
+    "scoring_inputs": {
+      "relevance": 8.5,
+      "practical_value": 7.5,
+      "actionability": 8.0,
+      "stage_fit": 8.0,
+      "novelty": 6.0,
+      "excitement": 7.0,
+      "difficulty": 3.0,
+      "time_cost": 2.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_11ebff9970cf",
+    "analyzed_at": "2026-03-29T02:32:35.153768Z"
   }
 ]

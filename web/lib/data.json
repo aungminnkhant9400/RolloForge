@@ -2021,5 +2021,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_11ebff9970cf",
+    "source": "x",
+    "url": "https://x.com/goshawktrades/status/2038032998319214934?s=46",
+    "text": "Every Profitable Strategy Falls Into These 4 Types. Here's How Each One Works (With Examples)",
+    "title": "Every Profitable Strategy Falls Into These 4 Types.",
+    "note": "None",
+    "author": "goshawktrades",
+    "created_at": "2026-03-29T02:32:35.153768Z",
+    "bookmarked_at": "2026-03-29T02:32:35.153768Z",
+    "tags": [
+      "trading",
+      "automation",
+      "ai-tools",
+      "multi-agent"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
