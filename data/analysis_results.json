@@ -3295,5 +3295,48 @@
     "model": "deepseek-chat",
     "bookmark_id": "bookmark_11ebff9970cf",
     "analyzed_at": "2026-03-29T02:32:35.153768Z"
+  },
+  {
+    "title": "Seedance 2.0 Complete Guide",
+    "summary": "This appears to be a guide for Seedance 2.0, a tool or methodology that claims transformative potential. The key takeaway is a comprehensive implementation approach for this system. For a user building OpenClaw multi-agent systems, understanding different automation frameworks could provide inspiration for agent workflows or trading strategy automation.",
+    "recommendation_reason": "While not directly about OpenClaw or prediction markets, it may offer automation concepts applicable to multi-agent systems.",
+    "key_insights": [
+      "Potential framework for automation workflows",
+      "Complete implementation guide structure",
+      "Possibility of adaptable concepts for agent systems",
+      "Life-changing claims suggest ambitious scope"
+    ],
+    "tags": [
+      "automation",
+      "ai-tools",
+      "coding",
+      "agents"
+    ],
+    "recommendation_bucket": "archive",
+    "priority_score": 2.5,
+    "worth_score": 4.0,
+    "effort_score": 3.0,
+    "relevance": 3.0,
+    "practical_value": 3.0,
+    "actionability": 3.0,
+    "stage_fit": 4.0,
+    "novelty": 5.0,
+    "excitement": 4.0,
+    "difficulty": 3.0,
+    "time_cost": 3.0,
+    "scoring_inputs": {
+      "relevance": 3.0,
+      "practical_value": 3.0,
+      "actionability": 3.0,
+      "stage_fit": 4.0,
+      "novelty": 5.0,
+      "excitement": 4.0,
+      "difficulty": 3.0,
+      "time_cost": 3.0
+    },
+    "analysis_source": "deepseek",
+    "model": "deepseek-chat",
+    "bookmark_id": "bookmark_8eb8518e0d28",
+    "analyzed_at": "2026-03-29T02:43:35.322318Z"
   }
 ]

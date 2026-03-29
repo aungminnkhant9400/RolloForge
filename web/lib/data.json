@@ -2043,5 +2043,27 @@
       "capture_mode": "url_only",
       "scraped_via": "playwright"
     }
+  },
+  {
+    "id": "bookmark_8eb8518e0d28",
+    "source": "x",
+    "url": "https://x.com/starks_arq/status/2037928570257903983?s=46",
+    "text": "seedance 2.0 can change your life, here's the complete guide",
+    "title": "seedance 2.0 can change your life, here's the complete guide",
+    "note": "None",
+    "author": "starks_arq",
+    "created_at": "2026-03-29T02:43:35.322318Z",
+    "bookmarked_at": "2026-03-29T02:43:35.322318Z",
+    "tags": [
+      "automation",
+      "ai-tools",
+      "coding",
+      "agents"
+    ],
+    "raw_payload": {
+      "ingestion_channel": "telegram",
+      "capture_mode": "url_only",
+      "scraped_via": "playwright"
+    }
   }
 ]
